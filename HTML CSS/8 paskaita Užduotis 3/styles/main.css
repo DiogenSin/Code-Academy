@@ -1,0 +1,107 @@
+/* Reset */
+@import url(https://meyerweb.com/eric/tools/css/reset/reset200802.css);
+
+body{
+    width: flex;
+    background-color: rgb(210, 210, 230);
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+logo {
+    display: block;
+    background-color: #ddaa00;
+    text-align: center;
+    height: 60px;
+    line-height: 60px;
+    color: white;
+    margin: 0px;
+    font-size: 34px;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 60px;
+    background-color: #cccccc;
+}
+
+nav ul li a{
+    display: flex;
+    text-decoration: none;
+    color: #ddaa00;    background-color: white;
+    border: 1px solid black;
+    height: 30px;
+    padding: 10px 60px;
+    margin: 5px 0;
+    line-height: 30px;
+}
+
+nav ul li a:hover{
+    color: #ffffff;    
+    background-color: #ddaa00;
+}
+
+main{
+    display: block;
+    height: auto;
+    background-color: #808080;
+}
+
+.options{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+
+.option {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 250px;
+    height: 500px;
+    background-color: #ffffff;
+    padding: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.option p{
+    text-align: left;
+}
+
+main div img{
+    width: 250px;
+    height: 250px;
+    margin-bottom: 30px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    border: 1px solid black;
+    padding: 12px;
+    background-color: #f1f1f1;
+}
+
+.button:hover {
+    background-color: #7c7c7c;
+    color: white;
+}
+
+.option a{
+    text-decoration: none;
+    color: black;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ddaa00;
+    color: white;
+    height: 60px;
+}

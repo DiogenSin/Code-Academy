@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6 paskaita - Pseudo klasės ir elementai</title>
+    <link rel="stylesheet" href="./styles/main.css">
+</head>
+<body>
+
+    <!--Pseudo klasės ir elementai 
+        Multimedijos elementai
+        Lentelės su pseudo klasėm/elementais
+        Formos su pseudo klasėm/elementais
+        Animacijos ir perėjimai
+    -->
+
+    <article id="pseudoSelektoriai">
+
+    <a href="https://w3schools.com/cssref/css_selectors.php"><h1>Pseudo klasės ir elementai</h1></a>
+    <ul>
+        <li>* - viskas</li>
+        <li>.class - klasė</li>
+        <li>#id - id</li>
+        <li>selectorY, selectorX - visi Y ir visi X elementai.</li>
+        <li>selectorX selectorY - visi Y elementai esantys elemente X.</li>
+        <li>selector > selector - selektorius(-iai) selektoriuje.</li>
+        <li>element.class#id - elementas, kuris turi X klasę ir Y id.</li>
+        <li>selectorX + selectorY - parenka pirmą elementąY einantį po elementX</li>
+        <li>selectorX ~ selectorY - parenka elementusY esančius tame pačiame lygmenyje žemiau už elementąX.</li>
+        <li>[attribute] - parenka elementą su nurodytu atributu.</li>
+        <li>[attribute=XYZ] - parenka elementą su nurodyto atributo XYZ reikšme.</li>
+        <li>[attribute~=XYZ] - parenka elementą, kuriame nurodyto atributo reikšmėje yra XYZ žodis/vertė.</li>
+        <li>[attribute*=XY] - parenka elementą, kuriame nurodyto atributo reikšmėje yra XY žodžio/vertės dalis.</li>
+        <li>[attribue|=XYZ] - parenka elementą, kurio nurodyto atributo reikšmėje yra atitinkama reikšmė arba vertė su brūkšneliu.</li>
+        <li>[attribute^=XYZ] - parenka element1, kurio nurodyto atributo reikšmė prasideda su nurodyta fraze/skaičiumi.</li>
+        <li>[attribute&=XYZ] - parenka element1, kurio nurodyto atributo reikšmė pasibaigia su nurodyta fraze/skaičiumi.</li>
+        <li>:link - nelankyta nuoroda.</li>
+        <li>:visited - lankyta nuoroda.</li>
+        <li>:hover - ant elemento užėjęs kursorius.</li>
+        <li>:active - aktyvi (paspaudimo momentu) nuoroda.</li>
+        <li>:empty - tusčias elementas (jokio turinio).</li>
+        <li>::marker - sąrašo elementų žymės.</li>
+        <li>::not(selectorX) - parenka viską, išskyrus nurodyta elementą</li>
+        <li>:target - selects the current active #news element (clicked on a URL containing that anchor name)</li>
+        <li>:first-child - parenka pirmąjį vaikinį elementą.</li>
+        <li>:last-child - parenka paskutinįjį vaikinį elementą.</li>
+        <li>:only-child - parenka vienintelį vaikinį elementą.</li>
+        <li>:first-of-type - parenka pirmąjį nurodyto tipo elementą.</li>
+        <li>:last-of-type - parenka paskutinį nurodyto tipo elementą.</li>
+        <li>:only-of-type - parenka vienintelį nurodyto tipo elementą.</li>
+        <li>:nth-child(n) - parenka nurodytą(-us) vaikinį(-ius) elementą(-us).</li>
+        <li>:nth-last-child(n) - parenka nurodytą(-us) elementą(-us) pagal tipą.</li>
+        <li>:nth-of-type(n) - parenka nurodytą(-us) elementą(-us) pagal tipą nuo galo.</li>
+        <li>:before - sukuria turinį prieš elementą.</li>
+        <li>:after - sukuria turinį už elemento.</li>
+        <li>input:checked - pažymėtus radio/ckeckbox/option pasirinkimus.</li>
+        <li>input:default - numatytasis pasirinkimas.</li>
+        <li>input:enabled - input`as, kuris turi disabled atributą.</li>
+        <li>input:disabled - input`as, kuris neturi disabled atributą. Naudojamas retai, nes tai numatytoji vertė.</li>
+        <li>input:focus - input`as, ant kurio yra paspausta/fokusuotas.</li>
+        <li>input:in-range - input`as, kurio vertė yra nurodytose ribose.</li>
+        <li>input:out-of-range - input`as, kurio vertė yra už nurodytų ribų.</li>
+        <li>input:indeterminate - input`as, kurio reikšmė yra neapibrėžta.</li>
+        <li>input:valid - input`as, kurio vertė yra tinkama.</li>
+        <li>input:invalid - input`as, kurio vertė yra netinkama.</li>
+        <li>input:required - input`as su required atributu.</li>
+        <li>input:optional - input`as su optional atributu.</li>
+        <li>input:read-only - inptu`as su read-only atributu.</li>
+        <li>input:write-only - input`as be read-only atributo.</li>
+        <li>input::placeholder - įvesties laukelio "placeholder" atributo reikšmės parinkimas stilizavimui.</li>
+        <li>element::first-letter - parenka elemento pirmąją raidę.</li>
+        <li>element::first-line - parenka elemento primąją eilutę.</li>
+        <li>::selection - perenka vartotojo pažymėtą informaciją.</li>
+        <li>:is() - </li>
+        <li>:has() - </li>
+        <li>:where() - </li>
+        
+    </ul>
+    <div class="selektoriusPvz">
+        <p class="RytoTekstas" id="Hallo">Labas rytas</p>
+        <p>Tekstas</p>
+        <h2 class="heading irDar" >Daugiau teksto</h2>
+        <h2>Dar daugiau teksto</h2>
+        <p>Tekstas tekstas</p>
+        <a href="#">Perkrauti puslapį</a>
+    </div>
+    </article>
+    <article id="MultimedijosElementai">
+        <h2>Multimedijos elementai</h2>
+        <p>Iframe yra skirtas įkelti kitos svetainės dalį/visą svetainę į savo svetainę.</p>
+        <div id="video"><!--Video-->
+            
+            <!-- <div id="video">
+            <video controls>
+                <source src="" type="">
+                <source src="" type="">
+                <source src="" type="">
+            </video>
+            <video src=""></video> -->
+            
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/2LikrQVWe0c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div id="audio">
+            <audio controls>
+                <source src="" type="audio/mp3">
+            </audio>
+            <audio src="" controls></video>
+        </div>
+        <div id="maps">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30512.80044705541!2d4.487954469087928!3d10.644145718177494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x11cad377855171e7%3A0xbefd1e32865c8f76!2sMosque!5e0!3m2!1sen!2slt!4v1668415573070!5m2!1sen!2slt" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div id="page">
+            <iframe src="https://www.seimas.lt" frameborder="0" height="400" width="500"></iframe>
+        </div>
+        </script>
+    </article>
+    <section id="uzduotis-lentele">
+        <table>
+            <tr>
+                <th>Vardas</th>
+                <th>Pavardė</th>
+                <th>Gimimo metai</th>
+                <th>Miestas</th>
+                <th>Lytis</th>
+                <th>Ved. Statusas</th>
+                <th>Plaukų spalva</th>
+                <th>Akių spalva</th>
+            </tr>
+            <tr>
+                <td>Jonas</td>
+                <td>Jonaitis</td>
+                <td>1999</td>
+                <td>Klaipėda</td>
+                <td>Vyras</td>
+                <td>Vedęs</td>
+                <td>Ruda</td>
+                <td>Mėlyna</td>
+            </tr>
+            <tr>
+                <td>Jonas</td>
+                <td>Jonaitis</td>
+                <td>1999</td>
+                <td>Klaipėda</td>
+                <td>Vyras</td>
+                <td>Vedęs</td>
+                <td>Ruda</td>
+                <td>Mėlyna</td>
+            </tr>
+            <tr>
+                <td>Jonas</td>
+                <td>Jonaitis</td>
+                <td>1999</td>
+                <td>Klaipėda</td>
+                <td>Vyras</td>
+                <td>Vedęs</td>
+                <td>Ruda</td>
+                <td>Mėlyna</td>
+            </tr>
+            <tr>
+                <td>Jonas</td>
+                <td>Jonaitis</td>
+                <td>1999</td>
+                <td>Klaipėda</td>
+                <td>Vyras</td>
+                <td>Vedęs</td>
+                <td>Ruda</td>
+                <td>Mėlyna</td>
+            </tr>
+            <tr>
+                <td>Jonas</td>
+                <td>Jonaitis</td>
+                <td>1999</td>
+                <td>Klaipėda</td>
+                <td>Vyras</td>
+                <td>Vedęs</td>
+                <td>Ruda</td>
+                <td>Mėlyna</td>
+            </tr>
+            <tr>
+                <td>Jonas</td>
+                <td>Jonaitis</td>
+                <td>1999</td>
+                <td>Klaipėda</td>
+                <td>Vyras</td>
+                <td>Vedęs</td>
+                <td>Ruda</td>
+                <td>Mėlyna</td>
+            </tr>
+            <tr>
+                <td>Jonas</td>
+                <td>Jonaitis</td>
+                <td>1999</td>
+                <td>Klaipėda</td>
+                <td>Vyras</td>
+                <td>Vedęs</td>
+                <td>Ruda</td>
+                <td>Mėlyna</td>
+            </tr>
+            <tr>
+                <td>Jonas</td>
+                <td>Jonaitis</td>
+                <td>1999</td>
+                <td>Klaipėda</td>
+                <td>Vyras</td>
+                <td>Vedęs</td>
+                <td>Ruda</td>
+                <td>Mėlyna</td>
+            </tr>
+            <tr>
+                <td>Jonas</td>
+                <td>Jonaitis</td>
+                <td>1999</td>
+                <td>Klaipėda</td>
+                <td>Vyras</td>
+                <td>Vedęs</td>
+                <td>Ruda</td>
+                <td>Mėlyna</td>
+            </tr>
+            <tr>
+                <td>Jonas</td>
+                <td>Jonaitis</td>
+                <td>1999</td>
+                <td>Klaipėda</td>
+                <td>Vyras</td>
+                <td>Vedęs</td>
+                <td>Ruda</td>
+                <td>Mėlyna</td>
+            </tr>
+        </table>
+    </section>
+</body>
+</html>

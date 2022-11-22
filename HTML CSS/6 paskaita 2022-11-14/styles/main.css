@@ -1,0 +1,93 @@
+/* p elementas turintis klasę RytoTekstas ir id Hallo */
+p.RytoTekstas#Hallo {
+    font-weight: bold;
+}
+
+/* Iš karto už p einantis paragrafas */
+p+p {
+    color: red;
+}
+
+/* Už nurodyto elemento h2 su klase "heading" visi einantys elementai */
+h2.heading ~ *{
+    background-color: darkgray;
+}
+
+[class] {
+    color: blueviolet;
+}
+/* [href] {
+    color: chartreuse;
+} */
+
+/* Parinktas elementas, kurio klasės vertė lygi "heading"*/
+[class=heading] {
+    color: darkgoldenrod;
+}
+
+/* Heading turi būti klasės vertės dalis*/
+[class~=heading] {
+    color: darkgoldenrod;
+}
+
+/* Parinktas elementas, kurio klasės vertėje yra frazė "head" */
+[class*=head] {
+    color: rgb(63, 107, 94);
+}
+
+
+
+
+
+a:link {
+    background-color:blue;
+}
+
+a:visited {
+    background-color: rgb(170, 62, 62);
+}
+
+:hover a{
+    background-color: darkgreen;
+}
+
+a:active{
+    background-color: rgb(29, 25, 26);
+    color: blueviolet;
+}
+
+/* Parenka sąrašo elementų žymes */
+li::marker{
+    color: chocolate;
+}
+
+/* Parenka viską kas ne div`as */
+
+
+table{
+    margin-top: 50px;
+    width: 900px;
+}
+
+table tr:hover{
+    background: #cc6ca7;
+}
+
+td:first-child {
+    color: rgb(238, 28, 28);
+}
+
+td:last-child {
+    color: rgb(0, 4, 255);
+}
+
+table tr:nth-child(2n) td{
+    background: rgb(226, 191, 149);
+}
+
+table:first-child th{
+    background: rgb(157, 149, 226);
+}
+
+
+

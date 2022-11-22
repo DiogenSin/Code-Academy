@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./styles/main.css">
+    <title>5 paskaita</title>
+</head>
+<header></header>
+<body>
+    <!-- 
+        CSS paveldėjimas
+        CSS prioritetai
+        Reset/Normalize CSS
+        Google Fonts
+        Icons
+     -->
+<main>
+    <section id="vaikinisTevinis">
+        <h2>Vaikinis / Tėvinis elementas</h2>
+        <p>
+            Tėvinis elementas gali turėti daugelį vaikinių elementų. <br>
+            Vaikinis elementas gali turėti TIK vieną tėvinį elementą.
+        </p>
+    </section>
+    <section id="paveldejimas">
+        <h2>Paveldėjimas</h2>
+        <p>
+            Paveldėti stilius gali tik vaikinis elementas iš tėvinio elemento. <br>
+            Paveldinimi stiliai yra tie stiliai, kurie keičia elemento išvaizdą, bet ne būseną. <br>
+            <b>Pvz.:</b> color, font-size, font-family ir t.t. <br>
+            Nepaveldimi stiliai yra tie, kurie keičia elemento būseną. <br>
+            <b>Pvz.:</b> width, height, display, border, position ir t.t. <br>
+        </p>
+        <ul>
+            <li>Labas</li>
+            <li>Labas</li>
+            <li>
+                <ul>
+                    <li>Ate</li>
+                    <li>Ate</li>
+                    <li>Ate</li>
+                    <li>Ate</li>
+                </ul>
+            </li>
+            <li>Labas</li>
+            <li>Labas</li>
+        </ul>
+        <p>Net paveldėti stiliai negali būti atvaizduoti dėl stilių prioritetų.</p>
+    </section>
+    <section id="defaultStyles">
+        <h1>Numatytieji stiliai</h1>
+        <h2>Numatytieji stiliai</h2>
+        <h3>Numatytieji stiliai</h3>
+        <h4>Numatytieji stiliai</h4>
+        <p>Numatytieji stiliai yra tag`ams automatiškai naršyklės suteikti stiliai. Tarp skirtingų naršyklių, numatytieji stiliai gali minimalistiškai keistis ir šitaip sugadinti svetainės vaizdą skirtingų naršyklių vartotojams. <br>
+        Tam, kad nebūtų problemų kuriant dizainą skirtingoms naršyklėms, yra naudojami Reset arba Normalize CSS`ai. <br>
+        Reset - resetina visus stilius (ištrina) <br>
+        Normalize - suvienodina visus stiloius tarp naršyklių ir panaikina dalį kenkėjiškų stilių.</p>
+    </section>
+    <section id="reset-normalize">
+        <h2>Reset ir Normalize</h2>
+        <p>
+            Web naršyklės pritaiko savo numatytuosius stilių nustatymus, kurie dažnai gali iškraipyti vaizdą ir sugadinti svetainės dizainą. Dėl šios priežasties šie numatytieji stiliaus nustatytmai yra arba reset`inami arba normalizuojami. <br> <br>
+            Reset nuoroda: <a href="https://meyerweb.com/eric/tools/css/reset/reset200802.css">Meyerweb</a> <br>
+            Normalize nuoroda: <a href="https://www.necolas.github.io/normalize.css/8.0.1/normalize.css">Necolas</a> 
+        </p>
+    </section>
+    <section id="prioritetai">
+        <h2>CSS prioritetai</h2>
+        <br>
+        <ol>
+            <li>CSS points
+                <ol>
+                    <li>Inline style - 1000 taškai</li>
+                    <li>ID - 100 taškai</li>
+                    <li>Class - 10 taškai</li>
+                    <li>Element - 1 taškai</li>
+                </ol>
+            </li>
+            <li>CSS order (in CSS code)</li>
+            <li>Inheritence</li>
+            <li><span class="important">!Important - naudoti tik paskutiniu atveju.</span><br>
+            Important ignoruoja visus prioritetus ir suteikia jam priskirtą stilių, kurio niekas negali pakeisti išskyrus kitą Important su didesniu pioritetu.</li>
+        </ol>
+        <br>
+        <a href="https://google.lt">Google</a>
+        <br><br>
+        <p>
+            Esant dviem selektoriams, kurie nusako to paties elemento vienodus stilius yra atsižvelgiama į tų selector`ių prioritetus. Aukščiau esantys prioritetai (turintys aukštesnį balą) turi pirmenybę. <br>
+            Esant dviem vienodo prieritetų balo selektoriams, keičiant tą patį elemento stilių yra atsižvelgiama į CSS eiliškumą (CSS order). Kuris aprašytas vėliau, tas ir bus pritaikomas.
+        </p>
+    </section>
+    <section id="GoogleFonts">
+        <h2>Google Fonts</h2>
+        <a href="https://fonts.google.com" target="_blank">Google Fonts</a><br>
+        <br>
+        <p>
+            Norint panaudoti kažkokį importuotą šriftą, reikia jį surasti Google Fonts puslapyje, pasirinkti jį ir jo stilius ir įdiegti @import kodą į styles css dokumentą.
+        </p>
+    </section>
+    <section id="icons">
+        <h2>Icons</h2>
+        <p>
+            Mažas paveiksliukas. <br>
+            Ikonos neturi joms priskirto tag`o, todėl norint jas panaudoti, reikia naudoti i arba span (naudojamas išskirti/įdėti kažkį content`ą ir jį manipuliuoti) tag`ą. <br>
+            I tag`as naudojamas dėl sviejų paprastų priežasčių: 1. pasirašo kur kas greičiau nei span ir užima mažiau vietos 2. i - ikona, lengviau prisiminti. <br>
+            Ikonos stilizuojamos kaip ir tekstas. Joms nėra priskiriamas width/height, color, tačiau naudojamas font-size, color ir t. t..
+        </p>
+            <h3>Ikonų bibliotekos</h3>
+                <h4>Font-awesome</h4>
+                <p>Norint naudoti Font-Awesome 4 biblioteką, reikia ją importuoti ar sulinkinti. Tam reikalinga <a href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">nuoroda</a>.</p>
+                <i class="fa fa-address-card-o"></i>
+                <span class="fa fa-anchor"></span>
+                <span class="fa">&#xf179;</span>
+                <h4>Bootstrap (GlyphIcons)</h4>
+                <p>Norint naudoti Bootstrap biblioteką, reikia ją importuoti ar sulinkinti. Tam reikalinga <a href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">nuoroda</a>.</p>
+                <i class="glyphicon glyphicon-bell"></i>
+                <span class="glyphicon glyphicon-bishop"></span>
+                <span class="glyphicon">&#xe122;</span>
+                <h4>Google (Material icons)</h4>
+                <p>Norint naudoti Google biblioteką, reikia ją importuoti ar sulinkinti. Tam reikalinga <a href="https://fonts.googleapis.com/icon?family=Material+Icons">nuoroda</a>.</p>
+                <i class="material-icons">accessibility</i>
+                <span class="material-icons">add_to_photos</span>
+                <span class="material-icons">&#xe633;</span>
+    </section>
+</main>
+</body>
+</html>

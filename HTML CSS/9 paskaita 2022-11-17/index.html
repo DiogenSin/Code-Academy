@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/main.css">
+    <title>9 paskaita - Grid`as</title>
+</head>
+<body>
+    <section id="grid">
+        <h1>Display: grid</h1>
+            <ul>
+                <li>grid-template-columns - sukuria grid tinklelio stulpelius</li>
+                <li>grid-template-rows - sukuria grid tinklelio eilutes</li>
+                <li>grid-template - apjungia columns ir rows</li>
+                <li>gap, row-gap, column-gap - tarpas tarp grid`o elementų (grid-gap yra pasenusi sintaksė)</li>
+                <li>grid-template-areas - pavadinti tinklelio laukus</li>
+                <li>align-items - </li>
+                <li>justify-items - </li>
+                <li>place-items - </li>
+                <li>justify-content - </li>
+                <li>align-content - </li>
+                <li>place-content - apjungia align-content ir justify-content </li>
+                <li>grid-auto-columns - sukuria papildomus stulpelius esant child elementams?</li>
+                <li>grid-auto-rows - sukuria papildomas eilutes esant child elementams?</li>
+                <li>grid-auto-flow - nurodo, kokia kryptimi grid`e išsidėsto elementai</li>
+                <li>grid - apjungia grid-template-rows, grid-template-columns, grid-template-areas, </li>
+            </ul>
+            <ul>
+                <li>grid-column-start - kuriame stulpelyje prasideda</li>
+                <li>grid-column-end - kuriame stulpelyje pasibaigia</li>
+                <li>grid-row-start - kurioje eilutėje prasideda</li>
+                <li>grid-row-end - kurioje eilutėje pasibaigia</li>
+                <li>grid-column - grid-column-start/grid-column-end</li>
+                <li>grid-row - grid-row-start/grid-row-end</li>
+                <li>grid-area - name | grid-row-start/grid-column-start/grid-row-end/grid-column-end</li>
+            </ul>
+            <ul>
+                <li>fraction - fr, paskirsto plotį tolygiai nurodytomis dalimis (alternatyva procentams)</li>
+                <li>repeat(3, 1fr) - sukuria 3 stulpelius/eilutes po 1 frakciją</li>
+                <li>minmax(min, max) - nurodo minimalų ir maksimalų stulpelio/eilutės plotį. repeat(3, minmax(10px, 1fr))</li>
+                <li>span - išplečia grid`o elementą per nurodytą laukelių skaičių (grid-column-end: span 3 - pasibaigia už trijų laukelių).</li>
+                <li>negative # - skaičiuoja stulpelį/eilutę nuo grid`o pabaigos.</li>
+            </ul>
+    </section>
+    <section id="gridExample">
+        <div class="gridContainer1">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+        </div>
+        <div class="gridContainer2">
+            <div class="header"></div>
+            <div class="main"></div>
+            <div class="aside"></div>
+            <div class="footer"></div>
+        </div>
+        <div class="gridContainer3">
+            <div>1</div>
+            <div>2</div>
+            <div class="filler1"></div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+        </div>
+    </section>
+</body>
+</html>

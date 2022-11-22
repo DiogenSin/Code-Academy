@@ -1,0 +1,68 @@
+
+/*Normalize*/
+@import url(https://www.necolas.github.io/normalize.css/8.0.1/normalize.css);
+
+/*Font*/
+@import url('https://fonts.googleapis.com/css2?family=Sarpanch:wght@400;500;600;700;800;900&display=swap');
+
+/*Ikonos*/
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css);
+@import url(https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css);
+@import url(https://fonts.googleapis.com/icon?family=Material+Icons);
+
+h2 {
+    margin: 15px;
+}
+
+#paveldejimas > ul{
+    color: red;
+    font-size: 10px;
+    
+    margin-left: 50px;
+    border: 3px solid black;
+    
+    list-style-type: square;
+}
+h4 {
+    margin-left: 30px;
+}
+
+/*Prioritetai*/
+
+/* 1 balas*/
+p {
+    color: yellow;
+}
+
+/* 2 balai */
+section p{
+    color: blue;
+}
+
+/* 3 balai*/
+main section p{
+    color: red;
+}
+
+/* 101 balas*/
+#prioritetai p{
+    color: green;
+}
+
+#prioritetai a{
+    text-decoration: none;
+    color: coral;
+}
+ol li{
+    list-style-type: decimal;
+}
+
+.important {
+    color: red;
+}
+
+/*Google Fonts*/
+body{
+    font-family: 'Sarpanch', sans-serif;
+    font-weight: 400;
+}

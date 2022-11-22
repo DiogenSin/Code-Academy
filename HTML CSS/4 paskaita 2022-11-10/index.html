@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4 paskaita - Box model ir svetainė</title>
+    <link rel="stylesheet" href="./styles/main.css">
+</head>
+<header>
+    <nav>
+        <div class="logo">
+            <a href="#"><img src="./images/Akimirkos.png" alt="Logo"></a>
+        </div>
+        <div class="mainMenu">
+            <ul>
+                <li><a href="#boxModel" class="link">Box model</a></li>
+                <li><a href="#selectors" class="link">Selectors</a></li>
+                <li><a href="#background" class="link">Backgrounds</a></li>
+                <li><a href="#cards" class="link">Cards</a></li>
+                <li><a href="#semantic" class="link">Semantic</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+<body>
+    <main>
+        <h1>4 paskaita 2022-11-10</h1>
+        <!--    Paskaitos turinys:
+                    Box model
+                    Background
+                    Semantic tags
+                    Menu
+                    Page -->
+        <div id="boxModel">
+        <h2>Box Model</h2>
+        <ol>
+            <li>Content - turinys</li>
+            <li>Padding - pamušalas</li>
+            <li>Border - rėmelis</li>
+            <li>Margin - paraštė</li>
+            <li>Position - pozicija</li>
+        </ol>
+        <div class="boxModelPvz">Labas. Čia pavyzdinis tekstas!</div>
+        <section><!--Content-->
+            <h3>Content</h3>
+            <p>Turinys - dėžutiės modelio vidurinė dalis, kurioje yra atvaizduojama informacija vartotojui.</p>
+        </section>
+        <section><!--Padding-->
+            <h3>Padding</h3>
+            <p>Pamušalas - pirmasis turinio (content) sluoksnis, kuris nurodo per kokį atstumą turinys bus atitrauktas nuo rėmelio (border).<br>
+            Pamušalas yra vizualiai matomas vartotojui ir reaguoja į vartotojo veiksmą (paspaudimą ir pan.).</p>
+            <ul>
+                <li>padding-top: pamušalas viršuje</li>
+                <li>padding-right: pamušalas kairėje</li>
+                <li>padding-bottom: pamušalas apačioje</li>
+                <li>padding-left: pamušalas kairėje</li>
+                <li>padding: 10px (top / right / bottom / left)</li>
+                <li>padding: 0px 20px 15px 10px (top / right /bottom / left)</li>
+                <li>padding: 20px 50px (top&bottom / right&left)</li>
+                <li>padding: 20px 50px 30px (top / right&left / bottom)</li>
+            </ul>
+        </section>
+        <section><!-- Border-->
+            <h3>Border</h3>
+            <p>Rėmeliai yra antrasis turinio sluoksnis, kuris turi storį, tipą, spalvą. Jo storio nustatymas nurodo, kokiu atstumu bus atskirtas margin ir padding. <br>
+            Rėmelis (border) yra vizualiai matomas vartotojui ir reaguoja į vartotoją interakcijas.
+            <ul>
+                <li>Border: plotis stilius spalva</li>
+                <li>Border-width: plotis</li>
+                <li>Border-style: stilius</li>
+                <li>Border-color: spalva</li>
+                <li>Border-width/style/color:
+                    <ul>
+                        <li>value1 - nustato visas kraštines</li>
+                        <li>value1 value2 - nustato top& bottom ir right&left kraštines</li>
+                        <li>value1 value2 value3 - nustato top right&left ir bottom kraštines</li>
+                        <li>value1 value2 value3 value4 - nustato top, right, bottom ir left kraštines atskirai</li>
+                    </ul>
+                </li>
+                <li>Border-top/right/bottom/left-width/style/color:</li>
+                <ul>
+                    <li>Border-top-width: viršutinės kraštinės plotis</li>
+                    <li>Border-right-style: dešinės kraštinės stilius</li>
+                    <li>Border-bottom-color: dešinės kraštinės spalva</li>
+                    <li>...</li>
+                </ul>
+                
+                <li>Border-radius: kampų apvalumas</li>
+                <ul>
+                    <li>Border-top-left-radius: viršutinio kairio kampo apvalinimas</li>
+                    <li>Border-top-right-radius: viršutinio dešinio kampo apvalinimas</li>
+                    <li>Border-bottom-right-radius: apatinio dešinio kampo apvalinimas</li>
+                    <li>Border-bottom-left-radius: apatinio kairio kampo apvalinimas</li>
+                </ul>
+            </ul>
+            </p>
+        </section>
+        <section><!-- Margin-->
+            <h3>Margin</h3>
+            <p>Paraštė yra trečiasis turinio sluoksnis nurodantis per kokį atstumą nuo rėmelio bus atitraukti aplinkiniai elementai. <br>
+            Margin n4ra vizualiai atvaizduojamas ir nereaguoja į vartotojo inteakcijas.</p>
+            <ul>
+                <li>margin: top right bottom left</li>
+                <li>margin-top: viršuje</li>
+                <li>margin-right: dešinėje</li>
+                <li>margin-bottom: apačioje</li>
+                <li>margin-left: kairėje</li>
+                <li>margin: 20px (top / right / bottom / left)</li>
+                <li>margin: 20px 30px (top&bottom / right&left)</li>
+                <li>margin: 20px 30px 40px (top / right&left / bottom)</li>
+                <li>margin: 20px 30px 40px 50px (top / right / bottom / left)</li>
+            </ul>
+        </section>
+        <section><!-- Position-->
+            <h3>Position</h3>
+            <p>
+                Nurodo kaip elementas bus pozicionuojamas puslapyje. <br>
+                Daugiau informacijos: spauskite <a href="../3 paskaita 2022-11-09/index.html#positions" target="_blank">čia</a>.
+            </p>
+        </section>
+        <section id="selectors"><!-- Selectors-->
+            <h3>Selectors</h3>
+            <ul>
+                <li>* - visko</li>
+                <li>selector1, selector2 - keletas selektorių</li>
+                <li>Element1/class1/id1 element2/class2/id2 - bet kur pirmąjame elemente (element1/class1/id1) esantis elementas (element2/class2/id2)</li>
+                <li>Element1/class1/id1 > element2/class2/id2 - pirmąjame elemente (element1/class1/id1) esantis vaikinis elementas (element2/class2/id2)</li>
+                <li>selector:hover - ant element (į kūrį nurodo selector) užėjęs kursorius</li>
+                
+            </ul>
+        </section>
+        <section id="background"><!-- Background-->
+            <h3>Background</h3>
+            <div class="fonas1">Fonas 1</div>
+            <div class="fonas2"><div class="bg-op"></div>Fonas 2</div>
+            <div class="fonas3"><img src="./images/Kambarys.jpg" alt="">Fonas 3</div>
+            <div class="fonas4">Fonas 4</div>
+            <div class="fonas5">Fonas 5</div>
+            <div class="fonas6">Fonas 6</div>
+            <div class="fonas7">Fonas 7</div>
+        <br>
+        <hr>
+        <div id="cards">
+        <h3>Užduotis</h3>
+        <p>Sukurti 5 korteles su rėmeliu, paveikslėliu, dar viena kortele viduje, kur būtų parašytas koks nors tekstas. <br>
+        Ekstra: pridėti :hover ir opacity.
+        </p>
+        <div class="kipraskortele"><!--Kortelė-->
+            <div class="ckortele"><!--Kortelė kortelėje-->
+                <p class="tekstas">Capo Greco<br>
+                    Kipras<br><br>
+                    <div class="mygtukas"><a href="http://127.0.0.1:5500/HTML%20CSS/2%20paskaita%202022-11-07/index.html">Aplankyti</a>
+                    </div>
+                </p>
+            </div>
+        </div>
+        <br>
+        <div class="tdmkortele"><!--Kortelė-->
+            <div class="ckortele"><!--Kortelė kortelėje-->
+                <p class="tekstas">Tour Du Mont Blanc<br>
+                    Šveicarija<br><br>
+                    <div class="mygtukas"><a href="http://127.0.0.1:5500/HTML%20CSS/2%20paskaita%202022-11-07/index.html">Aplankyti</a>
+                    </div>
+                </p>
+            </div>
+        </div>
+        <br>
+        <div class="gotlandkortele"><!--Kortelė-->
+            <div class="ckortele"><!--Kortelė kortelėje-->
+                <p class="tekstas">Gotlandas<br>
+                    Švedija<br><br>
+                    <div class="mygtukas"><a href="http://127.0.0.1:5500/HTML%20CSS/2%20paskaita%202022-11-07/index.html">Aplankyti</a>
+                    </div>
+                </p>
+            </div>
+        </div>
+        <br>
+        <div class="lisbonkortele"><!--Kortelė-->
+            <div class="ckortele"><!--Kortelė kortelėje-->
+                <p class="tekstas">Lisabona<br>
+                    Portugalija<br><br>
+                    <div class="mygtukas"><a href="http://127.0.0.1:5500/HTML%20CSS/2%20paskaita%202022-11-07/index.html">Aplankyti</a>
+                    </div>
+                </p>
+            </div>
+        </div>
+        <br>
+        <div class="madeirakortele"><!--Kortelė-->
+            <div class="ckortele"><!--Kortelė kortelėje-->
+                <p class="tekstas">Madeira<br>
+                    Portugalija<br><br>
+                    <div class="mygtukas"><a href="http://127.0.0.1:5500/HTML%20CSS/2%20paskaita%202022-11-07/index.html">Aplankyti</a>
+                    </div>
+                </p>
+            </div>
+        </div>
+        </div>
+        </section>
+        <section id="semantic"><!--Semantic tags-->section
+        <h2>Semantiniai tag`ai</h2>
+        <p>
+            Semantiniai tag`ai yra naudojami tam, kad vien perskaičius tag`o pavadinimą, būtų daugiau mažiau aišku, kam jo viduje esanti informacija naudojama.
+        </p>
+        <ul>
+            <li>Header</li>
+            <p>Viršuje puslapio esanti dalis, kurioje būna: logotipas, meniu, paieškos sistema, prisijungimas/registracija, profilio info.</p>
+            <li>nav</li>
+            <p>Navigation menu. Pagrindinis puslapio meniu būna header`io viduje. Bet puslapis gali turėti pagalbinius meniu (papildomus nav tag`us).</p>
+            <li>main</li>
+            <p>Puslapio turinio vieta. Jo viduje būna sections, articles ir net kitų aside`ų (šoninių langų)</p>
+            <li>aside</li>
+            <p>Šoninė sekcija esanti šalia pagrindinio turinio arba esanti pagrindinio turinio viduje.</p>
+            <li>section</li>
+            <p>Skirsto pagrindinio turinio viduje esančią informaciją į sekcijas.</p>
+            <li>article</li>
+            <p>Skirsto pagrindinio turinio viduje esančią informaciją į articles.</p>
+            <li>footer</li><p>Apatinė puslapio dalis, kurioje būna: copyrights, data, kūrėjas/valdytojas/sąvininkas, terms&conditions, services, privacy policy, cookies, partneriai, remėjai, kontaktai, soc. media, kalbos pasirinkimas ir t.t.
+            </p>
+        </ul>
+        </section>
+    </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,325 @@
+/* General settings */
+
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css);
+
+body {
+    width: 65%;
+    margin: auto;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+h3 {
+    color: #8b8b8b;
+    text-align: center;
+    font-weight: 100;
+}
+
+p {
+    color: white;
+}
+
+/* Header */
+
+header {
+    display: flex;
+    position: absolute;
+    height: 80px;
+    width: 62%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header ul {
+    display: flex;
+    align-items: center;
+    column-gap: 25px;
+}
+
+header img{
+    height: 30px;
+    width: auto;
+    margin-left: 50px
+}
+
+
+
+header ul a{
+    text-decoration: none;
+    color: white;
+}
+
+header ul li{
+    list-style-type: none;
+}
+
+header ul button{
+    border-radius: 25px;
+    background-color: #00bc9e;
+    padding: 10px 20px;
+    color: white;
+    border: 0px;
+}
+
+/* Hero */
+
+.hero {
+    background: rgb(10,2,145);
+    background: linear-gradient(125deg, rgba(10,2,145,1) 0%, rgba(0,166,126,1) 100%);
+    height: 50vh;
+    padding-top: 80px;
+    padding-bottom: 25px;
+}
+
+.hero-container {
+    display: grid;
+    grid-template: 1fr 1fr / 2fr 1fr;
+    margin: 0px 50px;
+}
+
+.hero-image img{
+    height: 30%;
+}
+
+.hero-text button{
+    background-color: transparent;
+    border: 1px solid #6295ce;
+    padding: 10px 15px;
+    text-transform: uppercase;
+}
+
+.hero-text h1{
+    color: #01fed5;
+    line-height: 45px;
+}
+
+.hero-text a{
+    text-decoration: none;
+    color: white;
+}
+
+/* Trusted by */
+
+.trusted-by {
+    background-color: #f4f4f4;
+    padding: 15px 0px;
+}
+
+.trusted-by h3{
+    margin: 0px;
+}
+
+.client-logos {
+    display: flex;
+    justify-content: space-around;
+    margin: 30px 0px;
+}
+
+.client-logos img{
+    height: 30px;
+    width: auto;
+}
+
+/* What we do */
+
+.wwd-cards {
+    display: flex;
+    justify-content: space-around;
+    gap: 25px;
+    margin: 50px 0px;
+}
+
+.wwd-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wwd-card i{
+    font-size: 30px;
+}
+
+.wwd-card h4{
+    margin: 20px 0px 0px;
+}
+
+.wwd-card p{
+    color: black;
+    text-align: center;
+}
+
+.wwd-card a{
+    text-decoration: none;
+    color: #303181;
+}
+
+/* Pricing, how-we-work */
+
+
+#how-we-work {
+    background-color: blue;
+    color: white;
+    text-align: center;
+    padding-top: 25px;
+}
+
+#how-we-work span{
+    color: aqua;
+}
+
+#how-we-work h1{
+    margin: 10px 25px;
+}
+
+#pricing {
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+    color: black;
+}
+
+#pricing p{
+    color: black;
+    margin: 10px;
+    font-size: 12px;
+}
+
+.pricing-card {
+    width: 28%;
+    background-color: white;
+    margin-bottom: 25px;
+    padding: 25px 5px 25px;
+}
+
+.pricing-card-price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+}
+
+.pricing-card button{
+    background-color: #201f24;
+    height: 40px;
+    width: 40%;
+    border: none;
+}
+
+.pricing-card a{
+    height: 40px;
+    width: 40%;
+    color: white;
+    text-decoration: none;
+}
+
+/* Our team */
+
+#our-team {
+    background-color: #f7f7f7;
+    padding: 25px 0px;
+    margin-bottom: 100px;
+}
+
+#our-team h3{
+    margin: 0px;
+}
+
+.team-cards {
+    display: flex;
+    justify-content: space-around;
+    column-gap: 25px;
+}
+
+.team-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 80%;
+
+}
+
+.team-card img{
+    width: 150px;
+    height: 150px;
+    margin: 25px 0px;
+    object-fit: cover;
+    object-position: top;
+}
+
+.team-card p{
+    color: rgb(134, 134, 134);
+    margin:0px
+}
+
+.team-card h3{
+    color: #7f7ee4;
+    font-weight: bold;
+}
+
+/* Open source */
+
+#open-source {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 100px;
+
+}
+
+#open-source i{
+    font-size: 72px;
+    color: gray;
+}
+
+#open-source h1{
+    font-size: 54px;
+    width: 55%;
+    text-align: center;
+}
+#open-source button{
+    background-color: white;
+    border: 1px solid gray;
+    height: 45px;
+    width: 200px;
+}
+
+#open-source a{
+    text-decoration: none;
+    color: gray;
+    font-weight: bold;
+}
+
+/* Footer */
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: blue;
+    color: white;
+    column-gap: 25px;
+    padding-bottom: 50px;
+}
+
+footer div{
+    display: flex;
+    flex-direction: column;
+}
+
+footer a{
+    color: white;
+    text-decoration: none;
+}
+
+footer ul{
+    margin: 0px;
+    padding: 0px;
+    }
+
+footer li{
+list-style-type: none;
+}

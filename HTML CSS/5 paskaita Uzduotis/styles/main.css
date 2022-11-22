@@ -1,0 +1,467 @@
+
+
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*Normalize*/
+@import url(https://www.necolas.github.io/normalize.css/8.0.1/normalize.css);
+/* Icons */
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css);
+@import url(https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css);
+@import url(https://fonts.googleapis.com/icon?family=Material+Icons);
+
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin:0px
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+}
+p {
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+}
+a{
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+}
+
+/*Header*/
+header {
+    width: 100%;
+    height: 25px;
+    z-index: 1;
+    opacity: 90%;
+    position: fixed;
+}
+
+[id]{
+    scroll-margin-top: 150px;
+}
+
+.logo img{
+    width: 75px;
+    height: auto;
+}
+.mainMenu, .logo {
+    display: inline-block;
+}
+.mainMenu{
+    float: right;
+}
+.mainMenu ul{
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+    
+}
+
+.mainMenu li{
+    display: inline-block;
+    position: relative;
+    color: white;
+    padding: 25px 10px;
+    line-height: 25px;
+    margin-right: 0px;
+    background-color: rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.mainMenu li:hover{
+    background-color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    color:gray;
+}
+
+
+/*Hero*/
+.heroimg {
+    background-image: url(../images/seima-jachtoje.webp);
+    background-size: cover;
+    background-position: top;
+    height: 100vh;
+}
+.herotext {
+    display: inline-block;
+    height: auto;
+    width: 80vh;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 20px;
+    background-color: white;
+    opacity: 70%;
+    margin: 200px 0px 0px 100px;
+    padding: 0px 10px;
+}
+.cta {
+    display: inline-block;
+    padding: 5px 20px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 10px;
+    background-color: #e73c7e;
+    opacity: 90%;
+    margin-bottom: 30px;
+}
+.cta a{
+    text-decoration: none;
+    color: white;
+}
+.cta:hover {
+    background-color:#e73c7e;
+    opacity: 100%;
+}
+
+/*About us*/
+#aboutus   {
+    height: 60vh;
+    margin-top: 10vh;
+    display: block;
+}
+#aboutus h2{
+    text-align: center;
+}
+.dblokas {
+    display: inline-block;
+    background-image: url(../images/buriavimas.jpg);
+    background-size: cover;
+    background-position: center;
+    min-width: 350px;
+    max-width: 50%;
+    max-height: 300px;
+    height: 50vh;
+    float: right;
+    margin: 20px 100px;
+    border-radius: 50px;
+    box-shadow: 5px 5px 5px 1px #e73c7e;
+    
+}
+
+.kblokas {
+    display: inline-block;
+    width: 30%;
+    height: auto;
+    max-height: 50vh;
+    margin: 20px 0px 20px 100px;
+    text-align: justify;
+}
+
+/*Stats*/
+#stats {
+    display: block;
+    text-align: center;
+    height: 75vh;
+}
+#stats h2{
+    margin-bottom: 70px;
+}
+
+.statcard {
+    display: inline-block;
+    position: relative;
+    margin: auto;
+    text-align: center;
+    margin-right: 25px;
+    border: 1px solid #e73c7e;
+    border-radius: 20px;
+    max-width: 260px;
+    max-height: 360px;
+}
+
+.statcard:hover {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    bottom:5px;
+    right:5px;
+    box-shadow: 5px 5px 5px 1px #e73c7e;
+    border: 1px solid rgba(255, 255, 255, 0);
+    animation: gradient 15s ease infinite;
+    color: white;
+}
+
+.statcard:hover .statcardSkaicius p{
+    color:rgb(255, 255, 255);
+}
+.statcard img{
+    width: auto;
+    height: 100px;
+    margin: 50px 75px;
+}
+
+.statcardSkaicius p{
+    color:rgb(35, 118, 187);
+    font-weight: bold;
+    font-size: 32px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    text-align: center;
+}
+
+/* articles */
+
+.artcard {
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+    background-color: rgba(128, 128, 128, 0.40);
+    margin: auto;
+    text-align: center;
+    margin-right: 25px;
+    border-radius: 20px;
+    max-width: 260px;
+    max-height: auto;
+    color: gray;
+}
+
+.artcard:hover {
+    bottom:5px;
+    right:5px;
+    box-shadow: 5px 5px 20px 1px #ffffff;
+}
+
+.artcard img{
+    background-size: cover;
+    background-position: center;
+    width: 260px;
+    height: 170px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+#articles {
+    
+    text-align: center;
+    height: auto;
+    padding: 20px 0px 20px 0px;
+}
+#articles h2{
+    color: white;
+}
+#articles h4{
+    color:rgb(255, 255, 255)
+}
+
+#articles p{
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 18px;
+    margin: 20px;
+    text-align: justify;
+    font-weight: 100;
+}
+
+/* articles - Judantis gradient */
+
+.gradient {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    height: 100vh;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.mainMenugradient {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    height: 75px;
+    width: 100%;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Commentar form */
+
+#commentar {
+    text-align: center;
+    height: auto;
+
+}
+
+.commentarForm {
+    display: inline-block;
+    width: auto;
+    height: auto;
+    border-radius: 20px;
+    margin: 40px 20px;
+    text-align: center;
+}
+
+.commentarForm h2{
+    color: white;
+    line-height: 40px;
+}
+
+.commentarForm p{
+    color: white;
+    margin: 0px 60px;
+}
+
+textarea {
+    background-color: rgba(255, 255, 255, 0.4);
+    display: block;
+    border: 0px;
+    border-radius: 20px;
+    margin: 20px 20px;
+}
+
+textarea:hover {
+    background-color: white;
+}
+
+.button {
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    border: 3px solid transparent;
+    padding: 10px;
+    width: 20vh;
+    margin-bottom: 30px;
+    margin-top: 15px;
+}
+
+.button:hover {
+    background-color:#e73c7e;
+    border: 3px solid white;
+}
+
+.email-field {
+    display: inline-block;
+    text-align: left;
+    margin-right: 150px;
+    
+}
+
+label {
+    display: block;
+    text-align: left;
+    color: white;
+}
+
+#email {
+    background-color: rgba(255, 255, 255, 0.4);
+    display: inline-block;
+    border: 0px;
+    border-radius: 20px;
+    padding: 10px;
+    border: 3px solid transparent;
+}
+
+#email:hover {
+
+    background-color: white;
+}
+
+/* Contact us*/
+
+.contactus {
+    text-align: center;
+    background-color: #e73c7e;
+}
+
+.contactus > h1{
+    line-height: 100px;
+    color: white;
+}
+
+.contact-data, .map{
+    display: inline-block;
+    margin-bottom: 50px;
+}
+
+.contact-data {
+    margin-right: 100px;
+    vertical-align: top;
+    color: white;
+    text-align: left;
+}
+
+.contact-data p{
+    line-height: 30px;
+}
+
+.map iframe{
+    width: 50vh;
+    height: 30vh;
+}
+
+/* Footer */
+
+.copy-terms {
+    display: block;
+    text-align: center;
+    background-color: #e73c7e;
+    color: white;
+}
+
+.copyrights {
+    display: inline-block;
+    margin: 25px;
+}
+
+.icons {
+    display: inline-block;
+}
+
+.icon {
+    display: inline-block;
+    margin: 5px;
+    font-size: 18px;
+}
+
+.icon:hover {
+    color: #23a6d5;
+}
+
+.back-to-top {
+    display: inline-block;
+    margin-right: 50px;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 5px;
+    float:right;
+    text-decoration: none;
+}
+
+.back-to-top:hover, .back-to-top:hover  a{
+    background-color: white;
+    color:#e73c7e;
+    text-decoration: none;
+}
+
+.back-to-top:hover, .back-to-top:hover  span{
+    background-color: white;
+    color:#e73c7e;
+    text-decoration: none;
+}
+
+
+.back-to-top span{
+    display: block;
+    color:rgb(255, 255, 255);
+    font-size: 24px;  
+    text-decoration: none;
+}
+

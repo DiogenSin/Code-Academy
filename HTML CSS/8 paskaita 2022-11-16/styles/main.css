@@ -1,0 +1,112 @@
+.kvadratasDidelis {
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border: 1px dotted black;
+    background-color: lightcoral;
+    color: black;
+    opacity: 0.7;
+
+}
+
+.tranzicija{
+     /* transition-property: all;
+    transition-duration: 10s;
+    transition-timing-function: ease; */
+    transition: all 3s linear 0s;
+}
+
+.scale {
+    transform: scale(2, 0.5);
+}
+
+.rotate {
+    transform: rotate(45deg);
+}
+
+.translate {
+    transform: translate3D(100px, 50px, 50px);
+}
+
+.skew{
+    transform: skew(20deg, 20deg);
+}
+
+.kvadratasDidelis:hover {
+    transform: scale(1.5) translate(10px, 10px) rotate(90deg);
+    transform-origin: bottom;
+}
+
+/* animcija */
+
+.animacija{
+    /* animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
+    animation-name: pirmaAnimacija; */
+    animation: 10s linear infinite pirmaAnimacija;
+
+}
+
+@keyframes pirmaAnimacija {
+    0% {
+        background-color: rgb(51, 255, 0);
+
+    }
+    50% {
+        background-color: rgb(221, 38, 47);
+    }
+    100% {
+        background-color: rgb(226, 43, 211);
+        width: 300px;
+    }
+    }
+
+    /* Flex */
+
+    .kvadratas {
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    border: 1px solid black;
+    font-size: 30px;
+    text-align: center;
+    line-height: 100px;
+    }
+
+.flexContainer {
+    border: 5px solid black;
+    height: 500px;
+    background-color: burlywood;
+    display: flex;
+    /* flex-direction: row;
+    flex-wrap: wrap; */
+    flex-flow: row wrap;
+    justify-content: center;
+    /* align-items: center; */
+    align-content: center;
+    gap: 10px 30px;
+    }
+
+/* Flex child`u valdymas*/
+
+.order1 {
+        order:1;
+    }
+.order2 {
+        order:2;
+    }
+/* .flexGrow1 {
+    flex-grow: 1;
+}
+.flexGrow2 {
+    flex-grow: 2;
+} */
+
+.alignSelfEnd{
+    align-self: flex-end;
+}

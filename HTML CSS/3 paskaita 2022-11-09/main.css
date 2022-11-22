@@ -1,0 +1,161 @@
+body {
+    height: 600vh;
+}
+h2{
+    color: blanchedalmond;
+    background-color: cornflowerblue;
+    width: 500px;
+}
+.svarbustekstas {
+    font-size: larger;
+    font-style: italic;
+    font-weight: bold;
+}
+.raudonastekstas {
+    color: crimson;
+}
+#idPavadinimas {
+    border: 3px dashed coral
+}
+.kvadratas {
+    width: 115px;
+    height: 115px;
+    background-color: beige;
+    border: 2px solid black;
+    font-size: 20px;
+    text-align: center;
+    line-height: 115px;
+}
+.linijinis {
+    display: inline;
+}
+.blokinis {
+    display:block;
+}
+.linblok {
+    display: inline-block;
+}
+.hstaciakampis {
+    display: block;
+    width: 240px;
+    height: 50px;
+    border: 1px;
+}
+.vstaciakampis {
+    display: inline-block;
+    width: 80px;
+    height: 150px;
+    border: 1px;
+}
+.hstaciakampis1 {
+    display: block;
+    width: 240px;
+    height: 75px;
+    border: 1px;
+}
+.geltona {
+    background-color: yellow;
+}
+.zalia {
+    background-color: green;
+}
+.raudona {
+    background-color: red;
+}
+.melyna {
+    background-color: rgba(0, 215, 253, 0.418);
+}
+.balta {
+    background-color: white;
+}
+.eng1 {
+    display: inline-block;
+    width: 100px;
+    height: 50px;
+    background-color: antiquewhite;
+    border: 0px;
+}
+.eng11 {
+    display: inline-block;
+    width: 40px;
+    height: 50px;
+    background-color: red;
+    border: 0px;
+
+}
+.eng2 {
+    display: block;
+    width: 240px;
+    height: 40px;
+    background-color: red;
+    border: 0px;
+}
+.eur1 {
+    display: block;
+    width: 240px;
+    height: 25px;
+    background-color: blue;
+    border: 0px;
+}
+.eurp {
+    display: block;
+    width: 240px;
+    height: 100px;
+    background-color: blue;
+    border: 0px;
+    text-align: center;
+}
+
+.fontsize {
+    font-size: 0px;
+}
+.veliavos {
+    display: inline-block;
+}
+.velblokai {
+    display: inline;
+}
+.top10 {
+    top:10px
+}
+.right30 {
+    right: 30px;
+}
+.left50 {
+    left: 50px;
+}
+.bottom50 {
+    bottom: 50px;
+}
+.z5 {
+    z-index: 5;
+}
+.z10 {
+    z-index: 10;
+}
+.static {
+    position: static;
+}
+.relative {
+    position: relative;
+}
+.absolute {
+    position: absolute;
+}
+.fixed {
+    position: fixed;
+}
+.sticky {
+    position: sticky;
+}
+.aukstaskonteineris {
+    height: 500px;
+}
+.pozicija {
+    top: 10px;
+    left: 10px
+}
+.bg {
+    background: rgb(63,94,251);
+background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(83,186,162,1) 45%, rgba(252,70,107,1) 100%);;
+}

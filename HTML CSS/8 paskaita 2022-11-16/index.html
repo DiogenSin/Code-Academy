@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/main.css">
+    <title>8 paskaita</title>
+</head>
+<body>
+    <!-- 
+        Transform
+        Transition
+        Animation
+        Flex
+     -->
+
+     <main>
+        <section id="transform">
+            <h1>Transformacija</h1>
+            <ul>
+                <li>scale - keičia elemento dydį (default 1, min 0).</li>
+                <li>scale (x,y), scaleX, scaleY, scaleZ, scale3d (x,y,z)</li>
+                <li>rotate - pasuka elementą (default 1, min 0).</li>
+                <li>rotateX, rotateY, rotateZ, rotate3d (X, Y, Z, A)</li>
+                <li>translate - elemento pozicijos pakeitimas.</li>
+                <li>translateX, translateY, translateZ, translate3d (X, Y, Z)</li>
+                <li>skew - tampo elementą už kampų.</li>
+                <li>skewX, skewY, skew</li>
+                <li>matrix, matrix3D</li>
+                <li>perspective</li>
+            </ul>
+            <div class="kvadratasDidelis transformation">Labas</div>
+        </section>
+        <section id="transition"><!-- Tranzicijai reikia vartotojo interakcijos. Tranzicija gali kartotis be galo, tačiau tam reikia vartotojo interakcijos (click, hover ar pan.)-->
+            <h1>Tranzicija</h1>
+            <ul>
+                <li>transition-property - kokie stiliai keičiasi</li>
+                <li>transition-duration - per kiek laiko įvyksta pakitimai</li>
+                <li>transition-timing-function - tranzicijos laiko paskirstymas
+                    <ul>
+                        <li>ease</li>
+                        <li>ease-in</li>
+                        <li>ease-out</li>
+                        <li>ease-in-out</li>
+                        <li>linear</li>
+                        <li>cubiz-bezier</li>
+                    </ul>
+                </li>
+                <li>transition-delay - po kiek laiko pradeda vykti pakitimai</li>
+            </ul>
+        </section>
+        <section id="animation"><!-- Animacijai vartotojo interakcija nėra būtina, ji veikia ir be jo. Galima valdyti pokyčius naudojantis @keygrames. Animacija taip pat gali kartotis be ribų.-->
+            <h1>Animacija</h1>
+            <ul>
+                <li>animation-duration - animacijai skirtas laiko tarpas</li>
+                <li>animation-timing-function - animacijos laiko paskirstymas</li>
+                <li>animation-delay - po kiek laiko prasidės animacija</li>
+                <li>animation-iteration-count - kiek sykių vyks animacija</li>
+                <li>animation-direction - animacijos kryptis (pradžia-pabaiga/pabaiga-pradžia)</li>
+                <li>animation-fill-mode - animacijos pradžios/pabaigos nustatymai</li>
+                <li>animation-play-state - animacijos būsena</li>
+                <li>animation-name - animacijos pavadinimas</li>
+                <li>animation - visų 8 nustatymų junginys</li>
+            </ul>
+            <p></p>
+            <div class="kvadratasDidelis animacija"></div>
+        </section>
+        <section id="flex">
+            <h1>Display: flex</h1>
+            <ul>
+                <li>flex-direction - nusako, kaip išsidėstys elementai.</li>
+                <li>flex-wrap - perkelia elementus netelpančius į wrap`o rėmą.</li>
+                <li>flex-flow - flex-direction ir flex-wrap junginys (du nustatymai viename).</li>
+                <li>justify-content - nusako, kaip elementai išsidėstys flex`o main`o dalyje.</li>
+                <li>align-items - nusako, kaip atskiri elementai išsidėstys flex`o cross`o dalyje.</li>
+                <li>align-content - nusako, kaip visi elementai kartu išsidėstys flex`o cross`o dalyje.</li>
+                <li>gap/row-gap/column-gap - atitinkami tarpai tarp elementų.</li>
+                <li>order - elementų eilės tvarka.</li>
+                <li>flex-grow - pakeičia elemento plotį.</li>
+                <li>align-self - pakeičia elemento poziciją naudoti su "align-items".</li>
+            </ul>
+            <hr>
+            <div class="flexContainer">
+                <div class="kvadratas">1</div>
+                <div class="kvadratas flexGrow2">2</div>
+                <div class="kvadratas order2">3</div>
+                <div class="kvadratas">4</div>
+                <div class="kvadratas order1">5</div>
+                <div class="kvadratas flexGrow1">6</div>
+                <div class="kvadratas flexGrow1">7</div>
+                <div class="kvadratas order1 flexGrow1">8</div>
+                <div class="kvadratas">9</div>
+                <div class="kvadratas alignSelfEnd">10</div>
+                <div class="kvadratas flexGrow2">11</div>
+                <div class="kvadratas">12</div>
+            </div>
+        </section>
+     </main>
+</body>
+</html>

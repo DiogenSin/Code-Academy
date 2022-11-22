@@ -1,0 +1,119 @@
+@import url(https://necolas.github.io/normalize.css/8.0.1/normalize.css);
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(212, 212, 212);
+    padding: 30px 15px 15px;
+}
+
+header .logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    height: 60px;
+}
+
+.mainMenu > ul{
+    list-style-type: none;
+    border-radius: 5px;
+    padding: 0px;
+    margin:0px;
+    display: flex;
+    flex-direction: column;
+    gap:1px;
+    box-shadow: 2px 2px 3px grey;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.mainMenu > ul > li{
+    width: 100%;
+    background-color: white;
+    padding: 10px;
+    box-sizing: border-box;
+    font-weight: 600;
+}
+
+.link {
+    color: rgb(0, 182, 173);
+}
+
+#login {
+    width: 100%;
+    background-color: white;
+    padding: 1px 10px;
+    box-sizing: border-box;
+    font-weight: 600;
+    border-radius: 5px;
+    box-shadow: 2px 2px 3px grey;
+    margin-bottom: 10px;
+}
+
+section {
+    width: 100%;
+    background-color: white;
+    padding: 1px 10px;
+    box-sizing: border-box;
+    font-weight: 600;
+    border-radius: 5px;
+    box-shadow: 2px 2px 3px grey;
+    margin-bottom: 10px;
+}
+
+section#help {
+    display: none;
+}
+
+section h1{
+    font-size: 24px;
+    margin-top:25px;
+}
+
+footer {
+    text-align: center;
+}
+
+@media (min-width: 500px){
+    .mainMenu > ul{
+        flex-direction: row;
+        justify-content: flex-start;
+        gap:0px;
+        background-color: white;
+    }
+    
+    .mainMenu > ul > li{
+        width: 10%;
+        padding: 20px;
+    }
+    
+    .link {
+        color: rgb(117, 117, 117);
+        text-decoration: none;
+    }
+
+    main {
+        display: grid;
+        grid-template: 1fr 2fr / 1fr 4fr;
+        gap: 10px;
+    }
+    #content {
+        grid-row: span 2;
+        padding-left: 20px;
+        padding-top: 20px;
+    }
+    #login {
+        margin-bottom: 0px;
+        padding-left: 20px;
+    }
+
+    section#help {
+        display: flex;
+        align-items: center;
+        padding-left: 20px;
+    }
+}

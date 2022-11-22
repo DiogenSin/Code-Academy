@@ -1,0 +1,125 @@
+/* Pagrindiniai nustatymai */
+
+body{
+    text-align: center;
+}
+
+img{
+    width: 60%;
+}
+
+h2{
+    font-size: 12px;
+    margin: 5px 0px;
+}
+
+p{
+    font-size: 10px;
+    text-align: center;
+    margin: 0px;
+}
+
+main {
+    width: auto;
+    margin: auto;
+}
+
+
+/* Grid`o nustatymai*/
+
+.grid {
+    display: grid;
+    margin: 150px;
+    grid-template: repeat(7, 1fr) 0.5fr repeat(2, 1fr) / 1fr 1fr 1fr 0.5fr repeat(15, 1fr);
+    gap: 2px;
+}
+
+.space1 {
+    grid-column: span 17; 
+}
+
+.space2 {
+    grid-column: span 11; 
+}
+
+.space3 {
+    grid-row: span 4; 
+}
+
+.space4 {
+    grid-column: span 19;
+}
+
+.space5 {
+    grid-column: span 4;
+    grid-row: span 2;
+}
+.space6 {
+    grid-row: span 2;
+}
+
+/* elementų grupės */
+
+.artificial {
+    background-color: chocolate;
+}
+
+.AlkaliMetal {
+    background-color: #eace5d;
+}
+
+.AlkalineEarthMetal {
+    background-color: #f1f165;
+}
+
+.Lanthanide {
+    background-color: #e8d19c;
+}
+
+.Actinide {
+    background-color: #f5ccda;
+}
+
+.TransitionMetal {
+    background-color: rgb(182, 170, 170);
+}
+
+.Metalloid {
+    background-color: #9ee5d4;
+}
+
+.NobleGas {
+    background-color: #e5bde5;
+}
+
+.Nonmetal {
+    background-color: #8ced8c;
+}
+
+.Halogen {
+    background-color: aquamarine;
+}
+
+.Transactinide {
+    background-color: darkcyan;
+}
+
+.Metal {
+    background-color: cornflowerblue;
+}
+
+/* Kortelės */
+
+.grid > *{
+    border-radius: 3px;
+}
+
+.grid > :hover{
+    transform: scale(1.8);
+    box-shadow: 5px 10px 25px white;
+}
+
+.space:hover {
+    transform: scale(1);
+    box-shadow: 0px 0px 0px rgba(255, 255, 255, 0);
+}

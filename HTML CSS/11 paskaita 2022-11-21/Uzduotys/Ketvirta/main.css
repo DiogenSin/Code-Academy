@@ -1,0 +1,275 @@
+@import url(https://necolas.github.io/normalize.css/8.0.1/normalize.css);
+
+
+body{
+    background-color: #e0e0e0;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 200;
+    padding-bottom: 50px;
+}
+
+/* Header */
+
+    header {
+        text-align: center;
+        background-color: #e0e0e0;
+        height: 7vh;
+        border-top: 4px solid #88ba01;
+    }
+
+    header h1{
+        margin: 0px;
+        color: #1670de;
+    }
+
+    header p{
+        margin: 0px;
+        color: #959595;
+    }
+
+/* Hero */
+
+    #hero {
+        display: flex;
+        flex-direction: column-reverse;
+        background-color: #ffffff;
+        padding: 0px 3px;
+        box-shadow: 1px 1px 1px grey;
+    }
+
+    #hero .hero-text {
+        display: flex;
+        flex-direction: column;
+        padding: 10px 10px 0px 10px;
+        background-color: #2f362f;
+    }
+
+    #hero .hero-text h2{
+        color: #708c15;
+        margin-bottom: 0px;
+    }
+
+    #hero .hero-text h1{
+        font-size: 50px;
+        margin-bottom: 0px;
+        margin-top: 0px;
+    }
+
+    #hero .hero-text h1,p{
+        color: white;
+    }
+
+    #hero .hero-text a{
+        color:#708c15;
+        text-decoration: none;
+    }
+
+    #hero .price {
+        font-weight: bold;
+    }
+
+    .photos {
+        display: grid;
+        grid-template: 1fr 1fr / repeat(4, 1fr);
+    }
+
+    .photos img{
+        object-fit: contain;
+        width: 100%;
+    }
+
+    .photos > img:last-child {
+        display: none;
+    }
+
+/* Main - Articles */
+
+#articles {
+    background-color: white;
+    padding: 25px 10px 0px;
+    box-shadow: 1px 1px 1px grey;
+}
+
+.article {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+main h1{
+    color: #959595;
+    margin-top: 0px;
+}
+
+main .date {
+    color: #708c15;
+    margin: 0px;
+    font-weight: bold;
+}
+
+main h4{
+    color:#1670de;
+    font-size: 18px;
+    margin: 0px;
+}
+
+main p{
+    margin-top: 10px;
+    color:#2f362f;
+}
+
+main a{
+    color:#1670de;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Sponsor */
+
+#sponsors {
+    display: flex;
+    flex-direction: column;
+    padding: 25px 10px 0px;
+}
+
+.sponsor-card img{
+    width: 200px;
+}
+
+/* Screen size from 700px */
+
+@media (min-width: 700px){
+    body{
+        width: 95%;
+        margin: auto;
+    }
+    
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        padding-bottom: 25px;
+    }
+    #hero {
+        display: flex;
+        flex-direction: row;
+        background-color: #ffffff;
+        padding: 0px 3px;
+    }
+
+
+    #hero .hero-text {
+        display: flex;
+        flex-direction: column;
+        padding: 5px 20px 0px 25px;
+        background-color: #2f362f;
+    }
+
+    .photos {
+        grid-template: repeat(4, 1fr)/ 1fr 1fr ;
+    }
+    .hero-text {
+        justify-content: space-between;
+    }
+
+    #hero .hero-text p{
+        margin-bottom: 40px;
+    }
+
+    #articles {
+        display: flex;
+        justify-content: space-between;
+    }
+    #articles h1{
+        padding-right: 90px;
+        padding-left: 10px;
+    }
+    .article {
+        width: 25%;
+    }
+
+    #sponsors {
+        flex-direction: column;
+        padding: 25px 10px 0px;
+    }
+
+    #sponsors > div{
+        display: flex;
+        flex-direction: row;
+        gap: 50px;
+        padding: 0pxx;
+    }
+
+}
+
+/* Screen size from 1000px */
+
+@media (min-width: 1000px){
+    body{
+        width: 95%;
+        margin: auto;
+    }
+    
+    header {
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-end;
+        padding-bottom: 25px;
+    }
+    #hero {
+        display: flex;
+        flex-direction: row;
+        background-color: #ffffff;
+        padding: 0px 3px;
+    }
+
+
+    #hero .hero-text {
+        display: flex;
+        flex-direction: column;
+        padding: 5px 20px 0px 25px;
+        background-color: #2f362f;
+    }
+
+    .photos {
+        grid-template: repeat(3, 1fr)/ repeat(3, 1fr);
+        width: 220%;
+    }
+
+    .photos img:last-child {
+        display: block;
+    }
+
+    .hero-text {
+        justify-content: space-between;
+    }
+
+    #hero .hero-text p{
+        margin-bottom: 40px;
+    }
+
+    #articles {
+        display: flex;
+        justify-content: space-between;
+    }
+    #articles h1{
+        padding-right: 90px;
+        padding-left: 10px;
+    }
+    .article {
+        width: 25%;
+    }
+
+    #sponsors {
+        flex-direction: column;
+        padding: 25px 10px 0px;
+    }
+
+    #sponsors > div{
+        display: flex;
+        flex-direction: row;
+        gap: 50px;
+        padding: 0pxx;
+    }
+
+}

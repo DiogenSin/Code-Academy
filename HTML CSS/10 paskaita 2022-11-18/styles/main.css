@@ -1,0 +1,163 @@
+body{
+    display: flex;
+    justify-content: center;
+    background-color: antiquewhite;
+}
+
+/* flex`o blokai */
+
+.main {
+    display: flex;
+    column-gap: 10px;
+    width: 1000px;
+    height: 250px;
+}
+
+.kblokas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 250px;
+    background-color: blueviolet;
+}
+.dblokas {
+    display: flex;
+    row-gap: 10px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 500px;
+    height: 250px;
+
+}
+
+.d-top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 125px;
+    background-color: rgb(255, 80, 211);
+}
+
+.d-bottom{
+    display: flex;
+    column-gap: 10px;
+    width: 500px;
+    height: 125px;
+
+}
+
+.d-bottom-k {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 125px;
+    background-color: chartreuse;
+}
+
+.d-bottom-d {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 125px;
+    background-color: rgb(76, 133, 19);
+}
+
+
+/* Grid`o tinlas */ 
+
+.tinklas{
+    display: grid;
+    gap: 10px;
+    grid-template: repeat(2, 1fr) / 1fr 1fr 1fr;
+    background-color: white;
+    
+}
+
+.pirmas {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: 595px;
+    height: 250px;
+    grid-row: span 2;
+    background-color:blueviolet;
+}
+
+.antras {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: 495px;
+    height: 120px;
+    grid-column: span 2;
+    background-color: deeppink;
+}
+
+.apatiniai {
+    display: flex;
+    gap: 10px;
+
+    
+}
+
+.trecias {
+    display: grid;
+    align-items: center;
+    width: 242.5px;
+    height: 120px;
+    justify-content: center;
+    background-color: rgb(87, 255, 20);
+}
+
+.ketvirtas {
+    display: grid;
+    align-items: center;
+    width: 242.5px;
+    height: 120px;
+    justify-content: center;
+    background-color: rgb(47, 146, 7);
+}
+
+
+/* Koliažo užduotis */
+
+h1{
+    text-align: center;
+}
+
+.koliazas {
+    display: grid;
+    grid-template: repeat(6, 125px) / repeat(4, 250px);
+    gap: 10px;
+}
+
+.koliazas img{
+    width: 100%;
+    height: 100%;
+    object-fit:contain;
+    background-color: black;
+}
+.longer {
+    grid-row: span 3;
+    background-color: black;
+}
+
+.bigger {
+    grid-column:  span 2;
+    grid-row: span 2;
+    background-color: black;
+}
+
+.big {
+    grid-row: span 3;
+    grid-column: span 2;
+    background-color: black;
+}
+
+
+

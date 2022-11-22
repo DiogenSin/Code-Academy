@@ -1,0 +1,43 @@
+main {
+    display: grid;
+    grid-template: repeat(6, 1fr) / repeat(12, 1fr);
+    background-color: blanchedalmond;
+    row-gap: 50px;
+    column-gap: 10px;
+    padding: 50px;
+}
+
+main div{
+    text-align: center;
+    line-height: 50px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    height: 50px;
+    width: auto;
+    background-color: rgb(207, 85, 85);
+}
+
+.secondRow {
+    grid-column: span 2;
+}
+
+.thirdRow {
+    grid-column: span 3;
+}
+
+.fourthRow {
+    grid-column: span 4;
+}
+
+.fifthRow {
+    grid-column: span 6;
+}
+
+.sixthRow1 {
+    grid-column: span 8;
+}
+.sixthRow2 {
+    grid-column: span 4;
+}

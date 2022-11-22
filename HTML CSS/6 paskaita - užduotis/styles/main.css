@@ -1,0 +1,120 @@
+/* Body */
+
+body {
+    text-align: center;
+}
+h1 {
+    color: white;
+}
+
+
+/* Header */
+
+nav {
+    display: block;
+    position: sticky;
+    top: 0px;
+    text-align: center;
+    background-color: beige;
+}
+.mainMenu, .logo {
+    display: block;
+
+}
+
+.logo img{
+    height: 40px;
+    padding: 10px 0px;
+}
+
+.mainMenu {
+    display: block;
+    background-color: darkgreen;
+}
+
+.mainMenu ul{
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;  
+}
+
+.mainMenu li{
+    display: inline-block;
+    position: relative;
+    color: rgb(255, 255, 255);
+    padding: 15px 10px;
+    margin-right: 0px;
+    cursor: pointer;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.mainMenu li:hover{
+    background-color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    color:gray;
+}
+
+/* Hero */
+
+.hero img{
+    max-width: 700px;
+    min-width: 200px;
+    height: auto;
+    padding: 20px;
+    background-size: cover;
+    background-position: center;
+}
+
+/* About */
+
+#aboutus {
+    display: block;
+    text-align: left;
+}
+
+.header1 {
+    background-color: darkgreen;
+    width: 700px;
+    height: auto;
+    margin: auto;
+}
+
+.header1 h1{
+    margin-left: 10px;
+    line-height: 34px;
+    }
+
+.p1 {
+    width: 700px;
+    margin: auto;
+}
+
+/* Contact */
+
+#contact {
+    display: block;
+    text-align: left;
+    width: 100%;
+    padding: 5px 0px;
+    background-color: rgb(191, 255, 191);
+}
+
+.header2 {
+    background-color: darkgreen;
+    width: 700px;
+    height: auto;
+    margin: auto;
+}
+
+.header2 h1{
+    margin-left: 10px;
+    line-height: 34px;
+    }
+
+.p2 p{
+    width: 700px;
+    margin: auto;
+}
+

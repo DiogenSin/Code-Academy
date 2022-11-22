@@ -1,0 +1,47 @@
+main {
+    display: flex;
+    justify-items: flex-end;
+    width: 681px;
+    height: 341px;
+    background-color: #00253f;
+    column-gap: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+main div{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 5px;
+}
+
+.speaker img{
+    display: flex;
+    width: 142px;
+    height: 292px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.speaker h3,p{
+    margin: 0px;
+    color: white;
+    font-size: 10px;
+}
+.speaker h3{
+    margin-top: 5px;
+    font-size: 12px;
+}
+
+.title  {
+    padding: 20px;
+}
+
+.title  h1{
+    color: #84d5be;
+    font-size: 42px;
+    margin-bottom: 5px;
+}
+
+section img{
+    margin-left:-12px
+}

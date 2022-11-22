@@ -1,0 +1,116 @@
+main{
+    margin-left: 50px;
+}
+
+img{
+    width: 400px;
+    height: auto;
+}
+
+/* 1) Mygtuko tranzicija */
+
+input{
+    width: 150px;
+    height: 50px;
+    background-color: rgb(17, 150, 211);
+    border: none;
+    border-radius: 25px;
+    color: rgb(0, 0, 0);
+
+    transition: all 0.5s linear 0s;
+}
+
+input:hover {
+    background-color: rgb(10, 71, 99);
+    color: white;
+    font-weight: bold;
+}
+
+
+/* 2) Levitavimo animacija */
+
+.levituoju {
+    width: 150px;
+    height: 50px;
+    background-color: rgb(174, 252, 226);
+    border-radius: 25px;
+    text-align: center;
+    line-height: 50px;
+
+    animation: 3s alternate linear infinite levitacija;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes levitacija{
+    0% {
+        background-color: rgb(132, 79, 255);
+    }
+    50% {
+        background-color: rgb(22, 235, 171);
+        scale: 1.1;
+        translate: 0px -50px;
+    }
+    100% {
+        background-color: rgb(0, 102, 255);
+        scale: 1.2;
+    }
+}
+
+/* 3) CSS Diner animacija */
+
+.stalas {
+    width: 450px;
+    height: 150px;
+    background-color: rgb(165, 108, 42);
+    text-align: center;
+    line-height: 250px;
+}
+
+.stalas div{
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.orange {
+    width: 50px;
+    height: 50px;
+    background-color: orange;
+    border-radius: 50px;
+    box-shadow: 2px 2px 5px black;
+}
+
+.pickle {
+    width: 50px;
+    height: 120px;
+    background-color: rgb(45, 209, 12);
+    border-radius: 50px;
+    box-shadow: 2px 2px 5px black;
+}
+
+.apple {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(209, 67, 12);
+    border-radius: 50px;
+    box-shadow: 2px 2px 5px black;
+}
+
+.last{
+    animation: 0.5s alternate linear infinite vingiavimas;
+    transform-origin: bottom;
+}
+
+@keyframes vingiavimas{
+    0%{
+        transform: skew(-15deg, 0deg);
+    }
+    50% {
+        transform: skew(0deg, 0deg);
+        transform: scaleY(0.8);
+    }
+    100% {
+        transform: skew(15deg, 0deg);
+    }
+}
+
+
