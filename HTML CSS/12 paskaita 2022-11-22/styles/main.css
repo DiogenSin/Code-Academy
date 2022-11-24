@@ -1,14 +1,8 @@
-:root{
-  --color-warning: red;
-  font-size: 16px;
-  line-height: 1;
-}
-
 #preProcessors h1 {
   font-size: 2rem;
 }
 #preProcessors div h3 {
-  font-size: 2em;
+  font-size: 2rem;
   color: rgb(236, 124, 124);
 }
 #preProcessors div p {
