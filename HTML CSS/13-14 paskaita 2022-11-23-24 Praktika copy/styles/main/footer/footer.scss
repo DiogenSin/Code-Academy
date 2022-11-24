@@ -1,0 +1,48 @@
+$violet-color:#645cff;
+$violet-color-transparent:#645cff8c;
+$violet-color-brighter: #9f9aff;
+$heading-font-weigtht: 500;
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    background-color: #222222;
+    color: white;
+    padding: 50px;
+
+    ul{
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+        margin: 0px;
+        padding: 0px;
+        list-style-type: none;
+        font-size: 12px;
+    }
+
+    a{
+        color: white;
+    }
+
+    a:hover{
+        color:$violet-color;
+    }
+
+    .social-icons {
+        display: flex;
+        gap: 10px;
+        color: $violet-color;
+    }
+
+    .social-icons i:hover{
+        color: $violet-color-brighter;
+    }
+
+    p{
+        margin: 0px;
+    }
+
+}

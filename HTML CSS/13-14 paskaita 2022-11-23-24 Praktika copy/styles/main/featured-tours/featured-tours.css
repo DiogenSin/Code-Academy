@@ -1,0 +1,64 @@
+#featured-tours {
+  padding: 50px 30px 70px;
+}
+#featured-tours h1 {
+  font-weight: 500;
+  text-align: center;
+  line-height: 40px;
+  padding: 0px;
+  margin-top: 0px;
+  margin-bottom: 50px;
+}
+#featured-tours h1 span {
+  color: #645cff;
+}
+#featured-tours .image-date {
+  position: relative;
+  margin-bottom: -5px;
+}
+#featured-tours .image-date img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 30vh;
+}
+#featured-tours .image-date p {
+  display: flex;
+  position: absolute;
+  top: 5px;
+  padding: 5px;
+  background-color: #645cff;
+}
+#featured-tours .tour-text {
+  padding: 15px;
+  box-shadow: 0px 1px 2px rgb(199, 199, 199);
+  margin-bottom: 50px;
+}
+#featured-tours .tour-text h4 {
+  font-weight: 500;
+  font-size: 20px;
+  margin-top: 10px;
+}
+#featured-tours .tour-text p {
+  font-weight: 600;
+}
+#featured-tours .tour-card:hover .tour-text {
+  box-shadow: 0px 5px 5px rgb(218, 218, 218);
+}
+#featured-tours .country-price {
+  display: flex;
+  justify-content: space-between;
+}
+#featured-tours .country-price .country-icon {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 13px;
+  color: #645cff;
+}
+#featured-tours .all-tours {
+  text-align: center;
+}
+#featured-tours .all-tours a:hover {
+  color: #9f9aff;
+}/*# sourceMappingURL=featured-tours.css.map */

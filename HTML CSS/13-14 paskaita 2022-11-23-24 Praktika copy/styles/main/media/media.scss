@@ -1,0 +1,151 @@
+$violet-color:#645cff;
+$violet-color-transparent:#645cff8c;
+$violet-color-brighter: #9f9aff;
+$heading-font-weigtht: 500;
+
+@media (min-width: 480px){
+
+
+    header {
+        ul{
+            display: flex;
+            }
+        }
+
+    #hero {
+        img{
+            
+            display: block;
+            width: 100%;
+            position: absolute;
+            object-fit: cover;
+            height: 100%;
+            opacity: 50%;
+            height: 100vh;
+        }
+    }
+
+    #about-us {
+
+
+
+        .about-content{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap:30px;
+
+            .about-image {
+                border: 5px solid $violet-color;
+                width: 30vh;
+                height: 25vh;
+
+            }
+
+            img{
+                position: relative;
+                top: 15px;
+                left: 15px;
+                width: 30vh;
+                height: 25vh;
+            }
+        }
+
+    }
+
+    #our-services{
+
+        .services-grid{
+            display: grid;
+            grid-template: 1fr / 1fr 1fr 1fr;
+            column-gap: 25px;
+            row-gap: 25px;
+            margin-top: 50px;
+        }
+
+        .service-card{
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            gap: 10px;
+            
+            p{
+                text-align: left;
+            }
+
+            .service-text{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                h3{
+                    margin: 0px;
+                }
+            }
+        }
+
+
+
+    }
+
+    #featured-tours{
+
+        .tour-grid{
+            display: grid;
+            grid-template: 1fr 1fr / 1fr 1fr 1fr;
+            column-gap: 15px;
+            row-gap: 40px;
+            margin-bottom: 70px;
+        }
+
+
+        .image-date{
+            img{
+                object-fit: cover;
+                width: 100%;
+                height: 20vh;
+            }
+        }
+
+        .tour-text {
+            margin-bottom: 0px;
+        }
+    }
+    #gallery {
+
+        .images{
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+        
+            img{
+                object-fit: cover;
+                width: 100%;
+                height: 20vh;
+                border-bottom: none;
+            }
+        }    
+    }
+
+    #subscription {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 20px;
+    
+        form{
+
+            input{
+                border: 0px;
+                padding: 5px 5px
+            }
+            input#email {
+                margin-left: 5px;
+                font-size: 12pxs;
+            }
+            ::placeholder{
+                color: black;
+            }
+    
+        }
+    }
+}

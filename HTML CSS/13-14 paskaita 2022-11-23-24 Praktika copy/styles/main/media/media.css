@@ -1,0 +1,110 @@
+@media (min-width: 480px) {
+  header ul {
+    display: flex;
+  }
+  #hero img {
+    display: block;
+    width: 100%;
+    position: absolute;
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 100%;
+    opacity: 50%;
+    height: 100vh;
+  }
+  #about-us .about-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+  #about-us .about-content .about-image {
+    border: 5px solid #645cff;
+    width: 30vh;
+    height: 25vh;
+  }
+  #about-us .about-content img {
+    position: relative;
+    top: 15px;
+    left: 15px;
+    width: 30vh;
+    height: 25vh;
+  }
+  #our-services .services-grid {
+    display: grid;
+    grid-template: 1fr/1fr 1fr 1fr;
+    -moz-column-gap: 25px;
+         column-gap: 25px;
+    row-gap: 25px;
+    margin-top: 50px;
+  }
+  #our-services .service-card {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  #our-services .service-card p {
+    text-align: left;
+  }
+  #our-services .service-card .service-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  #our-services .service-card .service-text h3 {
+    margin: 0px;
+  }
+  #featured-tours .tour-grid {
+    display: grid;
+    grid-template: 1fr 1fr/1fr 1fr 1fr;
+    -moz-column-gap: 15px;
+         column-gap: 15px;
+    row-gap: 40px;
+    margin-bottom: 70px;
+  }
+  #featured-tours .image-date img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100%;
+    height: 20vh;
+  }
+  #featured-tours .tour-text {
+    margin-bottom: 0px;
+  }
+  #gallery .images {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+  #gallery .images img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100%;
+    height: 20vh;
+    border-bottom: none;
+  }
+  #subscription {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+  }
+  #subscription form input {
+    border: 0px;
+    padding: 5px 5px;
+  }
+  #subscription form input#email {
+    margin-left: 5px;
+    font-size: 12pxs;
+  }
+  #subscription form ::-moz-placeholder {
+    color: black;
+  }
+  #subscription form :-ms-input-placeholder {
+    color: black;
+  }
+  #subscription form ::placeholder {
+    color: black;
+  }
+}/*# sourceMappingURL=media.css.map */

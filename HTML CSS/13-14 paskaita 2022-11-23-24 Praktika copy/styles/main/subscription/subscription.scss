@@ -1,0 +1,45 @@
+$violet-color:#645cff;
+$violet-color-transparent:#645cff8c;
+$violet-color-brighter: #9f9aff;
+$heading-font-weigtht: 500;
+
+
+#subscription {
+    padding: 30px 10px 50px;
+    background-color: $violet-color;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    h1{
+        font-weight: $heading-font-weigtht;
+        text-align: center;
+    }
+    p{
+        font-size: 16px;
+        text-align: center;
+    }
+
+    form{
+        display: flex;
+        background-color: white;
+        padding: 1px;
+        input{
+            border: 0px;
+            padding: 5px 5px
+        }
+        input#email {
+            margin-left: 5px;
+            font-size: 12pxs;
+        }
+        ::placeholder{
+            color: black;
+        }
+
+        input[type=Submit]:hover{
+            background-color: $violet-color;
+            color: white;
+        }
+    }
+}

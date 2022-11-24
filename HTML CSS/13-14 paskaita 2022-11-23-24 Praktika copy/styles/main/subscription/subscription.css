@@ -1,0 +1,43 @@
+#subscription {
+  padding: 30px 10px 50px;
+  background-color: #645cff;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+#subscription h1 {
+  font-weight: 500;
+  text-align: center;
+}
+#subscription p {
+  font-size: 16px;
+  text-align: center;
+}
+#subscription form {
+  display: flex;
+  background-color: white;
+  padding: 1px;
+}
+#subscription form input {
+  border: 0px;
+  padding: 5px 5px;
+}
+#subscription form input#email {
+  margin-left: 5px;
+  font-size: 12pxs;
+}
+#subscription form ::-moz-placeholder {
+  color: black;
+}
+#subscription form :-ms-input-placeholder {
+  color: black;
+}
+#subscription form ::placeholder {
+  color: black;
+}
+#subscription form input[type=Submit]:hover {
+  background-color: #645cff;
+  color: white;
+}/*# sourceMappingURL=subscription.css.map */

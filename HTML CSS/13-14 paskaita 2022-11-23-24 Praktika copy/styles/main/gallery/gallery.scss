@@ -1,0 +1,59 @@
+$violet-color:#645cff;
+$violet-color-transparent:#645cff8c;
+$violet-color-brighter: #9f9aff;
+$heading-font-weigtht: 500;
+
+
+#gallery {
+    padding: 30px 0px 0px;
+    background-color: #f8fbfc;
+
+    h1{
+        font-weight: $heading-font-weigtht;
+        text-align: center;
+        line-height: 40px;
+        padding: 0px;
+        margin-top: 0px;
+        margin-bottom: 20px;
+        
+        span{
+            color: $violet-color;
+        }
+    }
+
+    div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+        color: white;
+        background-color: $violet-color;
+        width: 100%;
+    }
+
+    i {
+        display: none;
+        position: absolute;
+    }
+    img{
+        object-fit: cover;
+        width: 100%;
+        height: auto;
+        background-color: $violet-color;
+        border-bottom: 5px solid $violet-color;
+        opacity: 100%;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    img:hover {
+        background-color: #382dff;
+        opacity: 50%;
+    }
+
+    img:hover + i{
+        display: block;
+    }
+
+}

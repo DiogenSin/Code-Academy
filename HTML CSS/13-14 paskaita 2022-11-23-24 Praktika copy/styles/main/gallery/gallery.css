@@ -1,0 +1,47 @@
+#gallery {
+  padding: 30px 0px 0px;
+  background-color: #f8fbfc;
+}
+#gallery h1 {
+  font-weight: 500;
+  text-align: center;
+  line-height: 40px;
+  padding: 0px;
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+#gallery h1 span {
+  color: #645cff;
+}
+#gallery div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  color: white;
+  background-color: #645cff;
+  width: 100%;
+}
+#gallery i {
+  display: none;
+  position: absolute;
+}
+#gallery img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: auto;
+  background-color: #645cff;
+  border-bottom: 5px solid #645cff;
+  opacity: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+#gallery img:hover {
+  background-color: #382dff;
+  opacity: 50%;
+}
+#gallery img:hover + i {
+  display: block;
+}/*# sourceMappingURL=gallery.css.map */

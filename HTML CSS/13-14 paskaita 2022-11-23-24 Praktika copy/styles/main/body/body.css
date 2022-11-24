@@ -1,0 +1,15 @@
+body {
+  font-family: "Yantramanav", sans-serif;
+  width: 100%;
+}
+body a {
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: bold;
+}
+body h1 {
+  letter-spacing: 4px;
+}
+body p {
+  font-size: 12px;
+}/*# sourceMappingURL=body.css.map */

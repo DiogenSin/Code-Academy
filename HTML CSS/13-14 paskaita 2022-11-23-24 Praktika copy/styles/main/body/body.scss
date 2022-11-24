@@ -1,0 +1,21 @@
+$violet-color:#645cff;
+$violet-color-transparent:#645cff8c;
+$violet-color-brighter: #9f9aff;
+$heading-font-weigtht: 500;
+
+body{
+    font-family: 'Yantramanav', sans-serif;
+    width: 100%;
+    a{
+        text-decoration: none;
+        font-size: 12px;
+        font-weight: bold;
+    }
+    h1{
+        letter-spacing: 4px;
+        
+    }
+    p {
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,36 @@
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  background-color: #222222;
+  color: white;
+  padding: 50px;
+}
+footer ul {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+  font-size: 12px;
+}
+footer a {
+  color: white;
+}
+footer a:hover {
+  color: #645cff;
+}
+footer .social-icons {
+  display: flex;
+  gap: 10px;
+  color: #645cff;
+}
+footer .social-icons i:hover {
+  color: #9f9aff;
+}
+footer p {
+  margin: 0px;
+}/*# sourceMappingURL=footer.css.map */

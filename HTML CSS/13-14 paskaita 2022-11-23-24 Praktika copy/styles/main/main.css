@@ -1,0 +1,24 @@
+/* Normalize*/
+@import url(https://necolas.github.io/normalize.css/8.0.1/normalize.css);
+/* Font */
+@import url("https://fonts.googleapis.com/css2?family=Yantramanav:wght@100;300;400;500;700;900&display=swap");
+/* Icons */
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css);
+/* Styles */
+@import url(./body/body.css);
+@import url(./header/header.css);
+@import url(./hero/hero.css);
+@import url(./about-us/about-us.css);
+@import url(./our-services/our-services.css);
+@import url(./featured-tours/featured-tours.css);
+@import url(./gallery/gallery.css);
+@import url(./subscription/subscription.css);
+@import url(./footer/footer.css);
+@import url(./media/media.css);
+html {
+  scroll-behavior: smooth;
+}
+
+[id] {
+  scroll-margin-top: 150px;
+}/*# sourceMappingURL=main.css.map */

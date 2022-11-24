@@ -1,0 +1,53 @@
+$violet-color:#645cff;
+$violet-color-transparent:#645cff8c;
+$violet-color-brighter: #9f9aff;
+$heading-font-weigtht: 500;
+
+
+#hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $violet-color;
+    height: 100vh;
+    width: 100%;
+    padding-top: 5vh;
+
+    img{
+        display: none;
+    }
+
+    .hero-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        height: 50vh;
+        color: white;
+        font-weight: 400;
+        text-align: center;
+        padding: 0px 50px;
+        z-index: 1;
+        h1 {
+            font-weight: 400;
+        }
+        p {
+            line-height: 2;
+        }
+        button {
+            background-color: $violet-color;
+            border: 0px;
+            box-shadow: 3px 3px 5px #5047ff88;
+            color: white;
+            padding: 10px 10px;
+        }
+        button:hover {
+            background-color: #382dff;
+            box-shadow: 3px 3px 5px $violet-color;
+        }
+    }
+    .image img{
+        display: none;
+    }
+    
+}

@@ -1,0 +1,44 @@
+#hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #645cff;
+  height: 100vh;
+  width: 100%;
+  padding-top: 5vh;
+}
+#hero img {
+  display: none;
+}
+#hero .hero-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  height: 50vh;
+  color: white;
+  font-weight: 400;
+  text-align: center;
+  padding: 0px 50px;
+  z-index: 1;
+}
+#hero .hero-info h1 {
+  font-weight: 400;
+}
+#hero .hero-info p {
+  line-height: 2;
+}
+#hero .hero-info button {
+  background-color: #645cff;
+  border: 0px;
+  box-shadow: 3px 3px 5px rgba(80, 71, 255, 0.5333333333);
+  color: white;
+  padding: 10px 10px;
+}
+#hero .hero-info button:hover {
+  background-color: #382dff;
+  box-shadow: 3px 3px 5px #645cff;
+}
+#hero .image img {
+  display: none;
+}/*# sourceMappingURL=hero.css.map */
