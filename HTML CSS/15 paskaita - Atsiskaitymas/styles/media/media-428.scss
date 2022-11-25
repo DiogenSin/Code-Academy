@@ -1,0 +1,209 @@
+$pink: #FF3998;
+$text-gray: #555555;
+$text-pink: #FF3998;
+
+@media (min-width: 920px){
+
+
+    header {
+        
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+
+        /* Hides Hamburger */
+        .fa-navicon::before, .fa-reorder::before, .fa-bars::before{
+            display: none;
+        }
+
+        nav{
+            display: flex;
+            align-items: center;
+
+            ul{
+                display: flex;
+                gap: 25px;
+                list-style-type: none;
+                
+                a{
+                    text-decoration: none;
+                    color: $text-gray;
+                    font-family: Inter;
+                    font-size: 20px;
+                    font-weight: 400;
+                    line-height: 20px;
+                }
+
+                a:last-child {
+                    color:$text-pink;
+                }
+            }
+        }
+
+        /* Reveals menu */
+
+
+
+        
+    }
+
+    #hero {
+        
+        display: flex;
+        align-items: center;
+        gap: 50px;
+        padding: 50px 80px;
+
+        
+        
+        .hero-image {
+            display: flex;
+            justify-content: flex-center;
+            height: 40vh;
+            overflow:initial;
+    
+            img{
+                object-fit: cover;
+                position:static;
+                right: 0%;
+                height: 100%;
+    
+            }
+        }
+        
+        .hero-text {
+            width: 50%;
+        }
+    }
+
+    #sign-up-1 {
+
+        padding: 64px;
+        margin: 32px 80px;
+        border-radius: 10px;
+
+        p{
+            margin: 0px;
+        }
+    }
+
+    #partners {
+        display: flex;
+        justify-content: space-between;
+        margin: 80px 80px;
+            
+        :nth-child(4) {
+            display: flex;
+        }
+    }
+
+    #auctions{
+
+        padding: 0px;
+        margin: 80px 80px;
+        
+        .auction-cards {
+            display: flex;
+            justify-content: space-between;
+            gap: 30px;
+            width: 100%;
+            overflow-x:hidden;
+            scroll-behavior:unset;
+            scroll-snap-type: none;
+            margin-top: 40px;
+        
+            img{
+                margin-bottom: -5px;
+            }
+
+            .auction-card {
+                > img{
+                    height: 26vh;
+                }
+            }
+    }
+
+
+
+
+
+
+
+
+
+    }
+
+    #sign-up-2 {
+
+        display: flex;
+        height: 40vh;
+        width: 90%;
+        margin: 80px 80px 0px 80px;
+        padding: 0px;
+    
+        .sign-up-image{
+    
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            padding: 0px;
+            width: 100%;
+            overflow:initial;
+    
+            img{
+                object-fit: cover;
+                position: static;
+                right: 0%;
+                height: 100%;
+    
+            }
+    
+        }
+        .sign-up-text {
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            p{
+                width: 70%;
+    
+            }
+        }
+    
+    
+    }
+
+    footer {
+        margin: 80px 80px 20px 80px;
+        div {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+
+
+        .footer-end {
+
+                p:nth-child(2){
+                display: flex;
+            }
+
+            display: flex;
+        }
+
+        .footer-menu{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            gap: 50px;
+
+            ul {
+                margin: 0px;
+            }
+
+        }
+    }
+}

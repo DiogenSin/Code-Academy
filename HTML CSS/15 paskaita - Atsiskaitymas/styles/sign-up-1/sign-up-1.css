@@ -1,0 +1,21 @@
+#sign-up-1 {
+  background: rgb(255, 161, 206);
+  background: linear-gradient(72deg, rgb(255, 161, 206) 4%, rgb(255, 161, 206) 4%, rgb(255, 99, 174) 10%, rgb(255, 57, 152) 19%, rgb(255, 129, 57) 77%, rgb(211, 150, 48) 86%, rgb(151, 179, 35) 94%, rgb(147, 255, 149) 100%);
+  padding: 20px 20px 20px 20px;
+  margin-bottom: 32px;
+}
+#sign-up-1 h2 {
+  margin-top: 100px;
+  font-family: Inter;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 48px;
+  margin-bottom: 16px;
+}
+#sign-up-1 p {
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: left;
+}/*# sourceMappingURL=sign-up-1.css.map */

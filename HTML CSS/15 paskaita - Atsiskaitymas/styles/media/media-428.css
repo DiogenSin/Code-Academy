@@ -1,0 +1,145 @@
+@media (min-width: 920px) {
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    /* Hides Hamburger */
+    /* Reveals menu */
+  }
+  header .fa-navicon::before, header .fa-reorder::before, header .fa-bars::before {
+    display: none;
+  }
+  header nav {
+    display: flex;
+    align-items: center;
+  }
+  header nav ul {
+    display: flex;
+    gap: 25px;
+    list-style-type: none;
+  }
+  header nav ul a {
+    text-decoration: none;
+    color: #555555;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+  }
+  header nav ul a:last-child {
+    color: #FF3998;
+  }
+  #hero {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding: 50px 80px;
+  }
+  #hero .hero-image {
+    display: flex;
+    justify-content: flex-center;
+    height: 40vh;
+    overflow: initial;
+  }
+  #hero .hero-image img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    position: static;
+    right: 0%;
+    height: 100%;
+  }
+  #hero .hero-text {
+    width: 50%;
+  }
+  #sign-up-1 {
+    padding: 64px;
+    margin: 32px 80px;
+    border-radius: 10px;
+  }
+  #sign-up-1 p {
+    margin: 0px;
+  }
+  #partners {
+    display: flex;
+    justify-content: space-between;
+    margin: 80px 80px;
+  }
+  #partners :nth-child(4) {
+    display: flex;
+  }
+  #auctions {
+    padding: 0px;
+    margin: 80px 80px;
+  }
+  #auctions .auction-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    width: 100%;
+    overflow-x: hidden;
+    scroll-behavior: unset;
+    -ms-scroll-snap-type: none;
+        scroll-snap-type: none;
+    margin-top: 40px;
+  }
+  #auctions .auction-cards img {
+    margin-bottom: -5px;
+  }
+  #auctions .auction-cards .auction-card > img {
+    height: 26vh;
+  }
+  #sign-up-2 {
+    display: flex;
+    height: 40vh;
+    width: 90%;
+    margin: 80px 80px 0px 80px;
+    padding: 0px;
+  }
+  #sign-up-2 .sign-up-image {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 0px;
+    width: 100%;
+    overflow: initial;
+  }
+  #sign-up-2 .sign-up-image img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    position: static;
+    right: 0%;
+    height: 100%;
+  }
+  #sign-up-2 .sign-up-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  #sign-up-2 .sign-up-text p {
+    width: 70%;
+  }
+  footer {
+    margin: 80px 80px 20px 80px;
+  }
+  footer div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  footer .footer-end {
+    display: flex;
+  }
+  footer .footer-end p:nth-child(2) {
+    display: flex;
+  }
+  footer .footer-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 50px;
+  }
+  footer .footer-menu ul {
+    margin: 0px;
+  }
+}/*# sourceMappingURL=media-428.css.map */

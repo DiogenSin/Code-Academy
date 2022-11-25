@@ -1,0 +1,29 @@
+$pink: #FF3998;
+$text-gray: #555555;
+$text-pink: #FF3998;
+
+#sign-up-1 {
+    background: rgb(255,161,206);
+    background: linear-gradient(72deg, rgba(255,161,206,1) 4%, rgba(255,161,206,1) 4%, rgba(255,99,174,1) 10%, rgba(255,57,152,1) 19%, rgba(255,129,57,1) 77%, rgba(211,150,48,1) 86%, rgba(151,179,35,1) 94%, rgba(147,255,149,1) 100%);
+    padding: 20px 20px 20px 20px;
+    margin-bottom: 32px;
+
+
+    h2{
+        margin-top: 100px;
+        font-family: Inter;
+        font-size: 40px;
+        font-weight: 500;
+        line-height: 48px;
+        margin-bottom: 16px;
+    }
+
+    p{
+        font-family: Inter;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 30px;
+        text-align: left;
+
+    }
+}
