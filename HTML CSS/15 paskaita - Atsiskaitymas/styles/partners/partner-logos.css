@@ -1,0 +1,30 @@
+#partners {
+  display: grid;
+  grid-template: 1fr 1fr/1fr 1fr;
+  row-gap: 15px;
+  -moz-column-gap: 15px;
+       column-gap: 15px;
+  width: 90%;
+}
+#partners :nth-child(4) {
+  display: none;
+}
+#partners div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+#partners div p {
+  color: #999999;
+  font-family: Roboto;
+  font-size: 31px;
+  font-weight: 400;
+  line-height: 36px;
+  text-align: left;
+}
+#partners div img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  height: 40px;
+}/*# sourceMappingURL=partner-logos.css.map */

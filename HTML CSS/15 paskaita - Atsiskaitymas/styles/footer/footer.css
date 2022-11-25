@@ -1,0 +1,72 @@
+footer {
+  display: flex;
+  flex-direction: column;
+  padding: 50px 20px 20px 20px;
+}
+footer .credentials p {
+  font-family: Inter;
+  color: #555555;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+}
+footer .logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+footer .logo img {
+  height: 30px;
+}
+footer .logo p {
+  font-family: Varela Round;
+  color: #111111;
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 34px;
+  letter-spacing: 0.05em;
+  text-align: left;
+  margin: 0px;
+}
+footer .social-media-icons {
+  display: flex;
+  gap: 17px;
+  margin-bottom: 50px;
+}
+footer .social-media-icons a {
+  color: #999999;
+  font-size: 18px;
+}
+footer .footer-menu {
+  display: grid;
+  grid-template: repeat(2, 1fr)/1fr 1fr;
+}
+footer .footer-menu ul {
+  list-style-type: none;
+  color: #555555;
+  font-size: 14px;
+  padding: 0px;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: 24px;
+}
+footer .footer-menu ul :first-child {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19px;
+  letter-spacing: 0.1em;
+  text-align: left;
+  margin-bottom: 20px;
+}
+footer p {
+  font-family: Inter;
+  color: #999999;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+}
+footer .footer-end p:nth-child(2) {
+  display: none;
+}/*# sourceMappingURL=footer.css.map */
