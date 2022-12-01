@@ -452,5 +452,3 @@ for(let i=0 ; i < skaiciuMasyvas.length ; i++){ //Nelyginiai skaičiai
 }
 
 
-
-
