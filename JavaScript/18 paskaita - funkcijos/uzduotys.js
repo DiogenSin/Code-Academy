@@ -52,7 +52,7 @@ console.groupEnd('Dalyba')
 console.groupCollapsed('Šaknis')
 function saknis(nr1, nr2){
     if(typeof(nr1) === 'number' && typeof(nr2) === 'number'){
-        return(nr1 ** nr2)
+        return(nr1 ** (1/nr2))
     } else{
         return 'Viena iš nurodytų verčių nėra skaičius.'
     }
@@ -84,6 +84,12 @@ let masyvas1=[1,2,5,7,6,21,'Dovydas','Jonas','Petras','Antanas',true, false,true
 function nuoPirmoIkiPaskutinio(masyvas1){
     for(i=0 ; i < masyvas1.lenght ; i++){
         return console.log(masyvas1[i])
+    }
+}
+
+function nuoPirmoIkiPaskutinio1(masyvas1){
+    for(let element of array){
+        console.log(element)
     }
 }
 console.groupEnd('2 Užduotis')
@@ -233,7 +239,7 @@ console.groupEnd('10 Užduotis')
 console.groupCollapsed('11 Užduotis')
 
 function randomKvadratu(){
-    let randomSkaiciusKvadratu = ((Math.floor(Math.random()*10))**2)
+    let randomSkaiciusKvadratu = ((Math.round(Math.random()*10))**2)
     return console.log('Random skaičius kvadratu: ' + randomSkaiciusKvadratu)
 }
 

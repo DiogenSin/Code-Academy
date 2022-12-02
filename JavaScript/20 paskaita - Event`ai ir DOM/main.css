@@ -1,0 +1,17 @@
+img{
+    height: 150px;
+}
+
+span {
+    font-weight: bold;
+}
+
+.tekstas {
+    font-weight: bold;
+    border: 2px solid black;
+}
+
+.tekstas1 {
+
+    font-size: 35px;
+}
