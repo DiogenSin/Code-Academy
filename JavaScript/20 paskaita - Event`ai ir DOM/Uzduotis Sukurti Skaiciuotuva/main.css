@@ -1,0 +1,94 @@
+main {
+    width: 70%;
+    margin: auto;
+}
+
+main #skaiciuotuvo_Elementas{
+    margin:auto
+}
+
+#skaiciuotuvo_Elementas {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    align-items: center;
+    width: 50%;
+    text-align: center;
+    background-color: #a9f1d9;
+    padding: 20px;
+    border-radius: 50px;
+}
+
+#forma {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input, select, button {
+    margin-bottom: 30px;
+}
+
+input {
+    height: 25px;
+    border-radius: 15px;
+    border: 1px solid #74c3e8;
+    background-color: #b6e6fc;
+}
+
+input:hover {
+    background-color: #ffffff;
+}
+
+input::placeholder{
+    color: rgb(124, 124, 124);
+    text-align: center;
+}
+
+
+select {
+    height: 25px;
+    width: 45%;
+    border-radius: 15px;
+    border: 1px solid #74c3e8;
+    background-color: #b6e6fc;
+    color: rgb(124, 124, 124);
+    text-align: center;
+}
+
+select:hover {
+    background-color: #ffffff;
+}
+
+button {
+    height: 30px;
+    width: 45%;
+    border-radius: 15px;
+    border: 1px solid #22b9ff;
+    background-color: #22b9ff;
+    color: white;
+    font-weight: bold;
+}
+
+button:hover {
+
+    border: 1px solid #22b9ff;
+    background-color: #1b88bb;
+}
+
+#rezultatas {
+    height: 50px;
+    border-radius: 25px;
+    color: white;
+}
+#rezultatas::placeholder {
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
