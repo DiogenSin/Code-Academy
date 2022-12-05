@@ -1,0 +1,69 @@
+.paveikslas1 {
+    display: flex;
+    gap: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: rgb(231, 231, 231);
+    padding: 25px;
+    margin-bottom: 25px;
+}
+
+.paveikslas1 img{
+    width: 25%;
+    object-fit: cover;
+}
+
+.paveiksluKonteineris {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: rgb(182, 182, 182);
+}
+
+#uzduotis3, #uzduotis4 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: rgb(182, 182, 182);
+    padding: 25px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.paveiksluKonteineris img{
+    display: flex;
+    width: 25%;
+    object-fit: cover;
+}
+
+.paveikslaiSuInfo {
+    display: flex;
+    flex-direction: column;
+}
+
+.paveikslasIrPavadinimas {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    padding: 20px;
+    background-color: gray;
+    border-radius: 25px;
+    color: white;
+    text-align: justify;
+    box-shadow: 2px 2px 2px grey;
+}
+
+.paveikslasIrPavadinimas:hover {
+    background-color: rgb(163, 163, 163);
+    transform: scale(1.1);
+}
+
+.paveikslasIrPavadinimas h2{
+    text-align: center;
+}
+
+
+.paveikslasIrPavadinimas img{
+    width: 100%;
+    height: 350px;
+    border-radius: 25px;
+}

@@ -1,0 +1,37 @@
+#variantas1 {
+    background-color: bisque;
+    display: relative;
+}
+
+#variantas2 {
+    background-color: rgb(240, 201, 155);
+    display: relative;
+}
+
+#variantas3 {
+    background-color: rgb(180, 131, 75);
+    display: relative;
+}
+
+#variantas4 {
+    background-color: rgb(153, 104, 47);
+    color: white;
+    display: relative;
+}
+
+#rodyti {
+    display: flex;
+    position: absolute;
+    top: 15%;
+    right: 5%;
+}
+
+#slepti {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+}
+
+.nerodyti {
+    display: none;
+}
