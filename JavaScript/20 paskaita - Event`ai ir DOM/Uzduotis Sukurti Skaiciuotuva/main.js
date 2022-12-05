@@ -44,7 +44,7 @@ skaiciuotuvoElementas.append(forma) // formos elementui prijungiama forma
 console.groupEnd('Skaičiuotuvo formos laukas')
 
 
-//---------------------------- 3 Sukuriamas pirmasis (skaučiaus input) laukas--------------------------------------
+//---------------------------- 3 Sukuriamas matematinio veiksmo pasirinkimo laukas--------------------------------------
 
 console.group('Skaičiuotuvo formos antrasis laukas')
 
@@ -127,7 +127,7 @@ console.group('Rezultato laukas')
 let rezultatoLabel = document.createElement('label') // sukuriamas label rezultato laukui
 let rezultatoLabelTekstas = document.createTextNode('Rezultatas:') // sukuriamas label tekstas
 rezultatoLabel.setAttribute('for', 'rezultatas') // label elementui priskiriamas for atributas
-rezultatoLabel.setAttribute('hidden', '') // label elementui priskiriamas for atributas
+rezultatoLabel.setAttribute('hidden', '') // label elementui pridedamas hidden atributas (paslepiama)
 
 let rezultatas = document.createElement('input') // sukuriamas input laukas rezultatui
 rezultatas.setAttribute('type', 'number') // input laukui priskiriamas type atributas
@@ -144,17 +144,17 @@ console.groupEnd('Rezultato laukas')
 
 //------------------------ 7 Pateiktų duomenų siuntimas į JS`ą-------------------------------
 
-let skaiciuotuvas = document.querySelector('#forma')
+let skaiciuotuvas = document.querySelector('#forma') // pasirirenkama forma
 console.dir(skaiciuotuvas)
 
-skaiciuotuvas.addEventListener('submit', function(event){
+skaiciuotuvas.addEventListener('submit', function(event){ // įvykių klausymasis formoje
     event.preventDefault(); // neleidžia puslapiui persikrauti paspaudus mygtuką
     console.dir(event);
     let pasirinktas1Skaicius = event.target.elements.pirmasSkaicius.valueAsNumber // gražina pirmąjį skaičių
     let pasirinktasVeiksmas = event.target.elements.veiksmas.value // gražina pasirinkto veiksmo simbolį
     let pasirinktas2Skaicius = event.target.elements.antrasSkaicius.valueAsNumber // grąžina antrąjį skaičių
 
-    console.log('Pasirinktas veiksmas: ' + pasirinktas1Skaicius + ' ' + pasirinktasVeiksmas + ' ' + pasirinktas2Skaicius) // patikrinama ar įvesti duomenys teisingi
+    console.log('Pasirinktas veiksmas: ' + pasirinktas1Skaicius + ' ' + pasirinktasVeiksmas + ' ' + pasirinktas2Skaicius) // pa(si)tikrinama ar įvesti duomenys teisingi kosnolėje
 
     let rezultatas =  "" // sukuriamas tuščias domuo būsimam rezultatui įterpti
 
@@ -179,15 +179,13 @@ skaiciuotuvas.addEventListener('submit', function(event){
 
         break;
     }
-    console.log('Rezultatas ir duomenų tipas: ' + rezultatas + ' ' + typeof(rezultatas)) // patikrinamas rezultatas ir duomenų tipas
+    console.log('Rezultatas ir duomenų tipas: ' + rezultatas + ' ' + typeof(rezultatas)) // pa(si)tikrinamas rezultatas ir duomenų tipas
 
-    event.target.elements.rezultatas.valueAsNumber = rezultatas
+    event.target.elements.rezultatas.valueAsNumber = rezultatas // rezultatas įdedamas atgal į formą (rezultato laukelyje)
     event.target.elements.rezultatas.style.textAlign = 'center'
     event.target.elements.rezultatas.style.backgroundColor = '#47b38f'
     event.target.elements.rezultatas.style.borderColor = '#0579ad'
     event.target.elements.rezultatas.style.fontWeight = 'bold'
-
-
 
 })
 
