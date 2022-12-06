@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/main.css">
+    <script src="./scripts/number.js" defer></script>
+    <script src="./scripts/string.js" defer></script>
+    <title>Užduotys - number ir String</title>
+</head>
+<body>
+    <h1>Užduotis - number</h1>
+    <ol>
+        <li>Sukurk variable 'milkPrice'. Su JS patikrink ir informuok vartotoją console() ar jam reikės centų, ar nereikės (t.y. ar skaičius sveikas).</li>
+        <li>Pakoreguok pirmą pratimą, kad console taip pat ir išmestų kainą - su dviem skaičias po kablelio (t.y. 3.00 Eur).</li>
+        <li>Sukurk programą degalinei - bus du input laukeliai (kuriame su HTML): viename įvedame kainą su trimis skaičias po kablelio, antrame - degalų kiekį, su vienu skaičiu po kablelio (HTML naudojame step="0.1" atributą pasakyti kiek skaičių po kablelio vartotojas gali paduoti). Pavyzdžiui: 1.399Eur x 5.1L. Pateikus duomenis - vartotojui apačioje turi išmesti kainą h1 laukelyje (sukuriame su JS), su dviem skaičiais po kablelio (pvz. 7.13 Eur).</li>
+    </ol>
+    <h1>Užduotis - string</h1>
+    <ol>
+        <li>Sukurk du input'us - vieną, kur vartotojas įves savo vardą; kitą - skaičių. Pirma, patikrink ar skaičius sveikas (jei ne - console). Jei sveikas, po apačia sukurk h1 elementą, kur vardas bus atkartotas tiek kartų, kiek skaičius nurodo.</li>
+        <li>Sukurk input, kur vartotojas įves savo vardą. Įvedus - console'ink kokio ilgio yra vardas. Tačiau užtikrink, kad priekyje ir gale nebūtų įskaičiuoti tarpeliai.</li>
+        <li>Sukurk input, kur vartotojas įves savo pilną vardą (t.y. vardą ir pavardę). Padaryk, kad JS pridėtų du h1 tag'us, viename - vardas, kitame - pavardė.</li>
+        <li>Pakoreguok trečią pratimą, kad įskaičiuotų, jei pavardė ilgesnė nei vienas žodis. Jeigu žodžių daugiau negu du, tuomet antrąjį, trečiąjį ir visus likusius išvesti į antrąjį h1 laukelį.</li>
+    </ol>
+    <h1>Užduotis - konspektai</h1>
+    <ul>
+        <li>Pasikonspektuoti VISUS Number metodus ir savybes.</li>
+        <li>Pasikonspektuoti VISUS Math metodus ir savybes.</li>
+        <li>Pasikonspektuoti VISUS String metodus ir savybes.</li>
+        <p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects">Konspektai</a></p>
+    </ul>
+    <section id="uzduotis1">
+        <form action="" id="skaiciuokle">
+            <h2>Degalų kainos skaičiuoklė</h2>
+            <input type="number" id="kaina" step="0.001" placeholder="Kaina eurais">
+            <input type="number" id="kiekis" step="0.1" placeholder="Kiekis litrais">
+            <button type="submit" >Skaičiuoti</button>
+        </form>
+    </section>
+    <section id="uzduotis2"></section>
+</body>
+</html>
