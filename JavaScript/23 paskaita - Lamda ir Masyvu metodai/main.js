@@ -29,13 +29,17 @@ let pavadinimas = (parametras1, parametras2) => {return veiksmas}
 
 //--------------------------Masyvų metodai-----------------------------
 /*
-    Metodai, kurie su kiekvienu elementu atlieka iteraciją.
-
+    Iteraciniai masyvų metodai - iteruoja per masyvą ir leidžia atlikti kažkokį veiksmą su kiekviena interacija (masyvo elementu).
+    Naudinga tose situacijose, kuriose neleidžiamas paprastas for`as arba for of`as.
     
-    forEach()
-    map()
-    filter()
-    reduce()
+    forEach()   - atlieka nurodytą funkciją kiekvienam masyvo elementui po kartą.
+                forEach`o minusai: negali būti sustabdytas ir negražina jokios reikšmės.
+
+    map()       - sukurią naują masyvą su ankstesnio masyvo duomenimis po pateiktos funkcijos pritaikymo.
+    
+    filter()    - sukuria "shalow" kopiją iš pateikto masyvo dalies, kuri praėjo filtrą, kuris naudojasi pateiktą funkciją.
+
+    reduce()    - sumažina masyvą į vieną kintamajį, kuris susideda iš visų masyvo modifikuotų elementų.
 
     reduceRight()
     some()
@@ -48,18 +52,81 @@ let pavadinimas = (parametras1, parametras2) => {return veiksmas}
 
     sort()
 
+----Visiems aukščiau išvardytiems metodams tinkama sintaksė (išskyrus reduce, reduceRight, sort)
+
+    masyvas.metodas(elementas => veiksmai)
+    masyvas.metodas((elementas, iteracija) => veiksmai)
+    masyvas.metodas((elementas, iteracija, masyvas) => veiksmai)
+
+
 
     Populiarus rikiavimo metodas - BUbble sort
 */
+let skaiciuMasyvas = [5,46,8,4,3,2,5,4,65]
 
-let skMas = [5,46,8,4,3,2,5,4,65,8,45,12,55,7,84,9,46,5,13]
+
+//---------------------forEacch()-----------------------
+console.groupCollapsed('forEach()')
+
+skaiciuMasyvasKopija = []
+skaiciuMasyvas.forEach(element => console.log(element)) // pateikia masyvo elementus konsolėje
+skaiciuMasyvas.forEach(skaicius => {skaiciuMasyvasKopija.push(skaicius)}) // nukopijuoja masyvą
+console.log('Kopija: ' + skaiciuMasyvasKopija)
+
+//-------------
+
+let pvzMasyvas = [4,6,1,'zodziu',false]
+
+//masyvas.forEach(elementoPavadinimas => veiksmai)
+pvzMasyvas.forEach(domuo => console.log('Masyvo domuo: ', domuo))
+
+//masyvas.forEach((elementoPavadinimas, iteracija) => veiksmai)
+pvzMasyvas.forEach((domuo, iteracija) => console.log('Masyvo domuo: ' + iteracija + ' <= Pozicija ' + ' Reikšmė => ' + domuo))
+
+//masyvas.forEach((elementoPavadinimas, iteracija, masyvas) => veiksmai)
+pvzMasyvas.forEach((domuo, iteracija, masyvas) => console.log('Masyvo domuo: ' + iteracija + ' <= Pozicija ' + ' Reikšmė => ' + domuo + ' sekanti reikšmė => ' + [iteracija + 1]))
+
+console.groupEnd('forEach()')
+
+//---------------------map()-----------------------
+console.groupCollapsed('map()')
+
+const zemelapis = skaiciuMasyvas.map(element => element*2)
+
+console.log(zemelapis)
+
+console.groupEnd('map()')
+
+//---------------------filter()-----------------------
+console.group('filter()')
+
+const filtruotasMasyvas = skaiciuMasyvas.filter(skaicius => skaicius > 5)
+
+console.log(filtruotasMasyvas)
+
+console.groupEnd('filter()')
+
+//---------------------reduce()-----------------------
+console.group('reduce()')
+
+const reduceMasyvas = skaiciuMasyvas.reduce((bendras, elementas) => bendras + ' ' + elementas, 'pradžia')
+console.log(reduceMasyvas)
+console.log(typeof(reduceMasyvas))
+
+console.groupEnd('reduce()')
+
+//----------------------sort()---------------------
+console.groupCollapsed('sort()')
 
 function skaiciuSortas(a, b){
     return a - b
 }
 
-console.log(skMas)
-skMas.sort(skaiciuSortas)
-console.log(skMas)
+console.log(skaiciuMasyvas)
+skaiciuMasyvas.sort(skaiciuSortas)
+console.log(skaiciuMasyvas)
+
+console.groupEnd('sort()')
+
 
 

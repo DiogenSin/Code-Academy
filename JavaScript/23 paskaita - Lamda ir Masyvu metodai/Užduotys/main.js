@@ -302,3 +302,4 @@ let grazintiLyginiusNelyginius = (masyvas, daugiauNei, maziauNei, lyginis) => {
 }
 
 console.groupEnd('22+++')
+
