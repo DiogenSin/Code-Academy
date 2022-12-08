@@ -1,7 +1,7 @@
 /*
 
     do while    - bent vieną kartą būtų paleistas ciklas
-    for of      - suka cikl1 per objektą
+    for of      - suka ciklą per objektą
     for in      - suka ciklą per masyvą
 
     array iteration methods
@@ -11,13 +11,11 @@
 //-------------Do while-------------
 
 { console.groupCollapsed('Do while')
-    let i=1;
-    //while(i>10){
-    //   console.log('veiksmai);
-    // i++; 
-    // }
-   do{
-    console.log('veiksmai');
+
+
+let i=1;
+
+   do{console.log('veiksmai');
     i++;
 }   while(i>10);
 
@@ -50,14 +48,14 @@
         //}
     }
 
-
-
     console.groupEnd('For of')
 }
 
 //----------for each-------------
 { console.groupCollapsed('For each')
+
 let masyvas=[1,5,2,4,5,false,true,false,false,'Hello',14,6,7];
+
 masyvas.forEach(element => typeof(element) === 'number' ? console.log(element) : null);
 
     console.groupEnd('For each')

@@ -152,7 +152,7 @@ console.groupCollapsed('14+++')
 console.log('Funckijos pavadinimas: ipatingiVardai')
 
 let ipatingiVardai = (masyvas, ilgesnisNei, trumpesnisNei) => {
-    for ( i = 0 ; i < masyvas.length ; i++ )    
+    for ( i = 0 ; i < masyvas.length ; i = i + 1 )    
     { if(masyvas[i].length > ilgesnisNei && masyvas[i].length < trumpesnisNei && masyvas[i].charAt(0) == masyvas[i].charAt(0).toLowerCase()){
         console.log(masyvas[i])
         } else {}
@@ -167,6 +167,7 @@ console.groupCollapsed('15+')
 console.log('Funckijos pavadinimas: stringuMasyvas')
 
 let misrusMasyvas = ['Dovydas', 1, 'Rūta', 2, 33333,12,13,15,14,19,18,15,16, 'kasparas', 20, 15, 7, 44444, 'baltrazamas']
+
 let suformuotasStringuMasyvas = []
 
 let stringuMasyvas = (masyvas) => {

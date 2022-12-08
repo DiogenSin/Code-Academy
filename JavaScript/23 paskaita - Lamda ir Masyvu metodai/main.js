@@ -40,15 +40,20 @@ let pavadinimas = (parametras1, parametras2) => {return veiksmas}
     filter()    - sukuria "shalow" kopiją iš pateikto masyvo dalies, kuri praėjo filtrą, kuris naudojasi pateiktą funkciją.
 
     reduce()    - sumažina masyvą į vieną kintamajį, kuris susideda iš visų masyvo modifikuotų elementų.
-
-    reduceRight()
-    some()
-    every()
-    find()
-    findIndex()
-    findLast()
-    findLastIndex()
-    flatMap()
+                someArray.reduce((accumulator, element) => veiksmai)
+                someArray.reduce((accumulator, element, iteration) => veiksmai)
+                someArray.reduce((accumulator, element, iteration, array) => veiksmai)
+                someArray.reduce((accumulator, element) => veiksmai, initialValue)
+                someArray.reduce((accumulator, element, iteration) => veiksmai, initialValue)
+                someArray.reduce((accumulator, element, iteration, array) => veiksmai, initialValue)
+    reduceRight()- taip pat kaip paprastas reduce, tik veikia iš dešinės į kairę.
+    some()      - tikrina ar bent vienas masyvo elementas atitinka kažkokią sąlygą ir gražina true/false.
+    every()     - tikrina ar kiekvienas masyvo elementas atitinka kažkokią sąlygą ir gražina true/false.
+    find()      - ieško elemento, kuris atitinka sąlygą ir radus gražina jį. (Neradus grąžina undefined.)
+    findIndex() - ieško elemento, kuris atitinka sąlygą ir radus gražina jo indeksą. (Neradus grąžina -1.)
+    findLast()  -   ieško paskutinio masyve esančio elemento, kuris atitinka sąlyga ir jį grąžina. (Neradus grąžina undefined.)
+    findLastIndex() - ieško paskutinio masyve esančio elemento, kuris atitinka sąlyga ir grąžina jo indeksą. (Neradus grąžina -1.)
+    flatMap()   - grąžina masyva, kuriame visi elementai yra vienu lygmeniu žemiau.
 
     sort()
 

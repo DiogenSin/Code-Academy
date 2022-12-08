@@ -368,13 +368,15 @@ for(interatorius, salyga(su iteratoriumi), iteratoriausKitimas){
 // console.log(9)
 // console.log(10)
 
-for(let i=1; i<10; i++){
-    console.log(i+1)
+let skaiciuMasyvas = [1,2,3,4,5,6,7,8,9]
+                  
+for(let i=0; i<=7; i = i = i+2){
+    console.log(i)
 }
 
 
 let masyvas=[1,2,3,4,5,6,7,8,9,10,11,12]
-for(let i=0; i<masyvas.length; null){
+for(let i=0; i < masyvas.length; null){
     console.log(masyvas.shift())
 }
 

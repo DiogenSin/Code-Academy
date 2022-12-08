@@ -42,7 +42,7 @@ console.log("[0]: " + zodis[0]) // parenka nurodytą informaciją(raidę) string
 console.log("charAt: " + zodis.charAt(0)) // parenka kažkelinta reikšmė string`e
 console.log("length: " + zodis.length) // parenka string`o ilgį
 console.log("charAt(zodis.length-1): " + zodis.charAt(zodis.length-1)) // parenka kažkelintą (-1) žodį nuo galo
-console.log("trim(): " + zodis.trim())
+console.log("trim(): " + zodis.trim()) // pašalina tarpus iš šonų
 console.log("includes('s'): " + zodis.includes('x')) // patikrina ar string`e yra nurodyta reikšmė
 console.log(zodis.replaceAll(/[0-9]/g, 'x')) // pakeičia vieną infromaciją į kitą. naudojantis regex galima pasirinkti pakeistinos infromacijos lauką (nuo 0 iki 9)
 console.log('Concat: ' + zodis.concat(' ir ', ' labas ', zodis)) // prie vieno masyvo prijungia kitą įterpus norimą reikšmę
