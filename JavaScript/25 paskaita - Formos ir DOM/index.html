@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+    <script src="./main.js" defer></script>
+    <title>25 paskaitos užduotys</title>
+</head>
+<body>
+    <section id="uzduotis">
+        <h1>Užduotys</h1>
+        <ol>
+            <li>Sukurti formą
+                <ol>
+                    <li>Kurioje vartotojas gali įkelti:
+                        <ol>
+                            <li>Nuotrauką</li>
+                            <li>Pavadinimą</li>
+                            <li>Aprašymą</li>
+                            <li>Datą (optional)</li>
+                            <li>Lokaciją (optional)</li>
+                        </ol>
+                    </li>
+                </ol>
+            </li>
+            <li>Stilizuoti formą</li>
+            <li>Paspaudus submit - žemiau turi būti sukuriama kortelė su formoje įvestais duomenimis. (kortelė stilizuota)</li>
+            <li>Galimybė vartotojui pasirinkti kortelės dizainą. Spalva ar elementų išdėstmas (optional)</li>
+        </ol>
+    </section>
+    <section id="formosKonteineris">
+        <form action="" id="forma">
+            <div class="photo">
+                <label for="photo">Nuotrauka</label>
+                <input type="url" id="photo" required>
+            </div>
+            <div class="title">
+                <label for="title">Pavadinimas</label>
+                <input type="text" id="title" required>
+            </div>
+            <div class="description">
+                <label for="description">Aprašymas</label>
+                <textarea type="text" id="description" required></textarea>
+            </div>
+            <div class="date">
+                <label for="date">Data</label>
+                <input type="date" name="date" id="date">
+            </div>
+            <div class="location">
+                <label for="location">Lokacija</label>
+                <input type="text" name="location" id="location">
+            </div>
+            <div>
+                <input type="submit" value="Generuoti">
+            </div>
+        </form>
+    </section>
+    <section id="generatedCards">
+
+    </section>
+</body>
+</html>

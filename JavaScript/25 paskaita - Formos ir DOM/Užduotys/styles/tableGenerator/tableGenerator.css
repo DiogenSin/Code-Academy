@@ -1,0 +1,44 @@
+#uzduotis2 {
+  display: flex;
+  justify-content: center;
+}
+
+#tableGenerator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 30%;
+  background-color: black;
+  color: white;
+  padding: 25px;
+}
+#tableGenerator #numberFields {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#tableGenerator #numberFields label {
+  margin-bottom: 5px;
+  margin-top: 10px;
+}
+#tableGenerator #numberFields input {
+  width: 80%;
+  padding: 5px;
+  border-radius: 15px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.178);
+}
+#tableGenerator #submit2 {
+  margin: 25px;
+  padding: 15px;
+  width: 40%;
+  border-radius: 25px;
+  font-weight: bold;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.37);
+}
+#tableGenerator #submit2:hover {
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+}/*# sourceMappingURL=tableGenerator.css.map */

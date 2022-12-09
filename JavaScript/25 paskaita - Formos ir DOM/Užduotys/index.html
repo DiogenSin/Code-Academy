@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/form/form.css">
+    <link rel="stylesheet" href="./styles/card/card.css">
+    <link rel="stylesheet" href="./styles/tableGenerator/tableGenerator.css">
+    <script src="./main.js" defer></script>
+    <title>Užduotys</title>
+</head>
+<body>
+    <hero>
+        <h1>Užduotys</h1>
+        <ol>
+            <li>Sukurti formą:
+                <ol>
+                    <li>Kurioje vartotojas gali įkelti:
+                        <ol>
+                            <li>Nuotrauką</li>
+                            <li>Pavadinimą</li>
+                            <li>Aprašymą</li>
+                            <li>Datą (optional)</li>
+                            <li>Lokacija (optional)</li>
+                        </ol>
+                    </li>
+                    <li>Stilizuoti formą</li>
+                    <li>Paspaudus "submit" - žemiau formos, turi būti sukurta kortelė su formoje įvestais duomenimis. (kortelė PRIVALO būti stilizuota)</li>
+                    <li>optional) Galimybė vartotojui pasirinkti kortelės dizainą. (spalvos tema, elementų išdėstymas)</li>
+                </ol>
+            </li>
+            <li>Sukurti formą, į kurią įvedus stulpelių ir eilučių skaičių - būtų sukurta tokio dydžio lentelė.</li>
+            <li>Naudojantis scripts/data.js viduje esančiais duomenimis:
+                <ol>
+                    <li>Sukurkite visų filmų korteles.</li>
+                    <li>Sukurkite mygtuką, kurį paspaudus būtų sugeneruojami visi filmai.</li>
+                    <li>++ Sukurkite formą, kurioje pasirinkus kažkurią selektoriaus opciją (TIK VIENĄ) ir įvedus duomenis, būtų sugeneruojami tik tie filmai, kurie atitinka formoje pateiktą informaciją.</li>
+                    <li>+++ Patobulinkite formą, kad vartotojas turėtų galimybę pridėti/atimti papildomus filtravimo kriterijus. Paspaudus ieškoti - būtų sugeneruojami tik tie filmai, kurie atitinka visus formoje pateiktus kriterijus.</li>
+                </ol>
+            </li>
+        </ol>
+    </hero>
+    <main>
+        <section id="1Uzduotis">
+            <form action="" id="form">
+                <img src="https://cdn.shopify.com/s/files/1/2356/1293/products/InfinityWars_800x.jpg" alt="Movie poster" id="formImage">
+                <div id="formFields">
+                    <div class="photo">
+                        <label for="photo">Pridėkite nuotrauką</label>
+                        <input type="url" id="photo" placeholder="Pateikite URL" required>
+                    </div>
+                    <div class="title">
+                        <label for="title">Pavadinimas</label>
+                        <input type="text" id="title" placeholder="Įrašykite pavadinimą" required>
+                    </div>
+                    <div class="description">
+                        <label for="description">Aprašymas</label>
+                        <textarea name="description" id="description" placeholder="Pateikite aprašymą" cols="30" rows="5"></textarea>
+                    </div>
+                    <div class="date">
+                        <label for="date">Data</label>
+                        <input type="date" value="2022-12-09" id="date">
+                    </div>
+                    <div class="location">
+                        <label for="location">Vieta</label>
+                        <input type="text" placeholder="Pateikite vietą" id="location">
+                    </div>
+                    <div class="submit">
+                        <input type="submit" id="submit" value="Generuoti">
+                    </div>
+                </div>
+            </form>
+            <section id="cards">
+                <!-- <section id="card">
+                    <div id="cardImageData">
+                        <img src="https://cdn.shopify.com/s/files/1/2356/1293/products/InfinityWars_800x.jpg" alt="Pateiktas paveikslas">
+                        <div id="dataLocation">
+                            <p>Data</p>
+                            <p>Lokacija</p>
+                        </div>
+                    </div>
+                    <div id="cardText">
+                        <h2>Pavadinimas</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut, aperiam?</p>
+                    </div>
+                </section> -->
+            </section> 
+        </section>
+        <section id="uzduotis2">
+            <form action="" id="tableGenerator">
+                <div id="numberFields">
+                    <label for="columnNumber">Įveskite stulpelių skaičių</label>
+                    <input type="number" name="columnNumber" id="columnNumber">
+
+                    <label for="rowNumber">Įveskite eilučių skaičių</label>
+                    <input type="number" name="rowNumber" id="rowNumber">
+                </div>
+                <input type="submit" name="submit" id="submit2" value="Generuoti">
+            </form>
+        </section>
+    </main>
+</body>
+</html>
