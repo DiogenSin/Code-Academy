@@ -1,0 +1,54 @@
+#uzduotis3 h1 {
+  text-align: center;
+}
+
+.movieCard {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 50px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+.movieCard .image {
+  width: 25%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: relative;
+}
+.movieCard .image img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+.movieCard .image .dataLocation {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  position: absolute;
+  bottom: 25px;
+  color: white;
+}
+.movieCard .image .dataLocation :first-child {
+  border-radius: 0px 10px 10px 0px;
+}
+.movieCard .image .dataLocation :last-child {
+  border-radius: 10px 0px 0px 10px;
+}
+.movieCard .image .dataLocation p {
+  padding: 10px 10px;
+  background-color: rgba(96, 16, 201, 0.712);
+}
+.movieCard .text {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  padding: 25px 25px 0px;
+  background-color: black;
+  color: white;
+  border-top: 5px solid rgb(96, 16, 201);
+}
+.movieCard .text p {
+  text-align: justify;
+}/*# sourceMappingURL=movieCards.css.map */

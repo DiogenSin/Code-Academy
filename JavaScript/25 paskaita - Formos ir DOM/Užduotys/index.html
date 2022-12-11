@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="./styles/form/form.css">
     <link rel="stylesheet" href="./styles/card/card.css">
     <link rel="stylesheet" href="./styles/tableGenerator/tableGenerator.css">
+    <link rel="stylesheet" href="./styles/movieCards/movieCards.css">
+    <link rel="stylesheet" href="./styles/filtroForma/filtroForma.css">
+    <script src="./data.js" defer></script>
     <script src="./main.js" defer></script>
     <title>Užduotys</title>
 </head>
@@ -67,7 +70,7 @@
                         <input type="text" placeholder="Pateikite vietą" id="location">
                     </div>
                     <div class="submit">
-                        <input type="submit" id="submit" value="Generuoti">
+                        <input type="submit" class="submit" id="submit" value="Generuoti">
                     </div>
                 </div>
             </form>
@@ -96,8 +99,30 @@
                     <label for="rowNumber">Įveskite eilučių skaičių</label>
                     <input type="number" name="rowNumber" id="rowNumber">
                 </div>
-                <input type="submit" name="submit" id="submit2" value="Generuoti">
+                <input type="submit" name="cta" id="submit2" value="Generuoti">
             </form>
+        </section>
+        <hr>
+        <section id="uzduotis3">
+                <form action="" id="filtroForma">
+                    <h1>Filmų duomenų bazė</h1>
+                    <section id="filtroLaukas">
+
+                    </section>
+                    <label for="filtras">Pasirinkite tipą:</label>
+                    <select name="filtras" id="filtras" class="box">
+                        <option value="Action">Action</option>
+                        <option value="Adventure">Adventure</option>
+                        <option value="Sci-Fi">Sci-Fi</option>
+                        <option value="Fantasy">Fantasy</option>
+                        <option value="Comedy">Comedy</option>
+                        <option value="Horror">Horror</option>
+                        <option value="Drama">Drama</option>
+                    </select>
+                    <input type="submit" class="cta" id="filmuGeneratorius" value="Rodyti filmus">
+                </form>
+            <section id="movieCards">
+            </section>
         </section>
     </main>
 </body>
