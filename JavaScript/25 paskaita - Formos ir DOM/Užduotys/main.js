@@ -1,3 +1,6 @@
+
+//------------------------Filmų kortelės----------------------------
+
 document.querySelector('#form').addEventListener('submit', event => {
     event.preventDefault()
     console.dir(event)
@@ -27,7 +30,23 @@ document.querySelector('#form').addEventListener('submit', event => {
             <p>${description}</p>
         </div>
     </section> 
-    
     `
 })
 
+
+//------------------------Lentelės generatorius----------------------------
+
+document.querySelector('#tableGenerator').addEventListener('submit', event2 => {
+    event2.preventDefault()
+    console.dir(event2)
+    const [eilutes, stulpeliai] = 
+    [
+        event2.target.elements.rowNumber.valueAsNumber,
+        event2.target.elements.columnNumber.valueAsNumber
+    ]
+    console.log(eilutes + ' eilutės ir ' + stulpeliai + ' stulpeliai.')
+
+document.querySelector('#uzduotis2').innerHTML += '<table id="table"><h1>Sugeneruota lentelė</h1></table>'
+
+
+})

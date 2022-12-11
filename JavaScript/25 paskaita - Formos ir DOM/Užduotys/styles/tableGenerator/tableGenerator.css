@@ -41,4 +41,8 @@
 #tableGenerator #submit2:hover {
   color: rgb(0, 0, 0);
   background-color: rgb(255, 255, 255);
+}
+
+#table {
+  border: 1px solid black;
 }/*# sourceMappingURL=tableGenerator.css.map */
