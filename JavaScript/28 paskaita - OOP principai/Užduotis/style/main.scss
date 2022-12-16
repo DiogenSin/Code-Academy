@@ -1,0 +1,22 @@
+body {
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+}
+
+#formContainer {
+    background-color:cornflowerblue;
+    margin: 50px;
+    padding: 50px;
+
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    table {
+        border: 1px solid white;
+        text-align: center;
+    }
+}

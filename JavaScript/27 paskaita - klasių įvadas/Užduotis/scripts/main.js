@@ -61,7 +61,8 @@ class Point{
         return this.x + ':' + this.y
     }
     distance(){
-        return Math.hypot(this.x, this.y)
+    
+        return Math.hypot(this.x, this.y) // reikia atstumo tarp dviejų taškų
     }
 }
 
