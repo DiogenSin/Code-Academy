@@ -1,0 +1,108 @@
+@import url(https://necolas.github.io/normalize.css/8.0.1/normalize.css);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css);
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #f8fafc;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 50px;
+  margin: 0px;
+  background-color: white;
+  box-shadow: 1px 4px 20px -9px rgb(146, 146, 146);
+  -webkit-box-shadow: 1px 4px 20px -9px rgb(156, 156, 156);
+  -moz-box-shadow: 1px 4px 20px -9px rgb(136, 136, 136);
+}
+header span {
+  color: #645cff;
+}
+header div {
+  display: flex;
+  gap: 10px;
+}
+header .socialIcon {
+  color: #645cff;
+  font-size: 24px;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
+#application {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin-top: 20vh;
+  border-radius: 5px;
+}
+#application #taskGenerator {
+  padding: 50px;
+  box-shadow: 1px 4px 20px -9px rgb(146, 146, 146);
+  -webkit-box-shadow: 1px 4px 20px -9px rgb(156, 156, 156);
+  -moz-box-shadow: 1px 4px 20px -9px rgb(136, 136, 136);
+}
+#application #taskGenerator h1 {
+  text-align: center;
+}
+#application #taskGenerator #inputField {
+  display: flex;
+  width: 100%;
+}
+#application #taskGenerator #inputField input {
+  width: 80%;
+  padding: 10px;
+  background-color: #f8fafc;
+  border: 1px solid rgb(224, 224, 224);
+  border-radius: 5px 0px 0px 5px;
+}
+#application #taskGenerator #inputField button {
+  width: 20%;
+  background-color: #645cff;
+  color: white;
+  border: none;
+  border-radius: 0px 5px 5px 0px;
+}
+#application #taskGenerator p {
+  color: red;
+  font-size: 12px;
+}
+#application #tasks {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin: 80px 0px 80px;
+}
+#application #tasks .task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  box-shadow: 1px 4px 20px -9px rgb(146, 146, 146);
+  -webkit-box-shadow: 1px 4px 20px -9px rgb(156, 156, 156);
+  -moz-box-shadow: 1px 4px 20px -9px rgb(136, 136, 136);
+}
+#application #tasks .task * {
+  display: flex;
+}
+#application #tasks .task :first-child {
+  gap: 15px;
+}
+#application #tasks .task :last-child {
+  gap: 15px;
+}
+#application #tasks .task :last-child button {
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+}
+#application #tasks .task :last-child .editButton {
+  color: green;
+}
+#application #tasks .task :last-child .deleteButton {
+  color: rgb(175, 0, 0);
+}/*# sourceMappingURL=main.css.map */

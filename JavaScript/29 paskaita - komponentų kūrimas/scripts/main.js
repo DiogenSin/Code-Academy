@@ -244,27 +244,39 @@ Kitų JS failų importavimas ir naudojimas
 
 // // Cookie
 
-// document.cookie = `vardas=kazkoks; expires=${new Date('2022 12 17')}`
-// document.cookie = `kitas=kazkoks; expires=${new Date('2022 12 17')}`
-// document.cookie = `kitoks=kazkoks; expires=${new Date('2022 12 17')}`
+document.cookie = `vardas=kazkoks; expires=${new Date('2022 12 17')}`
+document.cookie = `kitas=kazkoks; expires=${new Date('2022 12 17')}`
+document.cookie = `kitoks=kazkoks; expires=${new Date('2022 12 17')}`
 
 // // Session storage
 
-// document.querySelector('body').addEventListener('click', () => {
-//     sessionStorage.setItem('vardas', 'Dovydas')
-//     sessionStorage.setItem('pavarde', 'Jakas')
-//     sessionStorage.setItem('metai', 26)
+document.querySelector('body').addEventListener('click', () => {
+    sessionStorage.setItem('vardas', 'Dovydas')
+    sessionStorage.setItem('pavarde', 'Jakas')
+    sessionStorage.setItem('metai', 26)
     
-// })
+})
 
 
 // // Local storage
 
-// document.querySelector('body').addEventListener('click', () => {
-//     localStorage.setItem('vardas', 'Dovydas')
-//     localStorage.setItem('pavarde', 'Jakas')
-//     localStorage.setItem('metai', 26)
-    
-//     // localStorage.clear() // išvalo visą storage
-//     console.log(localStorage.getItem('pavarde'))
-// })
+document.querySelector('body').addEventListener('click', () => {
+    localStorage.setItem('vardas', 'Dovydas')
+    localStorage.setItem('pavarde', 'Jakas')
+    localStorage.setItem('metai', 26)
+    let data = {
+        planeta: 'Žemė',
+        zemynas: 'Europa',
+        salis: 'Lietuva'
+    }
+
+
+    // localStorage.clear() // išvalo visą storage
+    console.log(localStorage.getItem('pavarde'))
+    console.log(JSON.stringify(data))
+
+
+    // JSON.stringify(object) - paverčia objektą į stringą
+    // JSON.parse(stringifiedObject) - paverčia stringą į objektą.
+    localStorage.setItem('gyvenamojiVieta', JSON.stringify(data))
+})
