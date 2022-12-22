@@ -1,0 +1,90 @@
+@charset "UTF-8";
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+/* Search Container */
+#searchContainer {
+  background-color: #99E1D9;
+  padding: 25px;
+  width: 40%;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px 0px;
+}
+#searchContainer h1 {
+  margin-top: 0px;
+  color: white;
+}
+#searchContainer #searchForm {
+  display: flex;
+}
+#searchContainer #searchForm input {
+  height: 25px;
+  border-radius: 10px 0px 0px 10px;
+  border: none;
+}
+#searchContainer #searchForm button {
+  height: 27px;
+  border-radius: 0px 10px 10px 0px;
+  border: none;
+  width: 100px;
+  background-color: #F7567C;
+  color: white;
+  font-weight: bold;
+}
+
+/* Rezultatų card */
+#rezultatuContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.rezultatoCard {
+  width: 80%;
+  border-radius: 15px;
+  border: 1px solid gray;
+}
+
+#initialCardInfo {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  border-radius: 15px 15px 15px 15px;
+}
+#initialCardInfo img {
+  width: 30%;
+  border-radius: 15px 0px 0px 15px;
+}
+
+#moreInfo {
+  display: none;
+}
+
+.rezultatoCard:hover img {
+  width: 30%;
+  border-radius: 0px;
+}
+.rezultatoCard:hover #moreInfo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  border-radius: 0px 0px 15px 15px;
+}
+.rezultatoCard:hover #moreInfo p {
+  margin: 0px 25px 0px 25px;
+  width: 50%;
+}
+.rezultatoCard:hover #moreInfo iframe {
+  width: 17vw;
+  height: 20vh;
+  margin: 0px 25px 25px 0px;
+}/*# sourceMappingURL=main.css.map */

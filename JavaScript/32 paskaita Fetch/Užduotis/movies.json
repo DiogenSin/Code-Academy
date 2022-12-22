@@ -1,0 +1,17 @@
+{
+    "filmas1" : {
+        "pavadinimas": "AVATAR", 
+        "paveikslas": "https://pbs.twimg.com/media/FiGy-pIUcAM1SZW.jpg",
+        "trukme": "155 min.",
+        "aktoriai": ["James Cameron", "Jon Landau"]},
+    "filmas2" : {
+        "pavadinimas": "THE BANSHEES OF INISHERIN", 
+        "paveikslas": "http://images.mymovies.net/images/film/cin/350x522/fid21824.jpg",
+        "trukme": "109 min.",
+        "aktoriai": ["Martin McDonagh", "Peter Czernin"]},
+    "filmas3" : {
+        "pavadinimas": "THE WHALE", 
+        "paveikslas": "https://cdn.moviefone.com/admin-uploads/posters/thewhale-movie-poster_1667917910.jpg",
+        "trukme": "117 min.",
+        "aktoriai": ["Darren Aronofsky", "Samuel D. Hunter"]}
+}

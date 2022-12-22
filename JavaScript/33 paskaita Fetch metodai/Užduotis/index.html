@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/main.css">
+    <script src="./scripts/fetch.js" defer></script>
+    <script src="./scripts/post.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <section id='formSection'>
+            <form action="" id="pridejimoForma">
+                <h1>Parduokite savo būstą!</h1>
+                <div id="cityInput">
+                    <label for="miestas">Įveskite miestą:</label>
+                    <input type="text" name="miestas" id="miestas">
+                </div>
+                <div id="priceInput">
+                    <label for="kaina">Įveskite kainą:</label>
+                    <input type="number" name="kaina" id="kaina">
+                </div>
+                <div id="descriptionInput">
+                    <label for="aprasymas">Apie būstą:</label>
+                    <textarea name="aprasymas" id="aprasymas"></textarea>
+                </div>
+                <div id="imageInput">
+                    <label for="imageURL">Nuoroda į paveikslą:</label>
+                    <input type="text" name="imageURL" id="imageURL">
+                </div>
+                <button type="submit">Publikuoti skelbimą</button>
+            </form>
+        </section>
+        <hr>
+        <div id="filter">
+            <form action="">
+                <label for="filtras">Pasirinkite miestą</label>
+                <select name="filtras" id="filtras">
+                    <option value="vilnius">Vilnius</option>
+                    <option value="kaunas">Kaunas</option>
+                    <option value="klaipeda">Klaipėda</option>
+                </select>
+                <button type="submit">Ieškoti</button>
+            </form>
+        </div>
+        <section id="results">
+        </section>
+    </main>
+</body>
+</html>

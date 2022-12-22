@@ -1,0 +1,8 @@
+{
+    "zodis" : "Dovydas",
+    "skaicius" : 29,
+    "vedes" : false,
+    "masyvas" : ["Jakas", true, 29],
+    "objektas" : {"lytis" : "Vyras", "pomegiai" : 3, "turiVaiku" : false}
+}
+

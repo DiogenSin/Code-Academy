@@ -1,0 +1,113 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    form {
+        background-color: #90BAAD;
+        height: 10vh;
+        width: 30vw;
+        padding: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 15px;
+        margin-bottom: 15px;
+
+        input {
+            background-color: rgba(255, 255, 255, 0.493);
+            border-radius: 15px 0px 0px 15px;
+            border: none;
+            height: 40px;
+        }
+
+        button {
+            background-color: #717C89;
+            color: white;
+            font-weight: bold;
+            border-radius: 0px 15px 15px 0px;
+            border: none;
+            height: 42px;
+        }
+
+    }
+}
+
+#results {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+
+    .card1_2 {
+        border-radius: 15px;
+        background-color: #90baad85;
+        height: auto;
+        width: 100%;
+        padding-right: 25px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        img {
+            height: 150px;
+            border-radius: 15px 0px 0px 15px;
+        };
+
+        h2 {
+            margin: auto;
+        }
+    }
+
+    .card2_2 {
+        display: none;
+    }
+}
+
+.card:hover {
+    .card1_2 {
+        border-radius: 15px 15px 0px 0px;
+        background-color: #90baad85;
+        height: auto;
+        width: 40vw;
+        padding-right: 0px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        img {
+            border-radius: 15px 0px 0px 0px;
+        };
+    }
+
+    .card2_2 {
+        border-radius: 0px 0px 15px 15px;
+        background-color: #90baad85;
+        height: auto;
+        width: 40vw;
+        padding-right: 0px;
+        display: flex;
+        flex-direction: column;
+
+        p   {
+            padding: 5px 25px;
+            text-align: justify;
+        }
+
+        h3   {
+            padding: 5px 25px;
+            text-align: justify;
+            margin: 0px;
+        }
+
+
+        iframe{
+            border-radius: 0px 0px 15px 15px;
+        }
+    }
+}

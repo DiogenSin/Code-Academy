@@ -1,0 +1,122 @@
+body {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+    margin: auto;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#filterContainer {
+    background-color: #B8C4BB;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px;
+    width: 40vw;
+    margin-top: 50px;
+    border-radius: 15px;
+    color: white;
+
+    h1 {
+        margin: 0px;
+    }
+
+    form {
+        display: flex;
+        justify-content: center;
+        margin: 25px 0px;
+        width: auto;
+
+        input {
+            line-height: 30px;
+            border: 0px;
+            border-radius: 7px 0px 0px 7px;
+            background-color: rgba(255, 255, 255, 0.486);
+        }
+
+        button {
+            line-height: 30px;
+            border: 0px;
+            border-radius: 0px 7px 7px 0px;
+            width: 100px;
+            background-color: #663F46;
+            color: white;
+            font-weight: bold;
+        }
+
+        button:hover {
+            background-color: #97656e;
+        }
+    }
+}
+
+.recipesContainer {
+    background-color: #E8F7EE;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60vw;
+    margin-top: 15px;
+    margin-bottom: 50px;
+    border-radius: 15px;
+    color: #3C362A;
+
+    .recipeCard {
+        display: flex;
+        justify-content: space-between;
+        height: 18vh;
+
+        img {
+            height: auto;
+            width: 50%;
+            object-fit: cover;
+            border-radius: 15px 0px 0px 15px;
+        }
+
+        h2 {
+            align-self: center;
+            margin: auto;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+    }
+    .recipeInfo {
+        display: none;
+        flex-direction: column;
+
+        .recipe, .ingredients{
+            padding: 0px 25px;
+        }
+
+        .ingredients {
+            text-align: right;
+        }
+
+        .recipe {
+            text-align: justify;
+        }
+
+        video {
+            margin-top: 25px;
+            border-radius: 0px 0px 15px 15px;
+        }
+    }
+}
+
+.recipesContainer:hover {
+    background-color: #B8C4BB;
+    .recipeCard {
+
+        img {
+            border-radius: 15px 0px 0px 0px;
+        }
+
+    }
+    .recipeInfo {
+        display: flex;
+    }
+}
+
+
+

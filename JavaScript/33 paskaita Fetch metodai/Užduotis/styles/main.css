@@ -1,0 +1,87 @@
+#formSection {
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+}
+#formSection form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 40%;
+  padding: 25px;
+  border: 1px solid #a2bcdb;
+  background-color: rgba(198, 224, 255, 0.4431372549);
+  border-radius: 15px;
+}
+#formSection form h1 {
+  text-align: center;
+}
+#formSection form div {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  height: 28px;
+}
+#formSection form div input {
+  width: 50%;
+  border-radius: 5px;
+  border: none;
+}
+#formSection form div label {
+  line-height: 28px;
+  font-weight: 600;
+}
+#formSection form div textarea {
+  width: 50%;
+  border-radius: 5px;
+  border: none;
+}
+#formSection form button {
+  width: 100%;
+  height: 45px;
+  border-radius: 5px;
+  border: 0px;
+  background-color: rgba(41, 120, 160, 0.5411764706);
+  color: white;
+  font-size: 20px;
+}
+#formSection form button:hover {
+  background-color: #2978A0;
+}
+
+#results {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap-reverse;
+  padding: 50px;
+}
+#results .card {
+  width: 30%;
+  border: 1px solid #a2bcdb;
+  background-color: rgba(198, 224, 255, 0.4431372549);
+  border-radius: 5px;
+}
+#results .card img {
+  width: 100%;
+  height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 5px 5px 0px 0px;
+}
+#results .card div {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 15px;
+}
+#results .card div h3:last-of-type {
+  color: #2978A0;
+}
+#results .card p {
+  padding: 0px 15px;
+}
+#results .card:hover {
+  border: 1px solid rgba(198, 224, 255, 0.6980392157);
+  background-color: rgba(198, 224, 255, 0.6980392157);
+  box-shadow: 1px 1px 10px #b3def3;
+}/*# sourceMappingURL=main.css.map */
