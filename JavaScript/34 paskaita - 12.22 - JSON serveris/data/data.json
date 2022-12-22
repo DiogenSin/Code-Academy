@@ -1,0 +1,39 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "title": "Pakeistas title",
+      "author": "Kitoks Author",
+      "id": 2
+    },
+    {
+      "title": "Super title",
+      "author": "Gerulis",
+      "id": 3
+    },
+    {
+      "title": "Naujas title",
+      "author": "Naujas author",
+      "id": 4
+    },
+    {
+      "title": "Naujas title",
+      "author": "Naujas author",
+      "id": 5
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

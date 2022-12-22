@@ -1,0 +1,159 @@
+@import url(https://meyerweb.com/eric/tools/css/reset/reset200802.css);
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  background-image: url(https://cdn.wallpapersafari.com/25/52/1p8IiQ.jpg);
+  background-size: cover;
+}
+header #forms {
+  padding: 80px;
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+}
+header #forms h1 {
+  font-size: 60px;
+  width: 30%;
+  align-self: center;
+  color: white;
+}
+header #forms h1 hr {
+  background-color: rgb(100, 31, 230);
+  height: 5px;
+  width: 40%;
+  border: none;
+  margin-left: 0px;
+  margin-top: 5px;
+}
+header #forms .form {
+  background-color: rgba(133, 133, 133, 0.829);
+  border-top: 4px solid rgb(100, 31, 230);
+  width: 30%;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+header #forms .form h2 {
+  color: white;
+  text-align: center;
+  font-size: 32px;
+}
+header #forms .form label {
+  margin-top: 20px;
+  font-weight: bold;
+  color: white;
+}
+header #forms .form input {
+  height: 30px;
+  background-color: rgba(255, 255, 255, 0.767);
+  border: none;
+}
+header #forms .form button {
+  height: 37px;
+  background-color: rgba(101, 31, 230, 0.548);
+  border: none;
+  color: white;
+  font-size: 24px;
+}
+header #forms .form button:hover {
+  background-color: rgba(101, 31, 230, 0.767);
+}
+header #forms .form .year_imdb {
+  display: flex;
+  justify-content: space-between;
+}
+header #forms .form .year_imdb input {
+  width: 25%;
+}
+header #deleteForm {
+  align-self: flex-end;
+  padding-right: 80px;
+  margin: 25px 0px;
+  display: flex;
+}
+header #deleteForm input {
+  height: 30px;
+  background-color: rgba(255, 255, 255, 0.767);
+  border: none;
+  margin: 0px;
+}
+header #deleteForm button {
+  background-color: rgba(255, 0, 0, 0.568);
+  color: white;
+  width: 100px;
+  border: none;
+}
+
+main {
+  padding: 80px;
+  text-align: center;
+  background-color: rgb(0, 0, 0);
+}
+main h1 {
+  font-size: 60px;
+  width: 30%;
+  color: white;
+  margin: auto;
+}
+main #moviesGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  -moz-column-gap: 15px;
+       column-gap: 15px;
+  row-gap: 50px;
+  padding: 0px;
+  margin-top: 50px;
+}
+main .card {
+  background-color: rgba(133, 133, 133, 0.829);
+  width: 80%;
+}
+main .card .imageField {
+  position: relative;
+}
+main .card .imageField img {
+  width: 100%;
+  height: 30vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .card .imageField .image_data {
+  display: flex;
+}
+main .card .imageField .image_data p {
+  position: absolute;
+  bottom: 20px;
+  color: white;
+  padding: 5px 15px;
+  background-color: rgba(101, 31, 230, 0.548);
+}
+main .card .imageField .image_data :first-child {
+  left: 0px;
+}
+main .card .imageField .image_data :last-child {
+  right: 0px;
+}
+main .card .textField {
+  height: 15vh;
+  padding: 0px 15px;
+  position: relative;
+}
+main .card .textField h3 {
+  text-align: center;
+  font-size: 24px;
+  margin: 15px 0px;
+}
+main .card .textField :last-child {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  text-align: right;
+  font-weight: bold;
+}/*# sourceMappingURL=main.css.map */

@@ -29,6 +29,9 @@ document.querySelector('form').addEventListener('submit', event => {
 
                         let video = info.meals[0].strYoutube
 
+                        
+
+
                         console.log('Pagrindinai ingredientai: ' + ingredients)
                         console.log('Aprašymas: ' + description)
                         console.log('Video: ' + video)
@@ -44,7 +47,7 @@ document.querySelector('form').addEventListener('submit', event => {
                                 <p>Ingredients: ${ingredients}</p>
                                 <h3>Instructions</h3>
                                 <p>${description}</p>
-                                <iframe src="${video}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <iframe src="https://www.youtube.com/embed/${video.slice(-11)}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                             </div>
                         </div>
                         
