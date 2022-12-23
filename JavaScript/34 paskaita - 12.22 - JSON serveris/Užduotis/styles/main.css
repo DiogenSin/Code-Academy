@@ -1,4 +1,5 @@
 @import url(https://meyerweb.com/eric/tools/css/reset/reset200802.css);
+@import url(https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css);
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -156,4 +157,72 @@ main .card .textField :last-child {
   right: 15px;
   text-align: right;
   font-weight: bold;
+}
+
+.hide {
+  display: none;
+}
+
+#modaloContainer {
+  position: fixed;
+  bottom: 10%;
+  right: 5%;
+  left: 5%;
+  top: 10%;
+}
+
+#modalas {
+  margin-top: 50px;
+  display: flex;
+  position: relative;
+}
+#modalas img {
+  height: 80vh;
+  width: 40%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#modalas #modalText {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding: 80px;
+  border-top: 4px solid rgb(100, 31, 230);
+  color: white;
+  background-color: rgba(44, 44, 44, 0.979);
+}
+#modalas #modalText h1 {
+  margin: 15px 0px;
+}
+#modalas #modalText #yearImdb {
+  position: relative;
+  display: flex;
+  margin: 30px 0px;
+}
+#modalas #modalText #yearImdb p {
+  position: absolute;
+  font-weight: bold;
+}
+#modalas #modalText #yearImdb :first-child {
+  left: 0px;
+}
+#modalas #modalText #yearImdb :last-child {
+  right: 0px;
+}
+#modalas #modalText #autoriaiProduseriai {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+#modalas #close {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 24px;
+  color: white;
+  background-color: transparent;
+  border: none;
+}
+#modalas #close i:hover {
+  color: rgb(158, 158, 158);
 }/*# sourceMappingURL=main.css.map */

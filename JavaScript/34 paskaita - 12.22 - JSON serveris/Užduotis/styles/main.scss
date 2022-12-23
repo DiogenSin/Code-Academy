@@ -1,4 +1,6 @@
 @import url(https://meyerweb.com/eric/tools/css/reset/reset200802.css);
+@import url(https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css);
+
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -185,4 +187,82 @@ main {
             }
         }
     }
+}
+
+.hide {
+    display: none;
+}
+
+#modaloContainer {
+    position:fixed;
+    bottom: 10%;
+    right: 5%;
+    left: 5%;
+    top: 10%;
+}
+
+#modalas {
+    margin-top: 50px;
+    display: flex;
+    position: relative;
+    img {
+        height: 80vh;
+        width: 40%;
+        object-fit: cover;
+    }
+
+    #modalText {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        padding: 80px;
+        border-top: 4px solid rgb(100, 31, 230);
+        color: white;
+        background-color: rgba(44, 44, 44, 0.979);
+
+
+        h1 {
+            margin: 15px 0px;
+        }
+
+        #yearImdb {
+            position: relative;
+            display: flex;
+            margin: 30px 0px;
+
+            p {
+                position: absolute;
+                font-weight: bold;
+            }
+
+            :first-child {
+                left: 0px
+            }
+
+            :last-child {
+                right: 0px
+            }
+        }
+
+        #autoriaiProduseriai {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+        }
+    }
+
+    #close {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        font-size: 24px;
+        color: white;
+        background-color: transparent;
+        border: none;
+
+        i:hover {
+            color: rgb(158, 158, 158);
+        }
+    }
+
 }
