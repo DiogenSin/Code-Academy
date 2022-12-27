@@ -125,6 +125,14 @@ main .card .imageField img {
   -o-object-fit: cover;
      object-fit: cover;
 }
+main .card .imageField .movieID {
+  position: absolute;
+  color: rgba(117, 117, 117, 0.589);
+  text-align: center;
+  right: 15px;
+  font-size: 70px;
+  font-weight: bold;
+}
 main .card .imageField .image_data {
   display: flex;
 }
@@ -142,21 +150,17 @@ main .card .imageField .image_data :last-child {
   right: 0px;
 }
 main .card .textField {
-  height: 15vh;
+  height: auto;
   padding: 0px 15px;
-  position: relative;
+  color: white;
 }
 main .card .textField h3 {
   text-align: center;
   font-size: 24px;
   margin: 15px 0px;
 }
-main .card .textField :last-child {
-  position: absolute;
-  bottom: 15px;
-  right: 15px;
-  text-align: right;
-  font-weight: bold;
+main .card .textField p {
+  text-align: justify;
 }
 
 .hide {

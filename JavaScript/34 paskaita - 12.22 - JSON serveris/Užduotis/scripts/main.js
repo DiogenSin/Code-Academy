@@ -27,6 +27,10 @@ fetch('http://localhost:3000/posts')
     
                         this.imageField = document.createElement('div')
                         this.imageField.classList.add('imageField')
+                        this.movieId = document.createElement('p')
+                        this.movieId.append(document.createTextNode(`${movie.id}`))
+                        this.movieId.setAttribute('class', 'movieID')
+                        this.imageField.append(this.movieId)
                         this.card.append(this.imageField)
     
                             this.image = document.createElement('img')
@@ -36,7 +40,7 @@ fetch('http://localhost:3000/posts')
     
                             this.imageData = document.createElement('div')
                             this.imageData.classList.add('image_data')
-                            this.image.append(this.imageData)
+                            this.imageField.append(this.imageData)
     
                                 this.year = document.createElement('p')
                                 this.year.append(document.createTextNode(`${movie.year}`))
@@ -57,11 +61,7 @@ fetch('http://localhost:3000/posts')
                             this.movieDescription = document.createElement('p')
                             this.movieDescription.append(document.createTextNode(`${movie.description}`))
                             this.textField.append(this.movieDescription)
-    
-                            this.movieId = document.createElement('p')
-                            this.movieId.append(document.createTextNode(`${movie.IMDb}`))
-                            this.textField.append(this.movieId)
-    
+        
                     this.card.addEventListener('click', e => { // click event listeneris atidaro modala
                         document.getElementById('modaloContainer').classList.remove('hide')
 

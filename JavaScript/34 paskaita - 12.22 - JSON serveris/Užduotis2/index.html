@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/headerHero.css">
+    <link rel="stylesheet" href="./styles/movies.css">
+    <script src="./scripts/main.js" defer></script>
+    <title>Filmų duomenų bazė</title>
+</head>
+<body>
+    <header>
+        <h1>Filmu Bazė</h1>
+        <ul>
+            <li><a href="#pagrindinis">Pagrindinis</a></li>
+            <li><a href="#filmai">Filmai</a></li>
+            <li><a href="#apieMus">Apie mus</a></li>
+        </ul>
+    </header>
+    <section id="hero">
+        <h1>Didžiausia filmų duomenų bazė</h1>
+        <p>Interneto vartotojų valdoma ir didžiausia Lietuvoje filmų duomenų bazė. Pridėkite, redaguokite ar ištrinkite jums norimus filmus.</p>
+        <div id="buttons">
+            <button id="addCTA">Pridėti</button>
+            <button id="editCTA">Redaguoti</button>
+            <button id="deleteCTA">Trinti</button>
+        </div>
+
+    </section>
+    <main>
+        <h1>Filmai</h1>
+        <div id="cards">
+            <div class="card" id="movieId">
+                <div class="imageField">
+                    <img src="https://m.media-amazon.com/images/I/519NBNHX5BL._AC_SY580_.jpg" alt="">
+                    <p class="year">1993</p>
+                    <p class="imdb">7,2</p>
+                    <p class="movieId">#1</p>
+                </div>
+                <div class="textField">
+                    <h3>Movie title</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut dicta non architecto culpa necessitatibus eos?</p>
+                </div>
+            </div>
+            <div class="card" id="movieId">
+                <div class="imageField">
+                    <img src="https://m.media-amazon.com/images/I/519NBNHX5BL._AC_SY580_.jpg" alt="">
+                    <p class="year">1993</p>
+                    <p class="imdb">7,2</p>
+                    <p class="movieId">#1</p>
+                </div>
+                <div class="textField">
+                    <h3>Movie title</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut dicta non architecto culpa necessitatibus eos?</p>
+                </div>
+            </div>
+            <div class="card" id="movieId">
+                <div class="imageField">
+                    <img src="https://m.media-amazon.com/images/I/519NBNHX5BL._AC_SY580_.jpg" alt="">
+                    <p class="year">1993</p>
+                    <p class="imdb">7,2</p>
+                    <p class="movieId">#1</p>
+                </div>
+                <div class="textField">
+                    <h3>Movie title</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut dicta non architecto culpa necessitatibus eos?</p>
+                </div>
+            </div>
+            <div class="card" id="movieId">
+                <div class="imageField">
+                    <img src="https://m.media-amazon.com/images/I/519NBNHX5BL._AC_SY580_.jpg" alt="">
+                    <p class="year">1993</p>
+                    <p class="imdb">7,2</p>
+                    <p class="movieId">#1</p>
+                </div>
+                <div class="textField">
+                    <h3>Movie title</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut dicta non architecto culpa necessitatibus eos?</p>
+                </div>
+            </div>
+            <div class="card" id="movieId">
+                <div class="imageField">
+                    <img src="https://m.media-amazon.com/images/I/519NBNHX5BL._AC_SY580_.jpg" alt="">
+                    <p class="year">1993</p>
+                    <p class="imdb">7,2</p>
+                    <p class="movieId">#1</p>
+                </div>
+                <div class="textField">
+                    <h3>Movie title</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut dicta non architecto culpa necessitatibus eos?</p>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <section id="modals">
+        <form action="" id="addForm">
+            <h2>Pridėkite naują filmą</h2>
+            
+            <label for="name">Pavadinimas:</label>
+            <input type="text" name="name" id="name">
+
+            <label for="year">Metai:</label>
+            <input type="number" name="year" id="year">
+
+            <label for="imdb">IMDb:</label>
+            <input type="number" name="imdb" id="imdb" step="0.1">
+
+            <label for="description">Aprašymas:</label>
+            <input type="text" name="description" id="description">
+
+            <label for="banner">Baner`is:</label>
+            <input type="text" name="banner" id="banner">
+
+            <button id="addMovie">Pridėti</button>
+        </form>
+        <form action="" id="editForm">
+            <h2>Pakeiskite esamą filmą</h2>
+            
+            <label for="changeId">Filmo numeris:</label>
+            <input type="number" name="changeId" id="changeId">
+
+            <label for="editname">Pavadinimas:</label>
+            <input type="text" name="editname" id="editname">
+
+            <label for="edityear">Metai:</label>
+            <input type="number" name="edityear" id="edityear">
+
+            <label for="editimdb">IMDb:</label>
+            <input type="number" name="editimdb" id="editimdb" step="0.1">
+
+            <label for="editdescription">Aprašymas:</label>
+            <input type="text" name="editdescription" id="editdescription">
+
+            <label for="editbanner">Baner`is:</label>
+            <input type="text" name="editbanner" id="editbanner">
+
+            <button id="editMovie">Keisti</button>
+        </form>
+        <form action="" id="deleteForm">
+            <h2>Ištrinkite filmą</h2>
+
+            <label for="deleteId">Filmo numeris:</label>
+            <input type="number" name="deleteId" id="deleteId">
+
+            <button id="deleteMovie">Trinti</button>
+        </form>
+    </section>
+</body>
+</html>

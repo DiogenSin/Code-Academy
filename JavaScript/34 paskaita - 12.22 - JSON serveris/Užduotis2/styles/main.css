@@ -1,0 +1,12 @@
+@import url(https://meyerweb.com/eric/tools/css/reset/reset200802.css);
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap");
+body {
+  font-family: "Oswald", sans-serif;
+  letter-spacing: 1px;
+}
+
+:root {
+  --accent-color: rgb(99, 52, 209);
+  --accent-color-diluted: rgba(99, 52, 209, 0.664);
+  --gray: rgb(85, 85, 85);
+}/*# sourceMappingURL=main.css.map */

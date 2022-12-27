@@ -1,0 +1,78 @@
+main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: black;
+        padding: 25px 150px;
+        
+    h1 {
+        color: white;
+        text-align: center;
+        padding: 35px 0px;
+        font-size: 34px;
+    }
+
+    #cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 25px;
+        justify-items: center;
+        gap: 15px;
+        color: white;
+        height: 100vh;
+        
+        .card {
+            width: 300px;
+            height: auto;
+    
+            .imageField {
+                width: 100%;
+                overflow: hidden;
+                position: relative;
+                img {
+                    object-fit: cover;
+                    object-position: top;
+                    width: 100%;
+                    height: 200px;
+                }
+                .year {
+                    position: absolute;
+                    background-color: var(--accent-color-diluted);
+                    bottom: 15px;
+                    left: 0px;
+                    font-size: 18px;
+                    padding: 5px 5px 5px 15px;
+                }
+                .imdb {
+                    position: absolute;
+                    background-color: var(--accent-color-diluted);
+                    bottom: 15px;
+                    right: 0px;
+                    font-size: 18px;
+                    padding: 5px 15px 5px 5px;
+                }
+
+                .movieId {
+                    position: absolute;
+                    background-color: rgba(179, 41, 41, 0.5);
+                    top: 15px;
+                    right: 0px;
+                    font-size: 18px;
+                    padding: 5px 15px 5px 5px;
+                }
+            }
+            .textField {
+                background-color: var(--gray);
+                padding: 15px;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                line-height: 1.2;
+            }
+    
+    
+        }
+    }
+
+}
+
