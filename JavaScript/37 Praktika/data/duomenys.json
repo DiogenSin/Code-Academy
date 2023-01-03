@@ -1,0 +1,31 @@
+{
+    "posts": [
+        {"nr": "5", "plotas": "32.2", "kambSkaicius": "2", "kaina": "34000", "tel":"868856399"},
+        {"nr": "13", "plotas": "60.2", "kambSkaicius": "3", "kaina": "60000", "tel":"868123399"},
+        {"nr": "56", "plotas": "45.2", "kambSkaicius": "3", "kaina": "40000", "tel":"864561399"},
+        {"nr": "75", "plotas": "62.2", "kambSkaicius": "3", "kaina": "55000", "tel":"868789399"},
+        {"nr": "98", "plotas": "98.2", "kambSkaicius": "5", "kaina": "120000", "tel":"868901399"},
+        {"nr": "114", "plotas": "32.2", "kambSkaicius": "2", "kaina": "40000", "tel":"868781399"},
+        {"nr": "112", "plotas": "50.2", "kambSkaicius": "3", "kaina": "60000", "tel":"864501399"},
+        {"nr": "126", "plotas": "40.2", "kambSkaicius": "2", "kaina": "45000", "tel":"868901399"},
+        {"nr": "150", "plotas": "86.2", "kambSkaicius": "4", "kaina": "90000", "tel":"868966399"},
+        {"nr": "203", "plotas": "35.2", "kambSkaicius": "2", "kaina": "32000", "tel":"868321399"},
+        {"nr": "195", "plotas": "22.2", "kambSkaicius": "1", "kaina": "25000", "tel":"868925499"},
+        {"nr": "289", "plotas": "36.2", "kambSkaicius": "3", "kaina": "43000", "tel":"868965899"},
+        {"nr": "302", "plotas": "44.2", "kambSkaicius": "4", "kaina": "50000", "tel":"868978499"},
+        {"nr": "400", "plotas": "32.2", "kambSkaicius": "2", "kaina": "39000", "tel":"868974119"}
+    ],"atsakymai": [
+      {"nr": "5", "plotas": "32.2", "kambSkaicius": "2", "kaina": "34000", "tel":"868856399"}
+    ],
+    "comments": [
+      {
+        "id": 1,
+        "body": "some comment",
+        "postId": 1
+      }
+    ],
+    "profile": {
+      "name": "typicode"
+    }
+  }
+  

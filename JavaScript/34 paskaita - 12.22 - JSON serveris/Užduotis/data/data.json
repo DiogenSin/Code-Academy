@@ -25,12 +25,12 @@
       "id": 5
     },
     {
-      "id": 6,
-      "title": "12 Angry Men",
-      "year": 1957,
-      "IMDb": 9,
-      "description": "The jury in a New York City murder trial is frustrated by a single member whose skeptical caution forces them to more carefully consider the evidence before jumping to a hasty verdict.",
-      "image": "https://m.media-amazon.com/images/I/513TT8BMNFL._AC_SY580_.jpg"
+      "title": "Vienas Namuose",
+      "year": "1992",
+      "IMDb": "6",
+      "description": "Aprašymas",
+      "image": "",
+      "id": 6
     },
     {
       "title": "Rocky Balboa",
@@ -47,6 +47,14 @@
       "description": "Follows Wednesday Addams' years as a student, when she attempts to master her emerging psychic ability, thwart and solve the mystery that embroiled her parents.",
       "image": "https://ottarasan.com/wp-content/uploads/2022/11/Wednesday-OTT.jpg",
       "id": 8
+    },
+    {
+      "title": "Rings of Power",
+      "year": "1993",
+      "IMDb": "5",
+      "description": "trwesrqčw",
+      "image": "https://cdn.shopify.com/s/files/1/0969/9128/products/1917_-_Sam_Mendes_-_Hollywood_War_Film_Classic_English_Movie_Poster_9ef86295-4756-4c71-bb4e-20745c5fbc1a.jpg?v=1582781084",
+      "id": 9
     }
   ],
   "comments": [
