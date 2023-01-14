@@ -1,0 +1,131 @@
+:root {
+    --main-color: #1a3441;
+    --padding: 25px;
+}
+
+H1, H2 {
+    font-weight: 400;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: #f1f1f1;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    #root {
+        padding: 0px 10vw;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    header {
+        background-color: white;
+        img {
+            height: 42px;
+            padding: var(--padding);
+        }
+
+        nav {
+            background-color: var(--main-color);
+
+            ul {
+                list-style-type: none;
+                display: flex;
+                gap: 25px;
+                padding: var(--padding);
+                margin: 0px;
+            }
+            a {
+                text-decoration: none;
+                color: white;
+                font-size: 16px;
+                line-height: 24px;
+            }
+            a:hover {
+                color: rgb(187, 187, 187);
+            }
+        }
+
+    }
+
+    #hero {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 350px;
+        background-color: #aec43b;
+
+        h1 {
+            font-size: 34px;
+            color: white;
+            font-weight: 400;
+        }
+    }
+
+    #flex_row {
+        display: flex;
+        gap: 15px;
+
+        .flex_card {
+            background-color: white;
+            padding: var(--padding);
+        }
+    }
+
+    #grid {
+        display: grid;
+        grid-template: auto / repeat(3, 1fr);
+        padding: var(--padding);
+        background-color: white;
+        gap: 15px;
+        margin-bottom: 25px;
+        h1, h2 {
+            margin: 0px;
+        }
+
+        #content {
+            grid-column-start: span 2;
+        }
+        #sub_header {
+            grid-row-start: 2;
+            grid-column-start: span 2;
+        }
+        #navigation {
+            grid-row-start: span 2;
+            ul {
+                padding: 0px;
+            }
+            li {
+                background-color: #f1f1f1;
+                list-style-type: none;
+                display: flex;
+                padding: var(--padding);
+                gap: 25px;
+                margin: 0px;
+                a {
+                    text-decoration: none;
+                    color: black;
+                    font-size: 16px;
+                    line-height: 24px;
+                }
+                a:hover {
+                    color: black;
+                }
+            }
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+}
