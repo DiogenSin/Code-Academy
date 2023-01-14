@@ -1,0 +1,30 @@
+header{
+    display: flex;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+    background-image: url('https://www.tripsavvy.com/thmb/y4nSGgDCZAQbro3-gPYOv-7QegI=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/fire-in-the-sky-540790033-59ab05ce0d327a0011948475.jpg');
+    background-size: cover;
+    z-index: 0;
+
+    div{
+        z-index: 5;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: white;
+    }
+}
+
+main {
+    #articles {
+        display: grid;
+        grid-template: auto / repeat(3, 1fr);
+        gap: 10px;
+        .card{
+            img{
+                width: 100%;
+            }
+        }
+    }
+}
