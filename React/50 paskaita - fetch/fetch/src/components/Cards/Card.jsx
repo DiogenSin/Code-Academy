@@ -14,7 +14,9 @@ const Card = (props) => {
             <h3>{props.data.title}</h3>
             <p>{props.data.description}</p>
             <div className='change'>
-              <i className='fa fa-edit'></i>
+              <i className='fa fa-edit'
+              onClick={() => props.openChangeCard(props.data)}
+              ></i>
               <i className='fa fa-trash-o'
               onClick={() => props.deleteCard(props.data.id)}
               ></i>

@@ -17,6 +17,7 @@ return (
         {
           props.prisijungimoStatus ?
           <>
+          <i className="fa fa-plus-square-o" onClick={props.openForm}/>
           <h3>Dovydas</h3>
           <img src="https://pbs.twimg.com/media/FhC3LvHXkAEMEUZ.png" alt="avataras" />
           </>

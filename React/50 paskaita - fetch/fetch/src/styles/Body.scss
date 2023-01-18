@@ -1,5 +1,7 @@
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css);
-
+body {
+    position: relative;
+}
 
 header {
     display: flex;
@@ -19,8 +21,6 @@ header {
             font-size: 24px;
         }
     }
-
-
 
     #signIn {
         display: flex;
@@ -49,6 +49,14 @@ header {
             button:hover {
                 background-color: rgba(123, 52, 238, 0.808);
             }
+        }
+
+        i {
+            font-size: 24px;
+        }
+        i:hover {
+            font-weight: 900;
+            cursor: pointer;
         }
 
         img {
@@ -180,4 +188,61 @@ footer {
         justify-content: space-between;
         margin-top: 50px;
     }
+}
+
+#changeForm, #createForm {
+    background-color:white;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 40vw;
+    position: sticky;
+    bottom: 10vh;
+    left: 30vw;
+    box-sizing: border-box;
+    padding: 35px;
+    border-radius: 15px;
+    border: 1px solid rgba(128, 128, 128, 0.377);
+
+    .close {
+        position: absolute;
+        right: 35px;
+        top: 35px;
+        font-size: 24px;
+        margin: 0px;
+        padding: 0px;
+    }
+    .close:hover {
+        transform: rotate(90deg);
+        transition: 0.5s;
+    }
+
+    input {
+        margin-bottom: 10px;
+        height: 30px;
+        box-sizing: border-box;
+    }
+
+    .year_imdb {
+        display: flex;
+        justify-content: space-between;
+        div {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+    }
+
+    button {
+        height: 36px;
+        background-color: rgba(123, 52, 238, 0.555);
+        border: none;
+        border-radius: 5px;
+        color: white;
+        font-weight: 900;
+    }
+    button:hover {
+        background-color: rgba(123, 52, 238, 0.808);
+    }
+
 }
