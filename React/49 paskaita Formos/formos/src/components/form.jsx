@@ -1,73 +1,68 @@
-import { useState } from "react"
+import { useState } from "react";
 
 const Form = () => {
 
-    // const [vardas, setVardas] = useState('')
-    // const [pavarde, setPavarde] = useState('')
+  // const [vardas, setVardas] = useState('');
+  // const [pavarde, setPavarde] = useState('');
 
-    const [formosLaukai, setFormosLaukai] = useState({
-        vardas: '',
-        pavarde: ''
-    })
+  const [formosLaukai, setFormosLaukai] = useState({
+    vardas:'',
+    pavarde:''
+  });
 
-    const handleInputChange = (e) => {
-        console.log(e.target.value)
+  const handleInputChange = (e) => {
+    console.log(e.target.name);
+    switch(e.target.name){
+      case 'vardas':
+        setFormosLaukai({
+          ...formosLaukai,
+          vardas: e.target.value
+        });
+        break;
+      case 'pavarde':
+        setFormosLaukai({
+          ...formosLaukai,
+          pavarde: e.target.value
+        });
+        break;
 
-        switch(e.target.name){
-
-            case 'vardas':
-                setFormosLaukai({
-                    ...formosLaukai,
-                    vardas: e.target.value
-                })
-                break
-            case 'pavarde':
-                setFormosLaukai({
-                    ...formosLaukai,
-                    pavarde: e.target.value
-                })
-                break
-                default: console.log('Kažlą įkėlėme')
-        }
-
+      default:
+        console.log('Kažką keitėm');
     }
+  }
 
+  const daro = (e) => {
+    e.preventDefault();
+    console.log(e);
+    console.log(formosLaukai.vardas);
+    console.log(formosLaukai.pavarde);
+  }
 
-    const daro = (e) => {
-        e.preventDefault()
-        console.log(formosLaukai.vardas)
-    }
-
- return (
-
+  return (
     <>
-    
-    <form onSubmit={daro}>
+      <form onSubmit={daro}>
         <label>
-            Name:
-            <input 
-                type="text" 
-                name='vardas' 
-                value={formosLaukai.vardas} 
-                onChange={handleInputChange} />
+          Name:
+          <input 
+            type="text"
+            name="vardas"
+            value={formosLaukai.vardas}
+            onChange={handleInputChange}
+          />
         </label><br />
         <label>
-            Surname:
-            <input 
-                type="text" 
-                name='pavarde' 
-                value={formosLaukai.pavarde} 
-                onChange={handleInputChange} />
+          Surname:
+          <input 
+            type="text" 
+            name="pavarde" 
+            value={formosLaukai.pavarde} 
+            onChange={handleInputChange} 
+          />
         </label><br />
-        <input type="submit" value='Submit' />
-    </form>
-    
+        <input type="submit" value="Submit" />
+      </form>
     </>
-
-
- )
-
-
+  );
 }
-
-export default Form
+ 
+export default Form;

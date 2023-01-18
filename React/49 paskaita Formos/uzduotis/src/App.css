@@ -1,0 +1,78 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css);
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(240, 240, 240);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#toDoApp {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 30vw;
+}
+
+#appHeader {
+  border-bottom: 1px solid rgba(235, 235, 235, 0.781);
+  box-shadow: 0px 1px 3px rgba(197, 197, 197, 0.452);
+  display: flex;
+  justify-content: center;
+}
+#appBody {
+  display: flex;
+  flex-direction: column;
+}
+
+.task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 30px;
+  font-size: 14px;
+  border-bottom: 1px solid rgba(235, 235, 235, 0.781);
+  border-bottom: 0px 1px 3px rgba(197, 197, 197, 0.452);
+}
+
+.actions {
+  display: flex;
+  gap:  15px;
+  font-size: 20px;
+}
+
+.remove {
+  color: rgba(255, 23, 23, 0.842);
+}
+
+.check {
+  color: rgba(66, 211, 22, 0.767);
+}
+
+.task h2{
+  margin: 15px 0px;
+}
+
+.atlikta {
+  text-decoration: line-through;
+}
+
+#taskSubmitForm {
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+  padding: 10px 30px;
+}
+#taskSubmitForm input{
+  width: 70%;
+  height: 34px;
+  border: 1px solid rgba(197, 197, 197, 0.452);
+}
+
+#taskSubmitForm button{
+  width: 30%;
+  height: 40px;
+  background-color: transparent;
+  border: 1px solid rgba(197, 197, 197, 0.452);
+}

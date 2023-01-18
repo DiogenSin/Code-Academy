@@ -1,16 +1,23 @@
-import SignIn from './components/SignIn';
-import Form from './components/form';
 import './App.css';
+import Form from './components/Form';
+import SignIn from './components/SignIn';
 import { useState } from 'react';
 
-function App() {
-  const [arPrisijunges, setArPrisijunges] = useState(false)
+const App = () => {
+  const [arPrisijunges, setArPrisijunges] = useState(false);
+
   return (
     <>
-      {arPrisijunges ? 'Prisijungęs' : <SignIn prisijungti={setArPrisijunges}/>}
+      {
+        arPrisijunges ? 
+        "Prisijunges" : 
+        <SignIn 
+          prijungti={setArPrisijunges}
+        />
+      }
+      <hr />
       <Form />
     </>
-
   );
 }
 

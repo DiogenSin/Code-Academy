@@ -1,0 +1,159 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css);
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 10vw;
+  align-items: center;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.377);
+}
+header #logoTitle {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+header #logoTitle img {
+  height: 50px;
+}
+header #logoTitle h1 {
+  font-size: 24px;
+}
+header #signIn {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+header #signIn form {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  width: 300px;
+  gap: 10px;
+}
+header #signIn form input {
+  height: 30px;
+  width: 50%;
+  border: 1px solid rgba(128, 128, 128, 0.377);
+  border-radius: 5px;
+}
+header #signIn form button {
+  height: 36px;
+  background-color: rgba(123, 52, 238, 0.555);
+  border: none;
+  border-radius: 5px;
+  color: white;
+}
+header #signIn form button:hover {
+  background-color: rgba(123, 52, 238, 0.808);
+}
+header #signIn img {
+  height: 50px;
+  border-radius: 50px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main #cards {
+  display: grid;
+  grid-template: auto/repeat(3, 1fr);
+  gap: 15px;
+  margin-top: 25px;
+}
+main #cards .card {
+  height: auto;
+  border: 1px solid rgba(128, 128, 128, 0.377);
+  border-radius: 10px;
+  position: relative;
+}
+main #cards .card .image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+main #cards .card .image img {
+  width: 250px;
+  height: 150px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px 10px 0px 0px;
+}
+main #cards .card .image .data {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(123, 52, 238, 0.555);
+  position: absolute;
+  bottom: 5%;
+  width: 250px;
+  padding: 0px 15px;
+  box-sizing: border-box;
+  color: white;
+  font-weight: 900;
+  font-size: 20px;
+}
+main #cards .card .image .data p {
+  margin: 5px;
+}
+main #cards .card .info {
+  width: 250px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+main #cards .card .info .change {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  padding: 0px 10px;
+  box-sizing: border-box;
+}
+main #cards .card .info .change i {
+  font-size: 24px;
+}
+main #cards .card .info .change i:hover {
+  cursor: pointer;
+}
+main #cards .card:hover {
+  background-color: rgba(128, 128, 128, 0.377);
+  transition: 0.5s;
+  height: auto;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: rgba(128, 128, 128, 0.377);
+  padding: 20px 10vw;
+  margin-top: 35px;
+  box-sizing: border-box;
+}
+footer #footerMain {
+  display: flex;
+  gap: 50px;
+  justify-content: space-between;
+}
+footer #footerMain img {
+  height: 150px;
+}
+footer #footerMain #footerMenu {
+  display: flex;
+  width: 60%;
+  justify-content: space-between;
+}
+footer #footerMain #footerMenu ul {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  list-style-type: none;
+}
+footer #footerMain #footerMenu ul h4 {
+  margin: 5px 0px 15px;
+}
+footer #footerBottom {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}/*# sourceMappingURL=body.css.map */

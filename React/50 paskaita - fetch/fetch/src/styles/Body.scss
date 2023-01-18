@@ -1,0 +1,183 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css);
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 10vw;
+    align-items: center;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.377);
+
+    #logoTitle {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        img {
+            height: 50px;
+        }
+        h1 {
+            font-size: 24px;
+        }
+    }
+
+
+
+    #signIn {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+
+        form {
+            display: flex;
+            align-items: center;
+            height: 50px;
+            width: 300px;
+            gap: 10px;
+            input {
+                height: 30px;
+                width: 50%;
+                border: 1px solid rgba(128, 128, 128, 0.377);
+                border-radius: 5px;
+            }
+            button {
+                height: 36px;
+                background-color: rgba(123, 52, 238, 0.555);
+                border: none;
+                border-radius: 5px;
+                color: white;
+            }
+            button:hover {
+                background-color: rgba(123, 52, 238, 0.808);
+            }
+        }
+
+        img {
+            height: 50px;
+            border-radius: 50px;
+        }
+    }
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    #cards {
+        display: grid;
+        grid-template: auto / repeat(3, 1fr);
+        gap: 15px;
+        margin-top: 25px;
+
+        .card {
+            height: auto;
+            border: 1px solid rgba(128, 128, 128, 0.377);
+            border-radius: 10px;
+            position: relative;
+
+            .image {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                position: relative;
+    
+                img{
+                    width: 250px;
+                    height: 150px;
+                    object-fit: cover;
+                    border-radius: 10px 10px 0px 0px;
+                }
+                .data {
+                    display: flex;
+                    justify-content: space-between;
+                    background-color: rgba(123, 52, 238, 0.555);
+                    position: absolute;
+                    bottom: 5%;
+                    width: 250px;
+                    padding: 0px 15px;
+                    box-sizing: border-box;
+                    color: white;
+                    font-weight: 900;
+                    font-size: 20px;
+                    p {
+                        margin: 5px;
+                    }
+                }
+            }
+    
+            .info {
+                width: 250px;
+                padding: 10px;
+                box-sizing: border-box;
+    
+                .change {
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    margin-top: 20px;
+                    padding: 0px 10px;
+                    box-sizing: border-box;
+                    i {
+                        font-size: 24px;
+                    }
+                    i:hover {
+                        cursor: pointer;
+                    }
+                }
+            }
+
+
+
+        }
+
+
+
+        .card:hover {
+                background-color: rgba(128, 128, 128, 0.377);
+                transition: 0.5s;
+                height: auto;
+        }
+    }
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: rgba(128, 128, 128, 0.377);
+    padding: 20px 10vw;
+    margin-top: 35px;
+    box-sizing: border-box;
+
+    #footerMain {
+        display: flex;
+        gap: 50px;
+        justify-content: space-between;
+
+        img {
+            height: 150px;
+        }
+
+        #footerMenu {
+            display: flex;
+            width: 60%;
+            justify-content: space-between;
+            ul {
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+                list-style-type: none;
+
+                h4 {
+                    margin: 5px 0px 15px
+                }
+            }
+        }
+
+    }
+    #footerBottom {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 50px;
+    }
+}

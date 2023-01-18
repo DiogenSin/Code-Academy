@@ -1,0 +1,29 @@
+{
+    "tasks": [
+      {
+        "title": "Išvalyti grindis",
+        "id": 1,
+        "status": "neatlikta"
+      },
+      {
+        "title": "Pakeisti vinis",
+        "id": 2,
+        "status": "atlikta"
+      },
+      {
+        "title": "Nuvalyti stalą",
+        "id": 3,
+        "status": "neatlikta"
+      }
+    ],
+    "comments": [
+      {
+        "id": 1,
+        "body": "some comment",
+        "postId": 1
+      }
+    ],
+    "profile": {
+      "name": "typicode"
+    }
+  }
