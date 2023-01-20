@@ -30,34 +30,62 @@ import { nanoid } from 'nanoid';
 // 14 Patikrinama ar funkcija veikia. Funkcijoje keičiamas useState į true ir stebima ar modalas rodomas
 // 15 Sukurus redaguojamos korteles id useState sunkcijoje jis yra pakeičiamas į norimos redaguoti korteles id
 // 16 Redaguojamos korteles useState per propsus yra perduodamas į redagavimo formą (joje id yra paslėptas, tačiau submitinus forma bus perduotas)
-// 17 
+
+//***********User login kurimas naudojant JSON************************* */
+// 17 JSONe sukuriamas duomenų laukas useriams ("username": "Dovydas", "password": "123", "id": 1 ir t.t.)
+// 18 sukuriamas useState su pradine reikšme null
+// 19 Kuriama funkcija tikrinanti ar user`is egzistuoja duomenų banke (pagal įvedamą vardą)
+    // 19.1 iš formos parsitraukiama įvesta info
+    // 19.2 iš Json parsitraukiami user`iu duomenys
+    // 19.3 iš Json parsitraukti user duomenys sudedami į useState (naudojantis setUserData)
+    // 19.4 naudojantis ivestu usrname ieškomas vartotojo duomenų indeksas
+    // 19.5 tikrinama ar įvestas slaptažodis atitinka duomenyse esantį slaptažodį
 
 
 function App() {
 
 const [data, setData] = useState(null)
+const [userData, setUserData] = useState(null) // 18 kuriamas userData useState`as
 const [prisijunges, setPrisijunges] = useState(false)
 const [redagavimas, setRedagavimas] = useState(false)
 const [redaguojamas, setRedaguojamas] = useState(null)
 const [pridetiNauja, setPridetiNauja] = useState(false)
-
-const prisijungimas = (e) => {
-
-  e.preventDefault()
-  let loginName = e.target.elements.name.value
-  let loginPass = e.target.elements.password.value
-
-  if(loginName === 'Dovydas' && loginPass === 'Password123'){
-    console.log('Prisijungimas sėkmingas')
-    setPrisijunges(true)
-  } else { console.log('Neteisingi prisijungimo duomenys. Bandykite dar kartą.') }
-}
 
 const fetchData = async() => {
 
   const dataReceive = await fetch('http://localhost:3000/posts')
   .then (res => res.json())
   setData(dataReceive)
+
+
+   // 19.2 parsitraukiami user`iu duomenys iš JSON
+  const userDataReceive = await fetch('http://localhost:3000/users')
+    .then (res => res.json())
+
+  //↓↓↓ 19.3 fetchinti user duomenys sudedami į useState`a 
+    setUserData(userDataReceive)
+
+}
+
+const prisijungimas = (e) => { // 19 kuriama prisijungimo funkcija
+
+  e.preventDefault()
+
+  // 19.1 paimami duomenys iš formos ↓↓↓
+  let loginName = e.target.elements.name.value
+  let loginPass = e.target.elements.password.value
+
+  //↓↓↓ 19.4 einama per duomenu masyva ir ieškoma userio duomenu indexo masyve pagal jo ivesta username
+  let userIndex = userData.findIndex(user => user.username === loginName)
+  
+  //↓↓↓ 19.5 jei useris duomenyse egzistuoja (userIndex reikšmė nėra -1), tuomet tikrinamas slaptažodis.
+  userIndex !== -1 // <<< tikrinama ar vartotojas egzistuoja duomenų banke
+  &&
+  userData[userIndex].password === loginPass // <<< tikrinama, ar įvestas slaptažodis teisingas
+  ?
+  setPrisijunges(true) // jei abi aukščiau esančios sąlygos atitinka - vartotojas prijungiamas pakeičiant prisijungimo statusą
+  :
+  console.log('Neteisingi prisijungimo duomenys') // jei ne - error message konsolėje
 
 }
 
@@ -189,8 +217,6 @@ useEffect(() => {
       </main>
     }
 
-    
-    
     <Footer />
 
     

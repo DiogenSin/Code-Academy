@@ -48,5 +48,17 @@
       "description": "ewrger",
       "image": "https://cdn.shopify.com/s/files/1/0057/3728/3618/products/wandavision.mp_240x360_crop_center.progressive.jpg?v=1614371756"
     }
+  ],
+  "users": [
+    {
+      "username": "Dovydas",
+      "password": "123",
+      "id": 1
+    },
+    {
+      "username": "Jakas",
+      "password": "456",
+      "id": 2
+    }
   ]
 }
