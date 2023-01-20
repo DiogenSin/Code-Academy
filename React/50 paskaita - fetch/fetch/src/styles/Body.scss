@@ -196,8 +196,8 @@ footer {
     flex-direction: column;
     gap: 10px;
     width: 40vw;
-    position: sticky;
-    bottom: 10vh;
+    position: fixed;
+    bottom: 25vh;
     left: 30vw;
     box-sizing: border-box;
     padding: 35px;
@@ -215,6 +215,7 @@ footer {
     .close:hover {
         transform: rotate(90deg);
         transition: 0.5s;
+        cursor: pointer;
     }
 
     input {

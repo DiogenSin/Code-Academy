@@ -1,28 +1,20 @@
 {
   "posts": [
     {
-      "id": 1,
-      "title": "Naujausias pavadinimas",
-      "year": 1994,
-      "IMDb": 9.2,
-      "description": "Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency.",
-      "image": "https://marketplace.canva.com/EAFH4NHZv_8/1/0/1131w/canva-white-mystery-movie-poster-UfgB1AQbfvk.jpg"
-    },
-    {
-      "id": 2,
-      "title": "The Godfather",
-      "year": 1972,
-      "IMDb": 9.2,
-      "description": "The aging patriarch of an organized crime dynasty in postwar New York City transfers control of his clandestine empire to his reluctant youngest son.",
-      "image": "https://static.metacritic.com/images/products/movies/3/47c2b1f35087fc23c5ce261bbc3ad9e0.jpg"
+      "title": "Velma",
+      "year": "2023",
+      "IMDb": "1",
+      "description": "My grandchildren and i were appalled with what we tried to watch on the screen. I say tried because we count even finish watching it, it was that bad.",
+      "image": "https://pbs.twimg.com/media/Fhx-iXQX0AAI2XP.jpg",
+      "id": 5
     },
     {
       "title": "Vienas Namuose",
       "year": "1992",
       "IMDb": "6",
-      "description": "Aprašymas",
-      "image": "https://cdn11.bigcommerce.com/s-ydriczk/images/stencil/1280x1280/products/87399/88660/san_andreas_poster_regular_style_buy_original_movie_posters_at_starstills__38275.1435245972.jpg?c=2",
-      "id": 6
+      "description": "Then, the next morning, while the rest of the family was in a rush to make it to the airport on time, they completely forgot about Kevin, who now has the house all to himself.",
+      "image": "https://i5.walmartimages.com/asr/6c929c03-8eea-4666-a92b-adae4fe50853.cdd41e01d16b169281f6b586616950fc.jpeg",
+      "id": 8
     },
     {
       "title": "Rocky Balboa",
@@ -42,29 +34,19 @@
     },
     {
       "title": "Rings of Power",
-      "year": "1993",
+      "year": "2022",
       "IMDb": "5",
-      "description": "trwesrqčw",
-      "image": "https://cdn.shopify.com/s/files/1/0969/9128/products/1917_-_Sam_Mendes_-_Hollywood_War_Film_Classic_English_Movie_Poster_9ef86295-4756-4c71-bb4e-20745c5fbc1a.jpg?v=1582781084",
+      "description": "Epic drama set thousands of years before the events of J.R.R. Tolkien's 'The Hobbit' and 'The Lord of the Rings' follows an ensemble cast of characters, both familiar and new, as they confront the long-feared re-emergence of evil to Middle-earth.",
+      "image": "https://www.theonering.net/torwp/wp-content/uploads/2022/02/CR03__IGStory_TikTok-576x1024.jpg",
       "id": 9
     },
     {
-      "id": "EbKJ3tVK2415GNCTq-RH3",
-      "title": "Assassin",
-      "year": "2015",
+      "id": "XtzEPgGkDZ54EPGlVRZTY",
+      "title": "Naujas Filmas",
+      "year": "2010",
       "IMDb": "5",
-      "description": "Buckham has designed a number of brilliant posters over the past few years (The Dog, The Art of the Steal and The House of the Devil being among my favorites), ",
-      "image": "http://images.fandango.com/images/masterrepository/Fandango/186260/theAssassin.jpg"
+      "description": "ewrger",
+      "image": "https://cdn.shopify.com/s/files/1/0057/3728/3618/products/wandavision.mp_240x360_crop_center.progressive.jpg?v=1614371756"
     }
-  ],
-  "comments": [
-    {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
-    }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  ]
 }

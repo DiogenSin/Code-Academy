@@ -1,11 +1,10 @@
 const CreateModal = (props) => {
 
-console.log(props)
 
-const kurtiNauja = (e) => {
-    e.preventDefault()
-    props.createNew(e)
-  }
+    const kurtiNauja = (e) => {
+        e.preventDefault()
+        props.createNew(e)
+    }
 
     return (
 
