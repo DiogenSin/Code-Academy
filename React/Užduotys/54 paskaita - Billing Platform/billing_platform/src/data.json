@@ -7,7 +7,7 @@
     },
     {
       "id": 2,
-      "people": "1000",
+      "people": "900",
       "price": "2000.25"
     },
     {
@@ -17,13 +17,23 @@
     },
     {
       "id": 4,
-      "people": 2,
-      "price": 5.67
+      "people": "2",
+      "price": "150"
     },
     {
       "id": 5,
-      "people": 150,
-      "price": 120
+      "people": "150",
+      "price": "126"
+    },
+    {
+      "id": 6,
+      "people": 45,
+      "price": 125
+    },
+    {
+      "id": 7,
+      "people": 25,
+      "price": 115
     }
   ]
 }

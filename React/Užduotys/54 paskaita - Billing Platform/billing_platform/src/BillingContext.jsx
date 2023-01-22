@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { useState } from "react";
 import { createContext } from "react";
+import {useNavigate} from "react-router-dom"
 
 const BillingContext = createContext()
 
@@ -8,6 +9,7 @@ const BillingProvider = ({children}) => {
 
 const [data, setData] = useState(null)
 const [selectedBill, setSelectedBill] = useState(null)
+let navigate = useNavigate()
 
 const getData = async () => {
     const receivedData = await fetch('http://localhost:3000/bills')
@@ -17,8 +19,6 @@ const getData = async () => {
 
 const addNew = (e) => {
     e.preventDefault()
-    console.log(e)
-
     let newBillingList = [...data]
     let newId = newBillingList.length +1
     let newPeople = e.target.people.valueAsNumber
@@ -46,8 +46,8 @@ const selectBill = (e) => {
 }
 
 const changeBill = (e) => {
+
     e.preventDefault()
-    console.log(e)
     let changedData = [...data]
     let index = e.target.id.value
     let location = changedData.findIndex(bill => bill.id == index)
@@ -55,6 +55,7 @@ const changeBill = (e) => {
     changedData[location].people = e.target.people.value
     changedData[location].price = e.target.price.value
     setData(changedData)
+    navigate('/')
 
     fetch(`http://localhost:3000/bills/${e.target.id.value}`, {
         method: "PUT",
@@ -68,7 +69,11 @@ const changeBill = (e) => {
         })
   })
 
-}   
+}
+
+
+
+
 
 useEffect(() => {
     getData()
@@ -83,7 +88,8 @@ useEffect(() => {
                 addNew, 
                 selectBill, 
                 selectedBill,
-                changeBill
+                changeBill,
+                navigate
             }}>
             {children}
         </BillingContext.Provider>

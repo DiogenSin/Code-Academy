@@ -36,11 +36,17 @@ body main #newBill, body main #editBill {
   width: 50%;
   padding: 25px;
   border: 1px solid gray;
+  position: relative;
 }
 body main #newBill label, body main #editBill label {
   display: flex;
   flex-direction: column;
   margin-bottom: 15px;
+  width: 50%;
+}
+body main #newBill #buttons, body main #editBill #buttons {
+  display: flex;
+  gap: 10px;
   width: 50%;
 }
 body main #newBill button, body main #editBill button {
@@ -53,8 +59,22 @@ body main #newBill button, body main #editBill button {
   cursor: pointer;
   font-weight: 900;
 }
+body main #newBill #cancel, body main #editBill #cancel {
+  background-color: rgba(177, 32, 32, 0.575);
+}
 body main #newBill button:hover, body main #editBill button:hover {
   background-color: rgba(128, 128, 128, 0.801);
+  color: white;
+}
+body main #newBill #id, body main #editBill #id {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  width: 40px;
+  background-color: rgba(128, 128, 128, 0.616);
+  height: 20px;
+  border: 1px solid gray;
+  text-align: right;
   color: white;
 }
 body main table {

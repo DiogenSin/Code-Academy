@@ -4,6 +4,7 @@ import Edit from "./components/pages/Edit";
 import Home from "./components/pages/Home";
 import Navigation from "./components/organisms/Navigation";
 import './styles/app.css';
+import NotFound from "./components/pages/404";
 
 // Užduotis - sukurti billing app`sa
 /* Procesas
@@ -68,7 +69,7 @@ function App() {
         <Route path="/" element={<Home/>}/>
         <Route path="/edit" element={<Edit/>}/>
         <Route path="/add" element={<Add/>}/>
-
+        <Route path="*" element={<NotFound/>}/>
       </Routes>
     </main>
 
