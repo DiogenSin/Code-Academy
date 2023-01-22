@@ -1,0 +1,85 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+    header {
+        background-color: rgb(255, 255, 255);
+        border-bottom: 1px solid gray;
+
+        ul {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            list-style-type: none;
+            font-size: 35px;
+
+            a {
+                text-decoration: none;
+                color: rgba(0, 0, 0, 0.568);
+            }
+
+            .active {
+                color: black;
+            }
+        }
+        
+    }
+
+    main {
+        padding: 50px 10vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;    
+
+        #newBill, #editBill {
+
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            width: 50%;
+            padding: 25px;
+            border: 1px solid gray;
+            label {
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 15px;
+                width: 50%;
+            }
+            button {
+                width: 50%;
+                margin-top: 25px;
+                height: 35px;
+                background-color: rgba(128, 128, 128, 0.473);
+                color: black;
+                border: none;
+                cursor: pointer;
+                font-weight: 900;
+            }
+            button:hover {
+
+                background-color: rgba(128, 128, 128, 0.801);
+                color: white;
+
+            }
+        }
+
+        table {
+            width: 50%;
+            text-align: center;
+            border: 1px solid gray;
+            padding: 10px;
+
+            th {
+                padding-bottom: 10px;
+            }
+
+            tr:hover {
+                background-color: rgba(128, 128, 128, 0.233);
+            }
+        }
+    }
+}
+

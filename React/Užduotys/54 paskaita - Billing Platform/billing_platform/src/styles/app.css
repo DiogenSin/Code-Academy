@@ -1,0 +1,71 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+body header {
+  background-color: rgb(255, 255, 255);
+  border-bottom: 1px solid gray;
+}
+body header ul {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  list-style-type: none;
+  font-size: 35px;
+}
+body header ul a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.568);
+}
+body header ul .active {
+  color: black;
+}
+body main {
+  padding: 50px 10vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body main #newBill, body main #editBill {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 50%;
+  padding: 25px;
+  border: 1px solid gray;
+}
+body main #newBill label, body main #editBill label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+  width: 50%;
+}
+body main #newBill button, body main #editBill button {
+  width: 50%;
+  margin-top: 25px;
+  height: 35px;
+  background-color: rgba(128, 128, 128, 0.473);
+  color: black;
+  border: none;
+  cursor: pointer;
+  font-weight: 900;
+}
+body main #newBill button:hover, body main #editBill button:hover {
+  background-color: rgba(128, 128, 128, 0.801);
+  color: white;
+}
+body main table {
+  width: 50%;
+  text-align: center;
+  border: 1px solid gray;
+  padding: 10px;
+}
+body main table th {
+  padding-bottom: 10px;
+}
+body main table tr:hover {
+  background-color: rgba(128, 128, 128, 0.233);
+}/*# sourceMappingURL=app.css.map */

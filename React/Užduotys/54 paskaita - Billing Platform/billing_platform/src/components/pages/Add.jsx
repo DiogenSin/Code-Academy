@@ -1,16 +1,21 @@
+import BillingContext from "../../BillingContext"
+import { useContext } from "react"
+
 const Add = () => {
+
+    const {addNew} = useContext(BillingContext)
 
     return (
         <>
-        <form action="">
-        <h1>Add billing</h1>
+        <form action="" id="newBill" onSubmit={addNew}>
+        <h1>Pridėti sąskaitą</h1>
         <label htmlFor="">
-            Paslauga
-            <input type="text" name="" id="" />
+            Žmonių skaičius
+            <input type="number" name="" id="people" />
         </label>
         <label htmlFor="">
             Kaina
-            <input type="number" />
+            <input type="number" id="price"/>
         </label>
         <button>Pridėti</button>
         </form>

@@ -1,0 +1,29 @@
+{
+  "bills": [
+    {
+      "id": 1,
+      "people": 5,
+      "price": 13.55
+    },
+    {
+      "id": 2,
+      "people": "1000",
+      "price": "2000.25"
+    },
+    {
+      "id": 3,
+      "people": 4,
+      "price": 5.12
+    },
+    {
+      "id": 4,
+      "people": 2,
+      "price": 5.67
+    },
+    {
+      "id": 5,
+      "people": 150,
+      "price": 120
+    }
+  ]
+}
