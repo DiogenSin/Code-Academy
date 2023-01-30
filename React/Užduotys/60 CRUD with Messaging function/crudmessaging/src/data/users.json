@@ -1,0 +1,28 @@
+{
+  "users": [
+    {
+      "username": "Dovydas",
+      "password": "123",
+      "avatar": "https://ps.w.org/user-avatar-reloaded/assets/icon-256x256.png?rev=2540745",
+      "id": "1"
+    },
+    {
+      "username": "Antanas",
+      "password": "456",
+      "avatar": "https://ps.w.org/user-avatar-reloaded/assets/icon-256x256.png?rev=2540745",
+      "id": "2"
+    },
+    {
+      "username": "Petras",
+      "password": "789",
+      "avatar": "https://ps.w.org/user-avatar-reloaded/assets/icon-256x256.png?rev=2540745",
+      "id": "3"
+    },
+    {
+      "id": "IcBldnJ0J1F92fCrXSkzX",
+      "username": "Kęstas",
+      "password": "123456789",
+      "avatar": "https://coolors.co/37392e-19647e-28afb0-ddcecd-eee5e5"
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "users": [
+    {
+      "username": "Dovydas",
+      "password": "123",
+      "avatar": "https://ps.w.org/user-avatar-reloaded/assets/icon-256x256.png?rev=2540745",
+      "id": "1"
+    },
+    {
+      "username": "Antanas",
+      "password": "456",
+      "avatar": "https://ps.w.org/user-avatar-reloaded/assets/icon-256x256.png?rev=2540745",
+      "id": "2"
+    },
+    {
+      "username": "Petras",
+      "password": "789",
+      "avatar": "https://ps.w.org/user-avatar-reloaded/assets/icon-256x256.png?rev=2540745",
+      "id": "3"
+    },
+    {
+      "id": "GjTgpyXnWm77vyirIReNu",
+      "username": "Antanas",
+      "password": "123456789",
+      "avatar": "https://cdn1.iconfinder.com/data/icons/people-49/512/_nerd_woman-512.png"
+    }
+  ],
+  "posts": [
+    {
+      "id": "1",
+      "title": "Ipsum",
+      "text": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores facilis vitae alias eveniet tempora quis exercitationem, est esse reprehenderit?",
+      "image": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/tarsier-tarsius-of-philippines-royalty-free-image-1600997633.jpg"
+    },
+    {
+      "id": "2",
+      "title": "Tatum",
+      "text": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores facilis vitae alias eveniet tempora quis exercitationem, est esse reprehenderit?",
+      "image": "https://anchoranimalhospital.com/wp-content/uploads/small-animal-veterinary-care.jpg"
+    },
+    {
+      "id": "3",
+      "title": "Lorem",
+      "text": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores facilis vitae alias eveniet tempora quis exercitationem, est esse reprehenderit?",
+      "image": "https://cypresscreekanimalhospital.com/wp-content/uploads/2016/06/rabbit-300x231.jpg"
+    },
+    {
+      "id": "4",
+      "title": "Dolor",
+      "text": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores facilis vitae alias eveniet tempora quis exercitationem, est esse reprehenderit?",
+      "image": "https://blazepress.com/.image/MTI5NTUyOTAyMDExNDcxODgy/tiny-baby-animals-11jpg.jpg"
+    }
+  ]
+}

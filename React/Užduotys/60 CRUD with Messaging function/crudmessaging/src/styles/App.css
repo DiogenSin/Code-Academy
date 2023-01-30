@@ -1,0 +1,199 @@
+/* https://coolors.co/37392e-19647e-28afb0-ddcecd-eee5e5 */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+body header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10vw;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+body header .logo {
+  height: 60px;
+}
+body header nav ul {
+  display: flex;
+  gap: 10px;
+  list-style-type: none;
+}
+body header nav ul a {
+  text-decoration: none;
+  color: #37392E;
+}
+body header nav ul .active {
+  text-decoration: underline;
+}
+body header #loginForm {
+  display: flex;
+  gap: 10px;
+}
+body header #loginForm label input {
+  width: 100px;
+  height: 30px;
+  border: solid 1px rgba(55, 57, 46, 0.2470588235);
+  box-sizing: border-box;
+  border-radius: 15px;
+}
+body header #loginForm button {
+  background-color: #28AFB0;
+  color: white;
+  border: none;
+  height: 30px;
+  width: 80px;
+  border-radius: 15px;
+}
+body header #loginForm button:hover {
+  background-color: #208b8b;
+  cursor: pointer;
+}
+body header #regBtn {
+  background-color: transparent;
+  color: #37392E;
+  border: none;
+  height: 30px;
+}
+body header #regBtn:hover {
+  cursor: pointer;
+  color: #28AFB0;
+}
+body header #userInfo {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+body header #userInfo #username {
+  font-weight: 700;
+  margin: 5px 0px;
+}
+body header #userInfo .userAvatar {
+  height: 60px;
+}
+body header #userInfo div {
+  display: flex;
+  flex-direction: column;
+}
+body header #userInfo div #logout {
+  background-color: transparent;
+  border: none;
+  font-weight: 600;
+  color: rgb(112, 19, 19);
+}
+body header #userInfo div #logout:hover {
+  cursor: pointer;
+}
+
+body main {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+body main #registrationForm {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 40%;
+  margin: auto;
+  padding: 25px;
+  background-color: rgba(238, 229, 229, 0.4588235294);
+  border-radius: 25px;
+  align-items: center;
+  margin-top: 100px;
+}
+body main #registrationForm h1 {
+  text-align: center;
+}
+body main #registrationForm label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 700;
+  width: 70%;
+}
+body main #registrationForm label span {
+  font-weight: 400;
+  color: rgb(129, 20, 20);
+}
+body main #registrationForm #regButtons {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+}
+body main #registrationForm #regButtons #regBtn1 {
+  background-color: #28AFB0;
+  color: white;
+  border: none;
+  height: 30px;
+  width: 40%;
+  border-radius: 15px;
+}
+body main #registrationForm #regButtons #regBtn1:hover {
+  background-color: #208b8b;
+  cursor: pointer;
+}
+body main #registrationForm #regButtons #regBtn2 {
+  background-color: #d6cccc;
+  color: white;
+  border: none;
+  height: 30px;
+  width: 40%;
+  border-radius: 15px;
+}
+body main #registrationForm #regButtons #regBtn2:hover {
+  background-color: #bdb3b3;
+  cursor: pointer;
+}
+body main #posts {
+  display: grid;
+  grid-template: auto/repeat(3, 1fr);
+  padding: 50px 10vw;
+  gap: 15px;
+}
+body main #posts .postCard {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  box-sizing: border-box;
+  background-color: rgba(238, 229, 229, 0.5058823529);
+  border-radius: 15px;
+}
+body main #posts .postCard .upper img {
+  width: 100%;
+  height: 150px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  box-sizing: border-box;
+  border-radius: 15px 15px 0px 0px;
+}
+body main #posts .postCard .upper i {
+  position: absolute;
+  box-sizing: border-box;
+  top: 0px;
+  right: 0px;
+  font-size: 34px;
+  padding: 10px;
+  color: #28AFB0;
+  border-radius: 0px 0px 0px 25px;
+  background-color: white;
+}
+body main #posts .postCard .upper i:hover {
+  cursor: pointer;
+}
+body main #posts .postCard .lower {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+body main #posts .postCard .lower h3 {
+  margin: 0px;
+}
+body main #posts .postCard .lower p {
+  text-align: justify;
+}
+body main #posts .postCard .lower div {
+  display: flex;
+  justify-content: space-between;
+  font-size: 24px;
+  padding: 0px 30px;
+}
+body main #posts .postCard .lower div i:hover {
+  cursor: pointer;
+}
+body main #posts .postCard:hover {
+  background-color: #EEE5E5;
+}/*# sourceMappingURL=App.css.map */
