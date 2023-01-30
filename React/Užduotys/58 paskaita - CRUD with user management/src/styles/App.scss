@@ -1,0 +1,212 @@
+body {
+
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+
+    header {
+        display: flex;
+        height: 80px;
+        justify-content: center;
+        align-items: center;
+        .loginRegister {
+            display: flex;
+            gap: 20px;
+            font-size: 32px;
+    
+            a {
+                text-decoration: none;
+                color: gray;
+                text-transform: uppercase;
+            }
+            a:hover {
+                color: rgb(92, 92, 92);
+            }
+        }
+    }
+
+    main {
+        display: grid;
+        grid-template: auto / repeat(3, 1fr);
+        padding: 100px 10vw;
+        gap: 20px;
+
+        .post {
+            background-color: rgb(255, 255, 255);
+            border: 1px solid black;
+            padding: 10px;
+
+            .imgTitle {
+                display: flex;
+                align-items: center;
+                gap: 15px;
+            }
+
+            h1 {
+                font-size: 24px;
+                font-weight: 700;
+            }
+
+            p {
+                font-weight: 100;
+            }
+
+            .managePost {
+                display: flex;
+                justify-content: flex-start;
+                margin: 5px 0px;
+                gap: 15px;
+
+                #edit, #delete {
+
+                    background-color: white;
+                    font-weight: 400;
+                    border: none;
+
+                    a {
+                        text-decoration: none;
+                        color: black;
+                    }
+                }
+            }
+        }
+
+        .post:hover {
+            background-color: rgba(238, 238, 238, 0.589);
+        }
+    }
+
+    #registrationForm {
+        display: flex;
+        flex-direction: column;
+        width: 35vw;
+        margin: 25vh auto;
+        gap: 20px;
+
+
+        label {
+            display: flex;
+            justify-content: space-between;
+
+            input {
+                border: 1px solid black;
+            }
+        }
+
+        #regSubmit {
+            margin-top: 30px;
+            height: 30px;
+            background-color: white;
+            border: 1px solid black;
+            font-weight: 900;
+        }
+        #regSubmit:hover {
+            background-color: rgba(238, 238, 238, 0.589);
+        }
+    }
+
+    #loginForm {
+        display: flex;
+        flex-direction: column;
+        width: 35vw;
+        margin: 25vh auto;
+        gap: 20px;
+
+
+        label {
+            display: flex;
+            justify-content: space-between;
+
+            input {
+                border: 1px solid black;
+            }
+        }
+
+        #loginSubmit {
+            margin-top: 30px;
+            height: 30px;
+            background-color: white;
+            border: 1px solid black;
+            font-weight: 900;
+        }
+        #loginSubmit:hover {
+            background-color: rgba(238, 238, 238, 0.589);
+        }
+    }
+
+    #userInfo {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+
+        a {
+            text-decoration: none;
+            color: black;
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        a:hover {
+            color: rgb(104, 100, 100);
+        }
+
+        button {
+            background-color: transparent;
+            border: none;
+            color: rgba(0, 0, 0, 0.247);
+            font-size: 18px;
+            font-weight: 600;
+        }
+        button:hover {
+            cursor: pointer;
+            color: rgba(0, 0, 0, 0.555);
+        }
+
+        #userDetails {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+
+            #userData {
+                display: flex;
+                align-items: center;
+                gap: 15px;
+            }
+        }
+
+        img {
+            height: 60px;
+        }
+    }
+
+    #createForm {
+        display: flex;
+        flex-direction: column;
+        width: 35vw;
+        margin: 20vh auto;
+        gap: 20px;
+
+
+        label {
+            display: flex;
+            justify-content: space-between;
+
+            input {
+                border: 1px solid black;
+            }
+        }
+
+        #newSubmit {
+            margin-top: 30px;
+            height: 30px;
+            background-color: white;
+            border: 1px solid black;
+            font-weight: 900;
+        }
+        #newSubmit:hover {
+            background-color: rgba(238, 238, 238, 0.589);
+        }
+    }
+
+}
+
+

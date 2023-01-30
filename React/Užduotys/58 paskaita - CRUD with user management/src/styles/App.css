@@ -1,0 +1,173 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body header {
+  display: flex;
+  height: 80px;
+  justify-content: center;
+  align-items: center;
+}
+body header .loginRegister {
+  display: flex;
+  gap: 20px;
+  font-size: 32px;
+}
+body header .loginRegister a {
+  text-decoration: none;
+  color: gray;
+  text-transform: uppercase;
+}
+body header .loginRegister a:hover {
+  color: rgb(92, 92, 92);
+}
+body main {
+  display: grid;
+  grid-template: auto/repeat(3, 1fr);
+  padding: 100px 10vw;
+  gap: 20px;
+}
+body main .post {
+  background-color: rgb(255, 255, 255);
+  border: 1px solid black;
+  padding: 10px;
+}
+body main .post .imgTitle {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+body main .post h1 {
+  font-size: 24px;
+  font-weight: 700;
+}
+body main .post p {
+  font-weight: 100;
+}
+body main .post .managePost {
+  display: flex;
+  justify-content: flex-start;
+  margin: 5px 0px;
+  gap: 15px;
+}
+body main .post .managePost #edit, body main .post .managePost #delete {
+  background-color: white;
+  font-weight: 400;
+  border: none;
+}
+body main .post .managePost #edit a, body main .post .managePost #delete a {
+  text-decoration: none;
+  color: black;
+}
+body main .post:hover {
+  background-color: rgba(238, 238, 238, 0.589);
+}
+body #registrationForm {
+  display: flex;
+  flex-direction: column;
+  width: 35vw;
+  margin: 25vh auto;
+  gap: 20px;
+}
+body #registrationForm label {
+  display: flex;
+  justify-content: space-between;
+}
+body #registrationForm label input {
+  border: 1px solid black;
+}
+body #registrationForm #regSubmit {
+  margin-top: 30px;
+  height: 30px;
+  background-color: white;
+  border: 1px solid black;
+  font-weight: 900;
+}
+body #registrationForm #regSubmit:hover {
+  background-color: rgba(238, 238, 238, 0.589);
+}
+body #loginForm {
+  display: flex;
+  flex-direction: column;
+  width: 35vw;
+  margin: 25vh auto;
+  gap: 20px;
+}
+body #loginForm label {
+  display: flex;
+  justify-content: space-between;
+}
+body #loginForm label input {
+  border: 1px solid black;
+}
+body #loginForm #loginSubmit {
+  margin-top: 30px;
+  height: 30px;
+  background-color: white;
+  border: 1px solid black;
+  font-weight: 900;
+}
+body #loginForm #loginSubmit:hover {
+  background-color: rgba(238, 238, 238, 0.589);
+}
+body #userInfo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+body #userInfo a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  font-weight: 600;
+}
+body #userInfo a:hover {
+  color: rgb(104, 100, 100);
+}
+body #userInfo button {
+  background-color: transparent;
+  border: none;
+  color: rgba(0, 0, 0, 0.247);
+  font-size: 18px;
+  font-weight: 600;
+}
+body #userInfo button:hover {
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.555);
+}
+body #userInfo #userDetails {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+body #userInfo #userDetails #userData {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+body #userInfo img {
+  height: 60px;
+}
+body #createForm {
+  display: flex;
+  flex-direction: column;
+  width: 35vw;
+  margin: 20vh auto;
+  gap: 20px;
+}
+body #createForm label {
+  display: flex;
+  justify-content: space-between;
+}
+body #createForm label input {
+  border: 1px solid black;
+}
+body #createForm #newSubmit {
+  margin-top: 30px;
+  height: 30px;
+  background-color: white;
+  border: 1px solid black;
+  font-weight: 900;
+}
+body #createForm #newSubmit:hover {
+  background-color: rgba(238, 238, 238, 0.589);
+}/*# sourceMappingURL=App.css.map */
