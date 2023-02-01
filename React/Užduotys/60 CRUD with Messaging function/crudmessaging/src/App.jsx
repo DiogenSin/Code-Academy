@@ -9,10 +9,11 @@ import MainContexts from './components/contexts/MainContexts';
 import { useContext } from 'react';
 import Unlogged from './components/pages/UnLogged';
 import Registration from './components/pages/Registration';
+import Users from './components/pages/Users';
 
 function App() {
 
-  const {loginStatus} = useContext(MainContexts)
+  const {loginStatus, loggedInUser} = useContext(MainContexts)
 
   return (
     <>
@@ -26,6 +27,7 @@ function App() {
         <Route path='/favourites' element={<Favourites />} />
         <Route path='/chat' element={<Chat />} />
         <Route path='/profile' element={<Profile />} />
+        <Route path='/users' element={<Users />}/>
         <Route path='/*' element={
                 <>
                 <h1>404 not found</h1>

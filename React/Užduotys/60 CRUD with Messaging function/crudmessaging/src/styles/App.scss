@@ -7,6 +7,7 @@ body header{
     align-items: center;
     padding: 20px 10vw;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-bottom: 1px solid #DDCECD;
 
     .logo {
         height: 60px;
@@ -98,6 +99,7 @@ body header{
 body main{
 
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 50px 10vw;
 
     #registrationForm {
 
@@ -165,7 +167,6 @@ body main{
     #posts {
         display: grid;
         grid-template: auto / repeat(3, 1fr);
-        padding: 50px 10vw;
         gap: 15px;
 
         .postCard {
@@ -230,6 +231,157 @@ body main{
         }
         .postCard:hover {
             background-color: #EEE5E5;
+        }
+
+        .newPost {
+            background-color: #eee5e541;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+
+            i {
+                font-size: 55px;
+                color: #ddd4d4a1;
+            }
+        }
+        .newPost:hover {
+            cursor: pointer;
+
+            i {
+                color: #ada6a6cb;
+            }
+        }
+
+        #loadingGif {
+            grid-column: span 3;
+            text-align: center;
+            margin-top: 100px;
+
+            img {
+                object-fit:cover;
+                width: 40%;
+                height: 150px;
+            }
+
+            h2 {
+                margin: 0px;
+            }
+        }
+    }
+
+    .formBackground {
+        background-color: #19657e;
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: flex;
+    }
+
+    #newPostForm, #editPostForm {
+        
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        width: 40%;
+        margin: auto;
+        padding: 25px;
+        background-color: #eee5e575;
+        border-radius: 25px;
+        align-items: center;
+        margin-top: auto;
+
+        h1 {
+            text-align: center;
+        }
+
+        label {
+            display: flex;
+            flex-direction: column;
+            font-weight: 700;
+            width: 70%;
+
+            span {
+                font-weight: 400;
+                color: rgb(129, 20, 20);
+            }
+        }
+
+        #regButtons {
+            display: flex;
+            justify-content: space-between;
+            width: 70%;
+
+            #regBtn1 {
+                    background-color: #28AFB0;
+                    color: white;
+                    border: none;
+                    height: 30px;
+                    width: 40%;
+                    border-radius: 15px;
+            }
+            #regBtn1:hover {
+                background-color: #208b8b;
+                cursor: pointer;
+            }
+
+            #regBtn2 {
+                background-color: #d6cccc;
+                color: white;
+                border: none;
+                height: 30px;
+                width: 40%;
+                border-radius: 15px;
+            }
+            #regBtn2:hover {
+                background-color: #bdb3b3;
+                cursor: pointer;
+            }
+        }
+
+    }
+
+    .hide {
+        display: none;
+    }
+
+    #users {
+        display: grid;
+        grid-template: auto / repeat(2, 1fr);
+        gap: 10px;
+
+        .userCard {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+            background-color: #dfdfdf;
+            border-radius: 15px;
+            padding: 10px;
+            position: relative;
+
+            .upper {
+                img {
+                    height: 100px;
+                }
+            }
+
+            .ban {
+                font-size: 34px;
+                display: flex;
+                justify-content: center;
+                position: absolute;
+                bottom:15px;
+                right: 20px;
+                color: rgb(161, 56, 56);
+            }
+            
+            .ban:hover {
+                cursor: pointer;
+            }
+
+
         }
     }
 }

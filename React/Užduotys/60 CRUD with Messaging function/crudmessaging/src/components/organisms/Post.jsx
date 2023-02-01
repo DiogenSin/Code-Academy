@@ -1,13 +1,15 @@
 import { useState } from "react"
+import PostContexts from "../contexts/PostContext"
+import { useContext } from "react"
 
 const Post = ({data}) => {
 
     const [favourite, setFavourite] = useState(false)
+    const { deletePost, openEditForm } = useContext(PostContexts)
 
     const handleFavourite = () => {
         setFavourite(!favourite)
     }
-
     return (
 
         <>
@@ -20,8 +22,8 @@ const Post = ({data}) => {
                 <h3>{data.title}</h3>
                 <p>{data.text}</p>
                 <div>
-                    <i className="fa fa-trash-o"></i>
-                    <i className="fa fa-edit"></i>
+                    <i className="fa fa-trash-o" onClick={() => deletePost(data.id)}></i>
+                    <i className="fa fa-edit" onClick={() => openEditForm(data.id)}></i>
                 </div>
             </div>
         </div>

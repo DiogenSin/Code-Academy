@@ -3,40 +3,42 @@
     {
       "username": "Dovydas",
       "password": "123",
+      "role": "admin",
       "avatar": "https://ps.w.org/user-avatar-reloaded/assets/icon-256x256.png?rev=2540745",
+      "banned": false,
       "id": "1"
     },
     {
       "username": "Antanas",
       "password": "456",
-      "avatar": "https://ps.w.org/user-avatar-reloaded/assets/icon-256x256.png?rev=2540745",
+      "role": "user",
+      "avatar": "https://www.shareicon.net/data/512x512/2016/08/18/813775_man_512x512.png",
+      "banned": true,
       "id": "2"
     },
     {
       "username": "Petras",
       "password": "789",
-      "avatar": "https://ps.w.org/user-avatar-reloaded/assets/icon-256x256.png?rev=2540745",
+      "role": "user",
+      "avatar": "https://www.shareicon.net/data/512x512/2016/08/18/813781_man_512x512.png",
+      "banned": false,
       "id": "3"
     },
     {
       "id": "GjTgpyXnWm77vyirIReNu",
       "username": "Antanas",
       "password": "123456789",
-      "avatar": "https://cdn1.iconfinder.com/data/icons/people-49/512/_nerd_woman-512.png"
+      "role": "user",
+      "banned": false,
+      "avatar": "https://www.shareicon.net/data/512x512/2016/05/24/770137_man_512x512.png"
     }
   ],
   "posts": [
     {
       "id": "1",
-      "title": "Ipsum",
-      "text": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores facilis vitae alias eveniet tempora quis exercitationem, est esse reprehenderit?",
-      "image": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/tarsier-tarsius-of-philippines-royalty-free-image-1600997633.jpg"
-    },
-    {
-      "id": "2",
-      "title": "Tatum",
-      "text": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores facilis vitae alias eveniet tempora quis exercitationem, est esse reprehenderit?",
-      "image": "https://anchoranimalhospital.com/wp-content/uploads/small-animal-veterinary-care.jpg"
+      "title": "Bandau pakeisti jau ir su Fetchu",
+      "text": "O cia mano tekstas kuri ketinu sukelti i JSON faila lokaliam serveryje",
+      "image": "https://www.timeforkids.com/wp-content/uploads/2021/10/K1-habitat-back.jpg?w=1024"
     },
     {
       "id": "3",
@@ -45,10 +47,16 @@
       "image": "https://cypresscreekanimalhospital.com/wp-content/uploads/2016/06/rabbit-300x231.jpg"
     },
     {
-      "id": "4",
-      "title": "Dolor",
-      "text": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores facilis vitae alias eveniet tempora quis exercitationem, est esse reprehenderit?",
-      "image": "https://blazepress.com/.image/MTI5NTUyOTAyMDExNDcxODgy/tiny-baby-animals-11jpg.jpg"
+      "id": "YcwybxvbXH4rnlWvbZouP",
+      "title": "Naujas straipsnis",
+      "text": "Labai geras tekstas naujam straipsniui",
+      "image": "https://cdn.britannica.com/00/152300-131-FEE1926E/Cheetah-Maasai-Mara-National-Reserve-Kenya.jpg"
+    },
+    {
+      "id": "95npuiWkMAIqyVBnTcg2K",
+      "title": "Naujausias straipsnis",
+      "text": "Pats geriausias tekstas naujam straipsniui",
+      "image": "https://www.rd.com/wp-content/uploads/2020/08/GettyImages-85120553.jpg"
     }
   ]
 }

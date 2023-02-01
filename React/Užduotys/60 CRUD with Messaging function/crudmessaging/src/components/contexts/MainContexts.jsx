@@ -8,6 +8,7 @@ const MainProvider = ({children}) => {
     
     const [loginStatus, setLoginStatus] = useState(false)
     const [userList, setUserList] = useState(null)
+    const [loggedInUser, setLoggedInUser] = useState(null)
     const navigate = useNavigate()
 
     const getUserData = async() => {
@@ -18,19 +19,21 @@ const MainProvider = ({children}) => {
       }
 
     const login = (e) => {
-        e.preventDefault()
-        let givenUsername = e.target.elements.username.value
-        let givenPassword = e.target.elements.password.value
 
-        let userPlace = userList.findIndex(user => user.username === givenUsername)
-        
-        userList[userPlace].password === givenPassword ? setLoginStatus(true) : console.log('False password or username.')
-
+        const userExists = userList.find(user => user.username === e.username && user.password === e.password)
+        if(userExists){
+            if(userExists.banned){
+                console.log('Vartotojas užblokuotas')
+            } else {
+                setLoginStatus(true)
+                setLoggedInUser(userExists)
+            }
+        } else { console.log('Neteisingas slapyvardis arba slaptažodis') }
     }
 
     const logout = () => {
         setLoginStatus(false)
-        console.log('atsijunges')
+        setLoggedInUser('')
     }
 
     const registration = (e) => {
@@ -66,7 +69,10 @@ const MainProvider = ({children}) => {
             loginStatus,
             login,
             logout,
-            registration
+            registration,
+            loggedInUser,
+            userList
+
         }}>
             {children}
         </MainContexts.Provider>

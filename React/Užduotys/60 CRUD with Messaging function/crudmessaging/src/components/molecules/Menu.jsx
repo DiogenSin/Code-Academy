@@ -1,10 +1,11 @@
-import {Routes, Route, NavLink} from 'react-router-dom'
-import Chat from '../pages/Chat'
-import Favourites from '../pages/Favourites'
-import Home from '../pages/Home'
-import Profile from '../pages/Profile'
+import { NavLink } from 'react-router-dom'
+import MainContexts from '../contexts/MainContexts'
+import { useContext } from 'react'
 
 const Menu = () => {
+
+    const { loggedInUser } = useContext(MainContexts)
+
     return (
         <>
             <nav>
@@ -13,6 +14,8 @@ const Menu = () => {
                     <li><NavLink to="/favourites">Mėgiamiausi</NavLink></li>
                     <li><NavLink to="/chat">Pokalbiai</NavLink></li>
                     <li><NavLink to="/profile">Profilis</NavLink></li>
+                    
+                    {loggedInUser.role === 'admin' ? <li><NavLink to="/users">Vartotojai</NavLink></li> : null}
                 </ul>
             </nav>        
         </>

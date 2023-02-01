@@ -2,7 +2,10 @@ import LogoutBtn from "../atoms/LogoutBtn"
 import UserAvatar from "../atoms/UserAvatar"
 import UserName from "../atoms/UserName"
 
+
 const UserInfoLine = () => {
+
+
 
     return (
         <>

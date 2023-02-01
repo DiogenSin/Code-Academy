@@ -1,8 +1,12 @@
+import MainContexts from "../contexts/MainContexts"
+import { useContext } from "react"
+
 const UserName = () => {
+    const { loggedInUser } = useContext(MainContexts)
 
     return (
         <>
-        <p id="username">UserName</p>
+        <p id="username">{loggedInUser.username}</p>
         </>
     )
 }

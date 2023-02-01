@@ -6,6 +6,7 @@ body header {
   align-items: center;
   padding: 20px 10vw;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  border-bottom: 1px solid #DDCECD;
 }
 body header .logo {
   height: 60px;
@@ -83,6 +84,7 @@ body header #userInfo div #logout:hover {
 
 body main {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  padding: 50px 10vw;
 }
 body main #registrationForm {
   display: flex;
@@ -141,7 +143,6 @@ body main #registrationForm #regButtons #regBtn2:hover {
 body main #posts {
   display: grid;
   grid-template: auto/repeat(3, 1fr);
-  padding: 50px 10vw;
   gap: 15px;
 }
 body main #posts .postCard {
@@ -196,4 +197,129 @@ body main #posts .postCard .lower div i:hover {
 }
 body main #posts .postCard:hover {
   background-color: #EEE5E5;
+}
+body main #posts .newPost {
+  background-color: rgba(238, 229, 229, 0.2549019608);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body main #posts .newPost i {
+  font-size: 55px;
+  color: rgba(221, 212, 212, 0.631372549);
+}
+body main #posts .newPost:hover {
+  cursor: pointer;
+}
+body main #posts .newPost:hover i {
+  color: rgba(173, 166, 166, 0.7960784314);
+}
+body main #posts #loadingGif {
+  grid-column: span 3;
+  text-align: center;
+  margin-top: 100px;
+}
+body main #posts #loadingGif img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 40%;
+  height: 150px;
+}
+body main #posts #loadingGif h2 {
+  margin: 0px;
+}
+body main .formBackground {
+  background-color: #19657e;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+}
+body main #newPostForm, body main #editPostForm {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 40%;
+  margin: auto;
+  padding: 25px;
+  background-color: rgba(238, 229, 229, 0.4588235294);
+  border-radius: 25px;
+  align-items: center;
+  margin-top: auto;
+}
+body main #newPostForm h1, body main #editPostForm h1 {
+  text-align: center;
+}
+body main #newPostForm label, body main #editPostForm label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 700;
+  width: 70%;
+}
+body main #newPostForm label span, body main #editPostForm label span {
+  font-weight: 400;
+  color: rgb(129, 20, 20);
+}
+body main #newPostForm #regButtons, body main #editPostForm #regButtons {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+}
+body main #newPostForm #regButtons #regBtn1, body main #editPostForm #regButtons #regBtn1 {
+  background-color: #28AFB0;
+  color: white;
+  border: none;
+  height: 30px;
+  width: 40%;
+  border-radius: 15px;
+}
+body main #newPostForm #regButtons #regBtn1:hover, body main #editPostForm #regButtons #regBtn1:hover {
+  background-color: #208b8b;
+  cursor: pointer;
+}
+body main #newPostForm #regButtons #regBtn2, body main #editPostForm #regButtons #regBtn2 {
+  background-color: #d6cccc;
+  color: white;
+  border: none;
+  height: 30px;
+  width: 40%;
+  border-radius: 15px;
+}
+body main #newPostForm #regButtons #regBtn2:hover, body main #editPostForm #regButtons #regBtn2:hover {
+  background-color: #bdb3b3;
+  cursor: pointer;
+}
+body main .hide {
+  display: none;
+}
+body main #users {
+  display: grid;
+  grid-template: auto/repeat(2, 1fr);
+  gap: 10px;
+}
+body main #users .userCard {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  background-color: #dfdfdf;
+  border-radius: 15px;
+  padding: 10px;
+  position: relative;
+}
+body main #users .userCard .upper img {
+  height: 100px;
+}
+body main #users .userCard .ban {
+  font-size: 34px;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 15px;
+  right: 20px;
+  color: rgb(161, 56, 56);
+}
+body main #users .userCard .ban:hover {
+  cursor: pointer;
 }/*# sourceMappingURL=App.css.map */
